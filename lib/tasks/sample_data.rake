@@ -6,7 +6,7 @@ namespace :db do
     answerText = Faker::Lorem.sentence(1)
     descriptionText = Faker::Lorem.sentence(2)
     content = Faker::Lorem.sentence(5)
-    scenario = Scenario.all
+    scenarios = Scenario.all
     questions = Question.all
     media = "text.jpg"
 
@@ -21,13 +21,11 @@ namespace :db do
 
     end
     10.times do
-      questions.create!(questionprompt: content, media: media, scenario_id: 1)
-      questions.create!(questionprompt: content, media: media, scenario_id: 2)
-      questions.create!(questionprompt: content, media: media, scenario_id: 3)
+      scenarios.each{ |scenario| scenario.questions.create!( questionprompt: content, media: media ) }
     end
 
     4.times do
-      questions.each{ |question| question.answers.create!( answeroption: "answerText" ) }
+      questions.each{ |question| question.answers.create!( answeroption: answerText ) }
     end
 
 
