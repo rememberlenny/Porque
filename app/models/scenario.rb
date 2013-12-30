@@ -1,8 +1,3 @@
 class Scenario < ActiveRecord::Base
-
-  has_many :questions, dependent: :destroy
-
-  validates :name, presence: true
-
-
+  has_many :questions
 end

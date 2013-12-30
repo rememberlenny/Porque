@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131229223655) do
+ActiveRecord::Schema.define(version: 20131230181009) do
 
   create_table "answers", force: true do |t|
-    t.string   "answer"
+    t.string   "answeroption"
     t.integer  "question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -22,19 +22,18 @@ ActiveRecord::Schema.define(version: 20131229223655) do
 
   create_table "questions", force: true do |t|
     t.string   "media"
-    t.text     "question"
+    t.text     "questionprompt"
+    t.integer  "scenario_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "case_id"
-    t.integer  "scenario_id"
   end
 
   create_table "scenarios", force: true do |t|
     t.string   "name"
+    t.string   "description"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "image"
-    t.string   "description"
   end
 
 end
