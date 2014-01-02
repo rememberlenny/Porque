@@ -1,0 +1,12 @@
+<%= render 'questions/question' %>
+<%= render 'answers/answers' %>
+
+<div class="clearfix">
+  <a class="button right tiny">Next</a>
+  <a class="button left tiny">Prev</a>
+  <ul>
+    <%= render 'questions/pagination' %>
+  </ul>
+</div>
+
+<%= @questionPosition %>

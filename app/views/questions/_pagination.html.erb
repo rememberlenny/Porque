@@ -1,0 +1,18 @@
+<% if(params[:id] != '0') %>
+  <%= link_to :controller=>'scenarios',:action =>'question', id:params[:id].to_i-1 do %>
+    Prev
+  <% end %>
+<% end %>
+
+<% @questions.each do |question| %>
+  <% theIndex = @questions.index(question) %>
+  <%= link_to :controller=>'scenarios',:action =>'question', id: theIndex do %>
+    <%= theIndex + 1 %>
+  <% end %>
+<% end %>
+
+<% if(params[:id] != @questionLength) %>
+  <%= link_to :controller=>'scenarios',:action =>'question', id: params[:id].to_i+1 do %>
+    Next
+  <% end %>
+<% end %>

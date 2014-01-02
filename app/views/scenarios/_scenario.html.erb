@@ -1,7 +1,9 @@
 <li>
   <div class="scenario-preview">
-    <img src="<%=scenario.image %>" alt="">
-    <h2><%=scenario.name %></h2>
-    <p><%=scenario.description %></p>
+    <%= link_to scenario.name do %>
+      <img src="<%=scenario.image %>" alt="">
+      <h2><%=scenario.name %></h2>
+      <p><%=scenario.description %></p>
+    <% end %>
   </div>
 </li>

@@ -8,7 +8,7 @@ namespace :db do
     content = Faker::Lorem.sentence(5)
     scenarios = Scenario.all
     questions = Question.all
-    media = "text.jpg"
+    media = "test.jpg"
 
     Scenario.create!( name:        "Scenario Name",
                       image:       media,
