@@ -1,3 +1,92 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$unclicked: #fff;
+
+.answer-choice > li{
+  width: auto;
+  background: $unclicked;
+  margin: 1em;
+  padding: 0em;
+  input{
+    margin: 0em;
+  }
+  label{
+    margin-bottom: 0em;
+    font-size: 1.4em;
+  }
+}
+.full-w{
+  width: 100%;
+}
+.clear-fix{
+  clear: both;
+}
+/**
+ * Display the tick inside the checkbox
+ */
+.check #checkboxFiveInput:after {
+  opacity: 0.1;
+  content: '';
+  position: absolute;
+  width: 31px;
+  height: 17px;
+  background: rgba(0, 0, 0, 0);
+  top: 7px;
+  left: 6px;
+  border: 3px solid rgb(51, 51, 51);
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/**
+ * Create the box for the checkbox
+ */
+.check #checkboxFiveInput {
+  cursor: pointer;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+    left: 0;
+  background: #eee;
+  border:1px solid #ddd;
+}
+
+/**
+ * Checkbox Five
+ */
+.check {
+  width: 44px;
+  position: relative;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.check #checkboxFiveInput:hover::after,
+label:hover .check #checkboxFiveInput::after
+ {
+  opacity: 0.5;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.check input[type=checkbox]:checked + #checkboxFiveInput:after {
+  opacity: 1;
+}
+
+.check input[type=checkbox]{
+  visibility: hidden;
+  width: 51px;
+  height: 36px;
+}

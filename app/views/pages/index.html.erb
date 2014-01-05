@@ -1,11 +1,21 @@
 <div class="row">
 
 <h1>IOM Web Simulator</h1>
+ <h5 class="subheader">
+  Welcome to the Responding to IONM Changes Web Simulator created by the Center for Pediatric Orthopaedic Research at the Columbia University Medical Center. We recently created a multi-center consensus-based checklist to standardize surgeon responses to IONM changes.
+  </h5>
+  <h5 class="subheader">
+  In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.
+  </h5>
+  <h5 class="subheader">
+  <i>
+    Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations.
+  </i>
+  </h5>
 
 <% if @scenarios.any? %>
-
-<h3>Cases</h3>
-<ul class="large-block-grid-3">
+<hr>
+<ul class="large-block-grid-1">
 
 <%= render @scenarios %>
 

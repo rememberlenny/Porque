@@ -1,5 +1,23 @@
-<% @answer.each do |answer| %>
-<li>
-  <%= answer.answeroption %>
-</li>
+<%= form_tag do %>
+
+<ul class="no-bullet answer-choice">
+  <% @answer.each do |answer| %>
+  <li>
+    <label>
+        <div class="check">
+          <%= check_box_tag( "answer"+answer.id.to_s, answer.id ) %>
+          <div id="checkboxFiveInput"></div>
+        </div>
+        <div class="clear-fix"></div>
+        <%= answer.answeroption %>
+      <div class="clear-fix"></div>
+    </label>
+  </li>
+  <% end %>
+  <li>
+    <%= submit_tag("Submit Answer", :class=>"button full-w") %>
+  </li>
+</ul>
+
+
 <% end %>

@@ -1,0 +1,90 @@
+{
+  "application":[
+    {
+      "homepage": {
+        "name":        "Case 1",
+        "description": "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.",
+        "image":       "test.jpg"
+      },
+      "question_order": {
+        "1":{
+          "question":{
+            "questionprompt":[
+              "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.",
+              "Due to her size, positioning was difficult and her legs had to be secured with tape and straps to prevent them from falling off. Screws were placed cephalocaudally from T2 to L3 (skipping T3 and T5) on the left side. On the right, screws were placed caudal-cephalically from L3, and at the point when T10 screw was in we lost SSEP monitoring in the distribution of the right posterior tibial nerve.",
+              "What will you do next?"
+            ]
+          },
+          "answer":{
+            "answeroption":[
+              {
+                "answer"  :"Gain control of the room",
+                "response":"",
+                "result"  :"2"
+              },
+              {
+                "answer"  :"Check anesthetic/systemic conditions of the patient",
+                "response":"",
+                "result"  :"3"
+              },
+              {
+                "answer"  :"Seek technical/neurophysiologic reasons for IONM changes",
+                "response":"",
+                "result"  :"4"
+              },
+              {
+                "answer"  :"Seek surgery-related reasons for IONM changes",
+                "response":"",
+                "result"  :"5"
+              },
+              {
+                "answer"  :"Consider consultation with a colleague",
+                "response":"",
+                "result"  :"6"
+              }
+            ]
+          }
+        },
+        "2":{
+          "question":{
+            "questionprompt":[
+              "In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+            ]
+          },
+          "answer":{
+            "answeroption":[
+              {
+                "answer"  :"Stop case and announce to the room",
+                "response":"Now everyone is notified of the changes. How else can you gain control of the room?",
+                "result"  :"2"
+              },
+              {
+                "answer"  :"Eliminate extraneous stimuli (music, conversations, etc.)",
+                "response":[
+                  "The music has been stopped and you have eliminated extraneous stimuli.",
+                  "How else can you gain control of the room?"
+                ],
+                "result"  :"2"
+              },
+              {
+                "answer"  :"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
+                "response":"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+                "result"  :"2"
+              },
+              {
+                "answer"  :"Anticipate need for intraoperative imaging if not readily available",
+                "response":"How else can you gain control of the room? [",
+                "result"  :"2"
+              },
+              {
+                "answer"  :"All of the above",
+                "response":"Now you have everyone’s attention and ready to take further action steps.",
+                "result"  :"1"
+              },
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

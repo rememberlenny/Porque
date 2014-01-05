@@ -1,9 +1,19 @@
 <li>
-  <div class="scenario-preview">
-    <%= link_to scenario.name do %>
-      <img src="<%=scenario.image %>" alt="">
-      <h2><%=scenario.name %></h2>
-      <p><%=scenario.description %></p>
-    <% end %>
+  <div class="scenario-preview row">
+    <div class="large-3 column">
+      <%= link_to scenario.name do %>
+        <img src="<%=scenario.image %>" alt="">
+      <% end %>
+    </div>
+    <div class="large-9 column">
+      <%= link_to scenario.name do %>
+        <h2><%=scenario.name %></h2>
+      <% end %>
+        <p><%=scenario.description %></p>
+      <%= link_to scenario.name, :class=>"button tiny" do %>
+        Begin <%=scenario.name %>
+      <% end %>
+    </div>
   </div>
 </li>
+<hr>
