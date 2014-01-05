@@ -1,3 +1,5 @@
+// Array in text = new paragraph
+// If array is in array, make list
 {
   "application":[
     {
@@ -39,8 +41,8 @@
               },
               {
                 "answer"  :"Consider consultation with a colleague",
-                "response":"",
-                "result"  :"6"
+                "response":"You should always consider consultation with a colleague. What else can you and your colleague do in order to pinpoint the reason to bring the IONM back to baseline?",
+                "result"  :"1"
               }
             ]
           }
@@ -125,7 +127,116 @@
             ]
           }
         },
-        // STR SAMPLE
+        "4":{
+          "question":{
+            "questionprompt":[
+              "Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes)"
+            ]
+          },
+          "answer":{
+            "answeroption":[
+              {
+                "answer"  :"Discuss status of inhalational agents with anesthesia",
+                "response":"IONM has not returned to baseline. What else?",
+                "result"  :"4"
+              },
+              {
+                "answer"  :"Check extent of neuromuscular blockade",
+                "response":"IONM has not returned to baseline. What else?",
+                "result"  :"4"
+              },
+              {
+                "answer"  :"Check electrode placement",
+                "response":"During the process of checking all the electrode placements, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
+                "result"  :"6"
+              },
+              {
+                "answer"  :"Determine pattern and timing of signal changes",
+                "response":"IONM has not returned to baseline. What else?",
+                "result"  :"4"
+              },
+              {
+                "answer"  :"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+                "response":"You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
+                "result"  :"6"
+              },
+              {
+                "answer"  :"All of the Above",
+                "response":[
+                  "You checked all of the following: ",
+                  [
+                    "Discuss status of inhalational agents with anesthesia",
+                    "Check extent of neuromuscular blockade",
+                    "Check electrode placement",
+                    "Determine pattern and timing of signal changes",
+                    "Check limb/neck positioning; check limb position on table especially in unilateral loss"
+                  ],
+                  "As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline."
+                ],
+                "result"  :"6"
+              }
+            ]
+          }
+        },
+        "5":{
+          "question":{
+            "questionprompt":[
+              "Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+            ]
+          },
+          "answer":{
+            "answeroption":[
+              {
+                "answer"  :"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+                "response":"IONM has not returned to baseline. What else? ",
+                "result"  :"5"
+              },
+              {
+                "answer"  :"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+                "response":"Upon examination, everything looks normal. What else? ",
+                "result"  :"5"
+              },
+              {
+                "answer"  :"Both of the Above",
+                "response":"After checking for mechanical causes for IONM change, it did not return to baseline. What else? ",
+                "result"  :"1"
+              }
+            ]
+          }
+        },
+        // End of first set
+
+        "6":{
+          "question":{
+            "questionprompt":[
+              "Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+            ]
+          },
+          "answer":{
+            "answeroption":[
+              {
+                "answer"  :"",
+                "response":"",
+                "result"  :""
+              },
+              {
+                "answer"  :"",
+                "response":"",
+                "result"  :""
+              },
+              {
+                "answer"  :"",
+                "response":"",
+                "result"  :""
+              },
+              {
+                "answer"  :"",
+                "response":"",
+                "result"  :""
+              },
+            ]
+          }
+        },
         "#":{
           "question":{
             "questionprompt":[
@@ -156,9 +267,9 @@
               },
             ]
           }
-        }
+        },
         // END SAMPLE
       }
     }
   ]
-}
+}0
