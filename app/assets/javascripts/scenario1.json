@@ -83,7 +83,81 @@
               },
             ]
           }
+        },
+        "3":{
+          "question":{
+            "questionprompt":[
+              "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes)"
+            ]
+          },
+          "answer":{
+            "answeroption":[
+              {
+                "answer"  :"Optimize MAP",
+                "response":"Blood pressure is normal; what else will you check?",
+                "result"  :"3"
+              },
+              {
+                "answer"  :"Optimize Hematocrit",
+                "response":"There is no abnormality; what else will you check?",
+                "result"  :"3"
+              },
+              {
+                "answer"  :"Optimize Blood pH",
+                "response":"There is no abnormality; what else will you check?",
+                "result"  :"3"
+              },
+              {
+                "answer"  :"Seek Normothermia",
+                "response":"There is no abnormality; what else will you check?",
+                "result"  :"3"
+              },
+              {
+                "answer"  :"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+                "response":"Need discussed; what else will you check?",
+                "result"  :"3"
+              },
+              {
+                "answer"  :"All of the Above",
+                "response":"All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
+                "result"  :"1"
+              },
+            ]
+          }
+        },
+        // STR SAMPLE
+        "#":{
+          "question":{
+            "questionprompt":[
+              ""
+            ]
+          },
+          "answer":{
+            "answeroption":[
+              {
+                "answer"  :"",
+                "response":"",
+                "result"  :""
+              },
+              {
+                "answer"  :"",
+                "response":"",
+                "result"  :""
+              },
+              {
+                "answer"  :"",
+                "response":"",
+                "result"  :""
+              },
+              {
+                "answer"  :"",
+                "response":"",
+                "result"  :""
+              },
+            ]
+          }
         }
+        // END SAMPLE
       }
     }
   ]
