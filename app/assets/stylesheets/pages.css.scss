@@ -4,11 +4,21 @@
 
 $unclicked: #fff;
 
+.answer-choice{
+  margin-left: 50px !important;
+}
+
 .answer-choice > li{
+  line-height: 44px;
   width: auto;
   background: $unclicked;
   margin: 1em;
   padding: 0em;
+  padding-left: .3em;
+  border-left: 5px solid #fff;
+  &:hover{
+    border-left: 5px solid darken(#fff, 20%);
+  }
   input{
     margin: 0em;
   }
@@ -63,8 +73,9 @@ $unclicked: #fff;
  * Checkbox Five
  */
 .check {
+  position: absolute;
+  left: 37px;
   width: 44px;
-  position: relative;
   display: inline-block;
   margin-right: 1em;
 }

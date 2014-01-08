@@ -10,16 +10,16 @@ namespace :db do
     questions = Question.all
     media = "test.jpg"
 
-    Scenario.create!( name:        "Scenario Name",
-                      image:       media,
-                      description: descriptionText )
-    2.times do |n|
-      name = "Scenario Name #{n+1}"
-      Scenario.create!(  name: name,
-                          image: media,
-                          description: descriptionText )
+    # Scenario.create!( name:        "Scenario Name",
+    #                   image:       media,
+    #                   description: descriptionText )
+    # 2.times do |n|
+    #   name = "Scenario Name #{n+1}"
+    #   Scenario.create!(  name: name,
+    #                       image: media,
+    #                       description: descriptionText )
 
-    end
+    # end
     10.times do
       scenarios.each{ |scenario| scenario.questions.create!( questionprompt: content, media: media ) }
     end
