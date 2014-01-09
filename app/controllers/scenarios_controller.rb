@@ -9,11 +9,7 @@ class ScenariosController < ApplicationController
   end
 
   def show
-    @scenario = Scenario.find(params[:id])
 
-    @scenario.questions.each do |question|
-      @question = question
-    end
   end
 
   def question
@@ -28,10 +24,4 @@ class ScenariosController < ApplicationController
     @question = @questions[questionPosition]
     @answer = Question.find(@question.id).answers
   end
-
 end
-
-
-@scenario = Scenario.find(1)
-
-@question = @scenario.questions.find(1)

@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140105145302) do
+ActiveRecord::Schema.define(version: 20131230181009) do
 
   create_table "answers", force: true do |t|
     t.string   "answeroption"
     t.integer  "question_id"
+    t.integer  "questions_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

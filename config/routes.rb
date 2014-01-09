@@ -1,9 +1,11 @@
 MedicalSimulation::Application.routes.draw do
+
   resources :scenarios
 
-  get 'scenarios/:scenario_id/:id' => 'scenarios#question'
+  get 'scenarios/:scenario_id/:id' => 'scenarios#question', as: :question
 
   root 'pages#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
