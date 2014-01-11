@@ -1,0 +1,6 @@
+<% if @question.media %>
+  <div id="questionMediaPopup" class="reveal-modal" data-reveal>
+    <%= image_tag("#{@question.media}") %>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+<% end %>

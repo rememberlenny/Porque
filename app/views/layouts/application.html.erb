@@ -3,20 +3,25 @@
 <head>
   <title>MedicalSimulation</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<div>
-  <div class="large-2 column">
-    <%= render 'shared/sidenav' %>
-  </div>
-  <div class="large-10 column">
+    <%= render 'shared/topnav' %>
 
-    <%= yield %>
+    <%= render 'shared/header' %>
+  <div class="row">
 
+    <div class="large-3 column">
+      <%= render 'shared/sidenav' %>
+    </div>
+    <div class="large-9 column back-white">
+      <div class="column">
+        <%= yield %>
+      </div>
+    </div>
   </div>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 
 </body>
 </html>

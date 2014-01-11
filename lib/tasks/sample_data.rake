@@ -3,9 +3,7 @@ namespace :db do
   desc "Fill database with sample data"
 
   task populate: :environment do
-    answerText = Faker::Lorem.sentence(1)
-    descriptionText = Faker::Lorem.sentence(2)
-    content = Faker::Lorem.sentence(5)
+
     scenarios = Scenario.all
     questions = Question.all
     media = "test.jpg"
@@ -21,10 +19,16 @@ namespace :db do
 
     # end
     10.times do
+      answerText = Faker::Lorem.sentence(rand(28..100))
+      descriptionText = Faker::Lorem.sentence(rand(2..10))
+      content = Faker::Lorem.sentence(rand(20..50))
       scenarios.each{ |scenario| scenario.questions.create!( questionprompt: content, media: media ) }
     end
 
     4.times do
+          answerText = Faker::Lorem.sentence(rand(2..10))
+    descriptionText = Faker::Lorem.sentence(rand(2..10))
+    content = Faker::Lorem.sentence(rand(2..5))
       questions.each{ |question| question.answers.create!( answeroption: answerText ) }
     end
 

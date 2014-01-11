@@ -17,7 +17,7 @@ $unclicked: #fff;
   padding: 0em;
   &:not(.button-contain){
     margin-bottom: 1em;
-    padding-left: .3em;
+    padding-left: .8em;
     border-left: 5px solid #fff;
     &:hover{
       border-left: 5px solid darken(#fff, 20%);
@@ -28,7 +28,7 @@ $unclicked: #fff;
   }
   label{
     margin-bottom: 0em;
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
 }
 .full-w{
@@ -104,4 +104,23 @@ label:hover .check #checkboxFiveInput::after
   visibility: hidden;
   width: 51px;
   height: 36px;
+}
+
+.side-nav{
+  li{
+    line-height: 44px;
+    height: 44px;
+
+    border: 1px solid rgb(217, 217, 217);
+    background: rgb(242, 242, 242);
+    font-size: 1.4em;
+    padding-left: 1em;
+  }
+}
+
+.scenario-list{
+  padding-bottom: 0em;
+  .button{
+    margin-bottom: 0em;
+  }
 }

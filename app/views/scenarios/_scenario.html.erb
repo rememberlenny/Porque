@@ -1,14 +1,13 @@
-<li>
+<li class="scenario-list">
   <div class="scenario-preview row">
-
     <div class="large-3 column">
-      <%= link_to scenario.name do %>
+      <%= link_to question_path(scenario.id, 0) do %>
         <img src="<%=scenario.image %>" alt="">
       <% end %>
     </div>
     <div class="large-9 column">
-      <%= link_to scenario.name do %>
-        <h2><%=scenario.name %></h2>
+      <%= link_to question_path(scenario.id, 0) do %>
+        <h5><%=scenario.name %></h5>
       <% end %>
         <p><%=scenario.description %></p>
       <%= link_to question_path(scenario.id, 0), :class=>"button tiny" do %>

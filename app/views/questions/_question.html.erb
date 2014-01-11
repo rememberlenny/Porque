@@ -1,4 +1,18 @@
 <div class="question-content">
-  <%= image_tag("#{@question.media}") %>
-  <h3><%=@question.questionprompt %></h3>
+  <div class="row">
+    <div class="large-9 column">
+    <h4>Questions</h4>
+      <p class=""><%=@question.questionprompt %></p>
+    </div>
+    <div class="large-3 column">
+      <% if @question.media %>
+        <a href="#" data-reveal-id="questionMediaPopup">
+          <%= image_tag("#{@question.media}") %>
+          <strong class="enlarge-button">Click to enlarge.</strong>
+        </a>
+      <% end %>
+    </div>
+  </div>
 </div>
+
+

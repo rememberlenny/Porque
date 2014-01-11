@@ -1,0 +1,21 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.question-text{
+  p{
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+}
+a{
+  &:hover{
+    background: none !important;
+    color: #333 !important;
+    opacity: .9;
+  }
+
+}
+.enlarge-button{
+    opacity: .5;
+}
