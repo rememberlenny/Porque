@@ -1,0 +1,22 @@
+
+$('.answer-choice').on('click', function(){
+  var that = this;
+  removeAllClickHandles();
+  addClickPointer(that);
+});
+
+function removeAllClickHandles(){
+  $('.answer-choice').each(function(i, item){
+    var $item = $(item);
+    if( $item.hasClass('clicked') ){
+      $item.removeClass('clicked');
+    }
+  });
+}
+
+function addClickPointer(that){
+  var $this = $(that);
+  $this.addClass('clicked');
+}
+
+

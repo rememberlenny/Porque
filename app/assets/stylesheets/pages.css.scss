@@ -62,6 +62,7 @@ $unclicked: #fff;
 /**
  * Create the box for the checkbox
  */
+
 .check #checkboxFiveInput {
   cursor: pointer;
   position: absolute;
@@ -96,8 +97,8 @@ label:hover .check #checkboxFiveInput::after
 /**
  * Create the checkbox state for the tick
  */
-.check input[type=checkbox]:checked + #checkboxFiveInput:after {
-  opacity: 1;
+.clicked .check #checkboxFiveInput:after {
+  opacity: 1 !important;
 }
 
 .check input[type=checkbox]{
