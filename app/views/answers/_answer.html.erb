@@ -1,11 +1,10 @@
 <%= form_tag do %>
 
-<ul class="no-bullet answer-choice">
+<ul class="no-bullet answer-choices" id="answer-choices">
   <% @answer.each do |answer| %>
-  <li>
+  <li id="answer-choice-<%= answer.id %>" class="answer-choice">
     <label>
         <div class="check">
-          <%= check_box_tag( "answer"+answer.id.to_s, answer.id ) %>
           <div id="checkboxFiveInput"></div>
         </div>
         <div class="clear-fix"></div>
