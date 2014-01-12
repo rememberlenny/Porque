@@ -1,5 +1,6 @@
 MedicalSimulation::Application.routes.draw do
 
+
   resources :scenarios do
     resources :questions do
       resources :answers
