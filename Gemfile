@@ -21,6 +21,7 @@ group :test do
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
+gem 'rabl'
 gem "rails-backbone"
 gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.1.1'

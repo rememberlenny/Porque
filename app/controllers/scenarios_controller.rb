@@ -23,5 +23,10 @@ class ScenariosController < ApplicationController
     @questionPosition = questionPosition
     @question = @questions[questionPosition]
     @answer = Question.find(@question.id).answers
+
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 end

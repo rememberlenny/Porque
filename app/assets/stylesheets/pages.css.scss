@@ -1,7 +1,7 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+$primary-color: rgb(0, 121, 161);
 $unclicked: #fff;
 
 .answer-choices{
@@ -9,11 +9,25 @@ $unclicked: #fff;
   margin-bottom: 0em;
 }
 
+.button-contain{
+  input.button{
+    padding-top: .61429rem;
+    padding-bottom: .74286rem;
+  }
+}
+
+
+.button[disabled], .button[disabled]:hover {
+  background-color: rgba(0, 140, 186, 0.2);
+  border: 1px dotted rgba(0, 0, 0, 0.2);
+
+}
+
 .answer-choices > li{
-  line-height: 44px;
+  line-height: 34px;
   width: auto;
   background: $unclicked;
-  margin-left: 1em;
+  margin-left: 0em;
   padding: 0em;
   &:not(.button-contain){
     margin-bottom: 1em;
@@ -31,6 +45,9 @@ $unclicked: #fff;
     font-size: 1.1em;
   }
 }
+.clicked{
+  border-left: 5px solid $primary-color !important;
+}
 .full-w{
   width: 100%;
 }
@@ -44,8 +61,8 @@ $unclicked: #fff;
   opacity: 0.1;
   content: '';
   position: absolute;
-  width: 31px;
-  height: 17px;
+  width: 21px;
+  height: 12px;
   background: rgba(0, 0, 0, 0);
   top: 7px;
   left: 6px;
@@ -66,8 +83,8 @@ $unclicked: #fff;
 .check #checkboxFiveInput {
   cursor: pointer;
   position: absolute;
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
   top: 0;
     left: 0;
   background: #eee;
@@ -80,7 +97,7 @@ $unclicked: #fff;
 .check {
   position: absolute;
   left: 37px;
-  width: 44px;
+  width: 34px;
   display: inline-block;
   margin-right: 1em;
 }
@@ -109,8 +126,8 @@ label:hover .check #checkboxFiveInput::after
 
 .side-nav{
   li{
-    line-height: 44px;
-    height: 44px;
+    line-height: 34px;
+    height: 34px;
 
     border: 1px solid rgb(217, 217, 217);
     background: rgb(242, 242, 242);
@@ -125,3 +142,4 @@ label:hover .check #checkboxFiveInput::after
     margin-bottom: 0em;
   }
 }
+

@@ -1,13 +1,58 @@
 
+var $item,
+    $this,
+    that,
+    clickedChoice,
+    buttonChecked = false;
+
 $('.answer-choice').on('click', function(){
-  var that = this;
+  that = this;
   removeAllClickHandles();
   addClickPointer(that);
+  if($(that).hasClass('clicked')){
+    disableSubmitButton();
+  }
+  enableSubmitButton();
 });
+
+$('input[type=submit]').on('click', function(){
+  passClickedToSave();
+  checkForClicked();
+});
+
+function enableSubmitButton(){
+  if( buttonChecked === false ){
+    buttonChecked = true;
+  }
+  if( buttonChecked === true ){
+    $('input[type=submit]').removeAttr('disabled');
+  }
+}
+
+function disableSubmitButton(){
+  if( buttonChecked === true ){
+    buttonChecked = false;
+  }
+  if( buttonChecked === false ){
+    $('input[type=submit]').attr('disabled');
+  }
+}
+
+function checkForClicked(){
+  $('.answer-choice').each(function(i, item){
+    if( $item.hasClass('clicked') ){
+      clickedChoice = $item.attr('id');
+    }
+  });
+}
+
+function passClickedToSave(){
+  clickedChoice;
+}
 
 function removeAllClickHandles(){
   $('.answer-choice').each(function(i, item){
-    var $item = $(item);
+    $item = $(item);
     if( $item.hasClass('clicked') ){
       $item.removeClass('clicked');
     }
@@ -15,8 +60,7 @@ function removeAllClickHandles(){
 }
 
 function addClickPointer(that){
-  var $this = $(that);
+  $this = $(that);
   $this.addClass('clicked');
 }
-
 

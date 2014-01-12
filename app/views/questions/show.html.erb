@@ -1,4 +1,24 @@
-<p id="notice"><%= notice %></p>
+<h3>
+  <%= @scenario.name %>
+</h3>
+<u>Description</u>
+<p>
+  <%= @scenario.description %>
+</p>
 
-<%= link_to 'Edit', edit_question_path(@question) %> |
-<%= link_to 'Back', questions_path %>
+
+<% @questions.each do |question| %>
+<div class="panel">
+  <p>
+    <%= question.questionprompt %>
+  </p>
+  <ol>
+    <% question.answers.each do |answer| %>
+      <li>
+        <%= answer.answeroption %>
+      </li>
+    <% end %>
+  </ol>
+</div>
+
+<% end %>

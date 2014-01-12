@@ -1,5 +1,3 @@
-<%= form_tag do %>
-
 <ul class="no-bullet answer-choices" id="answer-choices">
   <% @answer.each do |answer| %>
   <li id="answer-choice-<%= answer.id %>" class="answer-choice">
@@ -14,9 +12,6 @@
   </li>
   <% end %>
   <li class="button-contain">
-    <%= submit_tag("Submit Answer", :class=>"button full-w") %>
+    <%= submit_tag("Submit Answer", :class=>"button full-w", :disabled=>"true") %>
   </li>
 </ul>
-
-
-<% end %>
