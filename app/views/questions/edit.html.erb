@@ -24,12 +24,10 @@
   </p>
 
   <ol>
-    <% @question.answers.each do |fa| %>
-      <%= f.fields_for :answers, fa do |ff| %>
-        <li>
-          <%= ff.text_field :answeroption %>
-        </li>
-      <% end %>
+    <%= f.fields_for :answers do |ff| %>
+      <li>
+        <%= ff.text_field :answeroption %>
+      </li>
     <% end %>
   </ol>
 

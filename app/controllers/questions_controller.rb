@@ -12,6 +12,10 @@ class QuestionsController < ApplicationController
   def index
     @scenario = Scenario.find(params[:scenario_id])
     @questions = @scenario.questions.all
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def update
@@ -28,6 +32,10 @@ class QuestionsController < ApplicationController
   def show
     @scenario = Scenario.find(params[:scenario_id])
     @question = @scenario.questions.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.json
+    end
   end
 
   def edit

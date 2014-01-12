@@ -1,4 +1,4 @@
-object @scenario
+object @question
 
 attribute :name, :description, :image
 
