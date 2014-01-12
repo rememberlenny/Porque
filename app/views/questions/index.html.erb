@@ -1,25 +1,35 @@
-<h1>Listing questions</h1>
+<h3>
+  <%= @scenario.name %>
+</h3>
+<u>Description</u>
+<p>
+  <%= @scenario.description %>
+</p>
 
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @questions.each do |question| %>
-      <tr>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
-        <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<% @questions.each do |question| %>
+<div class="panel">
+  <p>
+    <strong>
+      Unique ID:
+    </strong>
+      <%= question.id %> <br>
+       <strong>Last updated:</strong> <%= question.updated_at %> <br>
+       <strong>Created:</strong> <%= question.created_at %> <br>
+  </p>
+  <p>
+    <strong>Prompt</strong><br>
+    <%= question.questionprompt %>
+  </p>
+  <strong>Answers</strong>
+  <ol>
+    <% question.answers.each do |answer| %>
+      <li>
+        <%= answer.answeroption %>
+      </li>
     <% end %>
-  </tbody>
-</table>
+  </ol>
+  <%= link_to 'Edit', {:controller=>"questions", :action=>"edit", :scenario_id=>@scenario.id, :id=>question.id}%>
+</div>
 
-<br>
-
-<%= link_to 'New Question', new_question_path %>
+<% end %>

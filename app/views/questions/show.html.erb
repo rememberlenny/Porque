@@ -6,19 +6,6 @@
   <%= @scenario.description %>
 </p>
 
+<%= render 'questions/complete_show' %>
 
-<% @questions.each do |question| %>
-<div class="panel">
-  <p>
-    <%= question.questionprompt %>
-  </p>
-  <ol>
-    <% question.answers.each do |answer| %>
-      <li>
-        <%= answer.answeroption %>
-      </li>
-    <% end %>
-  </ol>
-</div>
-
-<% end %>
+<%= link_to questions_path() %>

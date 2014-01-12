@@ -1,0 +1,22 @@
+<div class="panel">
+  <p>
+    <strong>
+      Unique ID:
+    </strong>
+      <%= @question.id %> <br>
+       <strong>Last updated:</strong> <%= @question.updated_at %> <br>
+       <strong>Created:</strong> <%= @question.created_at %> <br>
+  </p>
+  <p>
+    <strong>Prompt</strong><br>
+    <%= @question.questionprompt %>
+  </p>
+  <strong>Answers</strong>
+  <ol>
+    <% @question.answers.each do |answer| %>
+      <li>
+        <%= answer.answeroption %>
+      </li>
+    <% end %>
+  </ol>
+</div>
