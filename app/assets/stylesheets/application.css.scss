@@ -12,6 +12,10 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+.top-bar-section li a:not(.button):hover{
+  color: #eee !important;
+}
+
 body{
   background-color: rgb(238, 238, 238) !important;
 }
@@ -24,11 +28,19 @@ html{
   }
 }
 
+a{
+  h5{
+    text-decoration: underline;
+  }
+}
+
 .back-white{
   margin-top:0.9375rem;
   border-top: 10px solid darken(#f6f6f6, 20%);
   padding-top: 0.9375rem;
-  background: #f6f6f6;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .top-bar .toggle-topbar.menu-icon a {
@@ -36,9 +48,10 @@ html{
 }
 
 .grey-back{
-  background: lighten(rgb(195, 195, 195), 20%);
+  background: lighten(rgb(195, 195, 195), 30%);
   padding-top: 1em;
   padding-bottom: 1em;
+  box-shadow: inset 0px -4px 13px -7px rgba(0, 0, 0, 0.4);
 }
 
 .app-status{

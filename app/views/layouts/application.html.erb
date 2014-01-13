@@ -7,9 +7,16 @@
 </head>
 <body>
 
+<% provide(:title, "IOM Web Simulator") %>
+<% provide(:description, "Created by the Center for Pediatric Orthopaedic Research at the Columbia University Medical Center") %>
+
     <%= render 'shared/topnav' %>
 
     <%= render 'shared/header' %>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
   <div class="row">
 
     <div class="large-3 column">

@@ -1,5 +1,6 @@
 MedicalSimulation::Application.routes.draw do
 
+  devise_for :admins
   get 'scenarios/:scenario_id/:id' => 'scenarios#question', as: :question
 
   resources :scenarios do
