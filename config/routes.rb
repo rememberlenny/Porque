@@ -1,5 +1,6 @@
 MedicalSimulation::Application.routes.draw do
 
+  get 'scenarios/:scenario_id/:id' => 'scenarios#question', as: :question
 
   resources :scenarios do
     resources :questions do
@@ -7,7 +8,6 @@ MedicalSimulation::Application.routes.draw do
     end
   end
 
-  # get 'scenarios/:scenario_id/:id' => 'scenarios#question', as: :question
 
   root 'pages#index'
 
