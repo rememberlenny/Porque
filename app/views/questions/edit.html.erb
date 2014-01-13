@@ -24,10 +24,8 @@
   </p>
 
   <ol>
-    <%= f.fields_for :answers do |ff| %>
-      <li>
-        <%= ff.text_field :answeroption %>
-      </li>
+    <% @question.answers.each do |answers| %>
+      <!-- NEED TO DRILL INTO ARRAY -->
     <% end %>
   </ol>
 
