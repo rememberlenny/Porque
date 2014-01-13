@@ -16,9 +16,6 @@
         <li>
           <%= link_to 'Contact', contact_path %>
         </li>
-        <li>
-          <%= link_to 'Login', new_admin_session_path %>
-        </li>
 <!--         <li class="has-dropdown">
           <a href="#">Right Button with Dropdown</a>
           <ul class="dropdown">
@@ -29,7 +26,9 @@
 
       <!-- Left Nav Section -->
       <ul class="left">
-        <li><a href="#">Left Nav Button</a></li>
+        <li>
+          <%= link_to 'Login', new_admin_session_path %>
+        </li>
       </ul>
     </section>
   </nav>

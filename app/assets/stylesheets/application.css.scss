@@ -13,7 +13,14 @@
  *= require_tree .
  */
 .top-bar-section li a:not(.button):hover{
-  color: #eee !important;
+  color: #ccc !important;
+}
+
+a.button{
+  border-top: 3px solid #fff;
+  &:hover{
+    border-top: 3px solid darken(rgb(0, 121, 161),10%);
+  }
 }
 
 body{
