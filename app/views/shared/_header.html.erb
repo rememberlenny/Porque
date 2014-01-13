@@ -1,7 +1,9 @@
 <div class="grey-back">
   <div class="row">
     <div class="large-3 column">
-      <%= image_tag 'head_cu_cor.gif' %>
+      <%= link_to root_path do %>
+        <%= image_tag 'head_cu_cor.gif' %>
+      <% end %>
     </div>
     <div class="large-9 column app-status">
       <%= render 'shared/appStatus' %>
