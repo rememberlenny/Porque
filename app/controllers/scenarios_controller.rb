@@ -9,7 +9,12 @@ class ScenariosController < ApplicationController
   end
 
   def show
-    redirect_to  scenario_question_path(:scenario_id => params[:id])
+    @scenario = Scenario.all
+    respond_to do |format|
+      format.html
+      format.json
+    end
+    # redirect_to  scenario_question_path(:scenario_id => params[:id])
   end
 
   def question
@@ -24,9 +29,6 @@ class ScenariosController < ApplicationController
     @question = @questions[questionPosition]
     @answer = Question.find(@question.id).answers
 
-    respond_to do |format|
-      format.html
-      format.json
-    end
+
   end
 end
