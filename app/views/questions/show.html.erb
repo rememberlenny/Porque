@@ -17,13 +17,13 @@
     <%= @question.questionprompt %>
   </p>
   <strong>Answers</strong>
-  <ol>
+  <ul class="large-block-grid-2">
     <% @question.answers.each do |answer| %>
       <li>
         <%= answer.answeroption %>
       </li>
     <% end %>
-  </ol>
+  </ul>
 
    <%= link_to 'Edit', {:controller=>"questions", :action=>"edit", :scenario_id=>@scenario.id, :id=>@question.id}%>
 </div>

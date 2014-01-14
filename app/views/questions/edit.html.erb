@@ -36,13 +36,15 @@
     <%= "Answers" %>
   </strong>
   </p>
+  <ul class="large-block-grid-2">
     <% @question.answers.each do |fa| %>
-      <p>
-        ID: <%= fa.id %> <br>
-        <%= fa.answeroption %> <br>
-        <%= link_to 'Edit', edit_answer_path(id: fa.id) %> <br>
-      </p>
+      <li>
+        <strong> ID:</strong>  <%= fa.id %> <br>
+        <strong> Question:</strong>  <%= fa.answeroption %> <br>
+        <u><%= link_to 'Edit', edit_answer_path(id: fa.id) %></u>  <br>
+      </li>
     <% end %>
+  </ul>
 
   <p>
     <%= f.submit %>
