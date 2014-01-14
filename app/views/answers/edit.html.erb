@@ -1,0 +1,31 @@
+<h1>Editing answer</h1>
+
+<%= form_for :answer, url: answer_path(), method: :patch do |f| %>
+  <% if @answer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@answer.errors.count, "error") %> prohibited
+        this answer from being saved:</h2>
+      <ul>
+      <% @answer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+  <strong>
+    <%= "Answer" %>
+  </strong>
+  </p>
+  <p>
+    <%= f.text_field :answeroption %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+  <% end %>
+
+  <%= link_to 'Back', answer_path %>

@@ -19,19 +19,18 @@ class QuestionsController < ApplicationController
   end
 
   def update
-    @scenario = Scenario.find(params[:scenario_id])
-    @question = @scenario.questions.find(params[:id])
+    @question = Question.find(params[:id])
 
-    if @question.update(params[:question].permit(:questionprompt, :text, answers: [:answeroption]))
-      redirect_to scenario_question_path
+    if @question.update(params[:question].permit(:questionprompt, :text ))
+      redirect_to question_path
     else
       render 'edit'
     end
   end
 
   def show
-    @scenario = Scenario.find(params[:scenario_id])
-    @question = @scenario.questions.find(params[:id])
+    @question = Question.find(params[:id])
+    @scenario = Scenario.find(@question.scenario_id)
     respond_to do |format|
       format.html
       format.json
@@ -39,10 +38,8 @@ class QuestionsController < ApplicationController
   end
 
   def edit
-    @scenario   = Scenario.find(params[:scenario_id])
-    @question   = @scenario.questions.find(params[:id])
-    @questions  = @scenario.questions.all
-    @answers    = @question.answers.all
+    @question   = Question.find(params[:id])
+    @questions  = Question.all
   end
 
 end

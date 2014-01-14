@@ -7,8 +7,8 @@ MedicalSimulation::Application.routes.draw do
 
 
   resources :scenarios do
-    resources :questions do
-      resources :answers
+    resources :questions, shallow: true do
+      resources :answers, shallow: true
     end
   end
 
