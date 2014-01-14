@@ -21,12 +21,17 @@
     <% @question.answers.each do |answer| %>
       <li>
         <%= answer.answeroption %>
+        <br>
+        <br>
+        Response:
+        <%= answer.response %>
       </li>
     <% end %>
   </ul>
-
-   <%= link_to 'Edit', {:controller=>"questions", :action=>"edit", :scenario_id=>@scenario.id, :id=>@question.id}%>
+  <u>
+   <%= link_to 'Edit', {:controller=>"questions", :action=>"edit", :scenario_id=>@scenario.id, :id=>@question.id }, :class=>"button small" %>
+  </u>
 </div>
 
 
-<%= link_to "All questions", question_path %>
+<%= link_to "All questions", scenario_questions_path(:scenario_id=>@question.scenario_id), :class=>"button small secondary" %>

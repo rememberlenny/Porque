@@ -26,10 +26,11 @@
     <% question.answers.each do |answer| %>
       <li>
         <%= answer.answeroption %>
+        <%= answer.response %>
       </li>
     <% end %>
   </ol>
-  <%= link_to 'Edit', {:controller=>"questions", :action=>"edit", :scenario_id=>@scenario.id, :id=>question.id}%>
+  <%= link_to 'Edit', {:controller=>"questions", :action=>"edit", :scenario_id=>@scenario.id, :id=>question.id}, :class=>"button small" %>
 </div>
 
 <% end %>

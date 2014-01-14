@@ -41,13 +41,15 @@
       <li>
         <strong> ID:</strong>  <%= fa.id %> <br>
         <strong> Question:</strong>  <%= fa.answeroption %> <br>
+        <strong> Response:</strong>  <%= fa.response %> <br>
         <u><%= link_to 'Edit', edit_answer_path(id: fa.id) %></u>  <br>
       </li>
     <% end %>
+
   </ul>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit 'Save', :class=>"button small" %>
   </p>
 
   <% end %>

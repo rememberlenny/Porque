@@ -12,7 +12,11 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
-
+.button{
+  &.secondary{
+    color: #333 !important;
+  }
+}
 .size-72{
   font-size: 56px;
 }

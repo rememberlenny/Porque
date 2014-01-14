@@ -14,18 +14,27 @@
   <% end %>
 
   <p>
-  <strong>
-    <%= "Answer" %>
-  </strong>
+    <strong>
+      <%= "Answer" %>
+    </strong>
   </p>
   <p>
     <%= f.text_field :answeroption %>
   </p>
 
   <p>
-    <%= f.submit %>
+    <strong>
+      <%= "Response" %>
+    </strong>
+  </p>
+  <p>
+    <%= f.text_area :response %>
+  </p>
+
+  <p>
+    <%= f.submit 'Save', :class=>'button right small' %>
   </p>
 
   <% end %>
 
-  <%= link_to 'Back', answer_path %>
+  <%= link_to 'Back', answer_path, :class=>"button small secondary left" %>
