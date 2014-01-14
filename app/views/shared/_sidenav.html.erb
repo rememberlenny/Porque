@@ -1,12 +1,37 @@
-<ul class="side-nav">
+<ul class="side-nav text-center">
   <div class="status">
     <% if @questions %>
     <% else %>
     <% end %>
   </div>
-  <li class="active">Scenario</li>
-  <li><a href="#">Link 2</a></li>
-  <li class="divider"></li>
-  <li><a href="#">Link 3</a></li>
-  <li><a href="#">Link 4</a></li>
+  <li class="">
+  <%= link_to root_path do %>
+    <i class="step fi-home size-72"></i>
+    Home
+  <% end %>
+  </li>
+  <li class="">
+  <%= link_to :back do %>
+    <i class="step fi-clipboard-notes size-72"></i>
+    Checklist
+  <% end %>
+  </li>
+  <li class="">
+  <%= link_to :back do %>
+    <i class="step fi-eye size-72"></i>
+    Hint
+  <% end %>
+  </li>
+  <li class="">
+  <%= link_to :back do %>
+    <i class="step fi-graph-trend size-72"></i>
+    Stats
+  <% end %>
+  </li>
+  <li class="">
+  <%= link_to :back do %>
+    <i class="step fi-arrow-left size-72"></i>
+    Back
+  <% end %>
+  </li>
 </ul>

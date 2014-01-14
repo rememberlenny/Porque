@@ -126,11 +126,13 @@ label:hover .check #checkboxFiveInput::after
 
 .side-nav{
   li{
-    line-height: 34px;
-    height: 34px;
-
-    border: 1px solid rgb(217, 217, 217);
-    background: rgb(242, 242, 242);
+    a{
+      color: rgb(102, 102, 102);
+    }
+    width: 96px;
+    margin-bottom: 1em;
+    border: none;
+    background: none;
     font-size: 1.4em;
     padding-left: 1em;
   }

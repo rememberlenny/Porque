@@ -1,7 +1,7 @@
 MedicalSimulation::Application.routes.draw do
 
   devise_for :admins
-  get 'scenarios/:scenario_id/:id' => 'scenarios#question', as: :question
+  # get 'scenarios/:scenario_id/:id' => 'scenarios#question', as: :question
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
 

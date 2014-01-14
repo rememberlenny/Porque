@@ -1,16 +1,16 @@
 <li class="scenario-list">
   <div class="scenario-preview row">
     <div class="large-3 column">
-      <%= link_to @scenario do %>
+      <%= link_to scenario do %>
         <img src="<%=scenario.image %>" alt="">
       <% end %>
     </div>
     <div class="large-9 column">
-      <%= link_to @scenario do %>
-        <h5><%=scenario.name %></h5>
+      <%= link_to scenario do %>
+        <h5><%= scenario.name %></h5>
       <% end %>
         <p><%=scenario.description %></p>
-      <%= link_to @scenario, :class=>"button tiny" do %>
+      <%= link_to scenario, :class=>"button tiny" do %>
         Begin <%=scenario.name %>
       <% end %>
     </div>
