@@ -3,7 +3,7 @@
     <div class="large-9 column">
 
     <h4>Question</h4>
-      <p class=""><%=@question.questionprompt %></p>
+      <p class=""><%= raw(@question.questionprompt) %></p>
     </div>
     <div class="large-3 column">
       <% if @question.media %>
