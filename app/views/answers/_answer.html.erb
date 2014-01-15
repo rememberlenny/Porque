@@ -10,7 +10,11 @@
       <div class="clear-fix"></div>
     </label>
     <div id="answer-<%= answer.id %>" class="answer-response-holder" data-response="<%= answer.nextQuestion %>">
-      <%= answer.response %>
+      <h4>
+        <%= answer.response %>
+      </h4>
+      <hr>
+      <%= link_to 'Next', {:controller => 'scenarios', :action=> 'question', :id=>answer.nextQuestion }, :class=>"button success small full-w" %>
     </div>
   </li>
   <% end %>
