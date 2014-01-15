@@ -4,6 +4,7 @@ MedicalSimulation::Application.routes.draw do
   # get 'scenarios/:scenario_id/:id' => 'scenarios#question', as: :question
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
+  get 'scenarios/:scenario_id/:id' => 'scenarios#question', as: :scenarioquestion
 
 
   resources :scenarios do

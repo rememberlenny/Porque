@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140114031232) do
+ActiveRecord::Schema.define(version: 20140115024104) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -50,6 +50,12 @@ ActiveRecord::Schema.define(version: 20140114031232) do
   create_table "questions", force: true do |t|
     t.string   "media"
     t.text     "questionprompt"
+    t.integer  "scenario_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "quiz_orders", force: true do |t|
     t.integer  "scenario_id"
     t.datetime "created_at"
     t.datetime "updated_at"
