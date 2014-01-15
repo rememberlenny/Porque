@@ -1,4 +1,3 @@
-
 var $item,
     $this,
     that,
@@ -21,9 +20,10 @@ $('.answer-choice').on('click', function(){
   setUpResponseModal();
 });
 
-$('input[type=submit]').on('click', function(){
+$('button').on('click', function(){
   passClickedToSave();
   checkForClicked();
+  loadDataIntoModal();
 });
 
 function enableSubmitButton(){
@@ -31,7 +31,7 @@ function enableSubmitButton(){
     buttonChecked = true;
   }
   if( buttonChecked === true ){
-    $('input[type=submit]').removeAttr('disabled');
+    $('button').removeAttr('disabled');
   }
 }
 
@@ -40,7 +40,7 @@ function disableSubmitButton(){
     buttonChecked = false;
   }
   if( buttonChecked === false ){
-    $('input[type=submit]').attr('disabled');
+    $('button').attr('disabled');
   }
 }
 
@@ -74,4 +74,8 @@ function setUpResponseModal(){
   response.holder       = $('.clicked')[0];
   response.textcontent  = $(response.holder).find('.answer-response-holder').html();
   response.nextquestion = $(response.holder).find('.answer-response-holder').data('response');
+}
+
+function loadDataIntoModal(){
+  $('#submitResponseContent').html(response.textcontent);
 }
