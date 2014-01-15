@@ -19,3 +19,18 @@ a{
 .enlarge-button{
     opacity: .5;
 }
+
+.answer-response-holder{
+  display: none;
+}
+.enlarge-contain{
+  position: absolute;
+  bottom: 10px;
+  right: 25px;
+  .fi-arrows-out.large{
+  }
+}
+
+.answer-chunck{
+  margin-bottom: 2em !important;
+}

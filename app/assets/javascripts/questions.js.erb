@@ -3,6 +3,11 @@ var $item,
     $this,
     that,
     clickedChoice,
+    response = {
+      holder:       '',
+      textcontent:  '',
+      nextquestion: ''
+    },
     buttonChecked = false;
 
 $('.answer-choice').on('click', function(){
@@ -13,6 +18,7 @@ $('.answer-choice').on('click', function(){
     disableSubmitButton();
   }
   enableSubmitButton();
+  setUpResponseModal();
 });
 
 $('input[type=submit]').on('click', function(){
@@ -64,3 +70,8 @@ function addClickPointer(that){
   $this.addClass('clicked');
 }
 
+function setUpResponseModal(){
+  response.holder       = $('.clicked')[0];
+  response.textcontent  = $(response.holder).find('.answer-response-holder').html();
+  response.nextquestion = $(response.holder).find('.answer-response-holder').data('response');
+}

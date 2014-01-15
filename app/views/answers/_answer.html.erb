@@ -9,6 +9,9 @@
         <%= answer.answeroption %>
       <div class="clear-fix"></div>
     </label>
+    <div id="answer-<%= answer.id %>" class="answer-response-holder" data-response="<%= answer.nextQuestion %>">
+      <%= answer.response %>
+    </div>
   </li>
   <% end %>
   <li class="button-contain">

@@ -26,10 +26,12 @@ namespace :db do
     end
 
     4.times do
-          answerText = Faker::Lorem.sentence(rand(2..10))
-    descriptionText = Faker::Lorem.sentence(rand(2..10))
+      questionNumber = rand(1..30)
+      answerText = Faker::Lorem.sentence(rand(2..10))
+      responseText = Faker::Lorem.sentence(rand(2..10))
+      descriptionText = Faker::Lorem.sentence(rand(2..10))
     content = Faker::Lorem.sentence(rand(2..5))
-      questions.each{ |question| question.answers.create!( answeroption: answerText ) }
+      questions.each{ |question| question.answers.create!( answeroption: answerText, response: responseText, nextQuestion: questionNumber ) }
     end
 
 

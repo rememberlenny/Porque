@@ -3,7 +3,7 @@ class CreateAnswers < ActiveRecord::Migration
     create_table :answers do |t|
       t.string :answeroption
       t.integer :question_id
-      t.belongs_to :questions
+      t.belongs_to :question
 
       t.timestamps
     end

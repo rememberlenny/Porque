@@ -1,5 +1,5 @@
 <div class="question-content">
-  <div class="row">
+  <div class="row answer-chunck">
     <div class="large-9 column">
 
     <h4>Question</h4>
@@ -9,7 +9,7 @@
       <% if @question.media %>
         <a href="#" data-reveal-id="questionMediaPopup">
           <%= image_tag("#{@question.media}") %>
-          <strong class="enlarge-button">Click to enlarge.</strong>
+          <strong class="enlarge-button enlarge-contain"><i class="fi-arrows-out large"></i> Click to enlarge.</strong>
         </a>
       <% end %>
     </div>
