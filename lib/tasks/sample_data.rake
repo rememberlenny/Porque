@@ -34,27 +34,27 @@ namespace :db do
       )
     #Answers 1
     scenario1.questions.last.answers.create!(
-      answer:"Gain control of the room",
+      answeroption:"Gain control of the room",
       response:"",
       result:"2"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Check anesthetic/systemic conditions of the patient",
+      answeroption:"Check anesthetic/systemic conditions of the patient",
       response:"",
       result:"3"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Seek technical/neurophysiologic reasons for IONM changes",
+      answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
       response:"",
       result:"4"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Seek surgery-related reasons for IONM changes",
+      answeroption:"Seek surgery-related reasons for IONM changes",
       response:"",
       result:"5"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Consider consultation with a colleague",
+      answeroption:"Consider consultation with a colleague",
       response:"You should always consider consultation with a colleague. What else can you and your colleague do in order to pinpoint the reason to bring the IONM back to baseline?",
       result:"1"
     )
@@ -64,27 +64,27 @@ namespace :db do
       questionprompt: '<iframe width="560" height="315" src="//www.youtube.com/embed/8yU2TqSVtTY?autoplay=1" frameborder="0" allowfullscreen></iframe><br><br>In what methods will you gain control of the room (pick one to create the best environment for this situation):')
     # Answer 2
     scenario1.questions.last.answers.create!(
-      answer:"Stop case and announce to the room",
+      answeroption:"Stop case and announce to the room",
       response:"Now everyone is notified of the changes. How else can you gain control of the room?",
       result:"2"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Eliminate extraneous stimuli (music, conversations, etc.)",
+      answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
       response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+3.5.jpg'><br><br>The music has been stopped and you have eliminated extraneous stimuli.<br><br>How else can you gain control of the room?",
       result:"2"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
+      answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
       response:"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
       result:"2"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Anticipate need for intraoperative imaging if not readily available",
+      answeroption:"Anticipate need for intraoperative imaging if not readily available",
       response:"How else can you gain control of the room? [",
       result:"2"
     )
     scenario1.questions.last.answers.create!(
-      answer:"All of the above",
+      answeroption:"All of the above",
       response:"Now you have everyone’s attention and ready to take further action steps.",
       result:"1"
     )
@@ -94,32 +94,32 @@ namespace :db do
       questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+4.jpg'><br><br>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes)")
     #A3
     scenario1.questions.last.answers.create!(
-      answer:"Optimize MAP",
+      answeroption:"Optimize MAP",
       response:"Blood pressure is normal; what else will you check?",
       result:"3"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Optimize Hematocrit",
+      answeroption:"Optimize Hematocrit",
       response:"There is no abnormality; what else will you check?",
       result:"3"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Optimize Blood pH",
+      answeroption:"Optimize Blood pH",
       response:"There is no abnormality; what else will you check?",
       result:"3"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Seek Normothermia",
+      answeroption:"Seek Normothermia",
       response:"There is no abnormality; what else will you check?",
       result:"3"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+      answeroption:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
       response:"Need discussed; what else will you check?",
       result:"3"
     )
     scenario1.questions.last.answers.create!(
-      answer:"All of the Above",
+      answeroption:"All of the Above",
       response:"All these points are vital to check; however there are no )systemic abnormalities found. IONM has not returned to baseline. What
       else? ",
       result:"1"
@@ -130,32 +130,32 @@ namespace :db do
       questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+5.JPG'><br><br>Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes)")
     #A4
     scenario1.questions.last.answers.create!(
-      answer:"Discuss status of inhalational agents with anesthesia",
+      answeroption:"Discuss status of inhalational agents with anesthesia",
       response:"IONM has not returned to baseline. What else?",
       result:"4"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Check extent of neuromuscular blockade",
+      answeroption:"Check extent of neuromuscular blockade",
       response:"IONM has not returned to baseline. What else?",
       result:"4"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Check electrode placement",
+      answeroption:"Check electrode placement",
       response:"During the process of checking all the electrode placements, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
       result:"6"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Determine pattern and timing of signal changes",
+      answeroption:"Determine pattern and timing of signal changes",
       response:"IONM has not returned to baseline. What else?",
       result:"4"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+      answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
       response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><br><br>You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
       result:"6"
     )
     scenario1.questions.last.answers.create!(
-      answer:"All of the Above",
+      answeroption:"All of the Above",
       response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><br><br><ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
       result:"6"
     )
@@ -165,17 +165,17 @@ namespace :db do
       questionprompt: " <iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe><br><br> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
     #A5
     scenario1.questions.last.answers.create!(
-      answer:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+      answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
       response:"IONM has not returned to baseline. What else? ",
       result:"5"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+      answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
       response:"Upon examination, everything looks normal. What else? ",
       result:"5"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Both of the Above",
+      answeroption:"Both of the Above",
       response:"After checking for mechanical causes for IONM change, it did not return to baseline. What else? ",
       result:"1"
     )
@@ -186,17 +186,17 @@ namespace :db do
 <br><br>After the SSEP’s returned to baseline, you:")
     #A6
     scenario1.questions.last.answers.create!(
-      answer:"Continue on with the surgery",
+      answeroption:"Continue on with the surgery",
       response:"After discussion with another attending surgeon, we continued on with the surgery. ",
       result:"7"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Stage and continue on another day",
+      answeroption:"Stage and continue on another day",
       response:"After discussion with another attending surgeon, we continued on with the surgery. ",
       result:"7"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Discuss this decision with another attending surgeon",
+      answeroption:"Discuss this decision with another attending surgeon",
       response:"Discussing and involving another attending surgeon is always important. It was decided to continue on with the surgery.",
       result:"7"
     )
@@ -206,7 +206,7 @@ namespace :db do
       questionprompt: "Screws were then placed on the right side at T7-T9. <br> <br> Bilateral SSEP’s and MEP’s are noted to have been lost. <br> <br> Blood pressure, temperature and hematocrit are checked; pt. was given a unit of cell saver blood. Lower extremities were properly placed on the table" )
     #A7
     scenario1.questions.last.answers.create!(
-      answer:"Next",
+      answeroption:"Next",
       response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+10.jpg'>",
       result:"8"
     )
@@ -216,23 +216,23 @@ namespace :db do
       questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/K1YXuTznM1c&start=3&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe><br><br>What will you do next? (pick one to move forward in the intervention):")
     #A8
     scenario1.questions.last.answers.create!(
-      answer:"Gain control of the room",
+      answeroption:"Gain control of the room",
       result:"9"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Check anesthetic/systemic conditions of the patient",
+      answeroption:"Check anesthetic/systemic conditions of the patient",
       result:"10"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Seek technical/neurophysiologic reasons for IONM changes",
+      answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
       result:"11"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Seek surgery-related reasons for IONM changes",
+      answeroption:"Seek surgery-related reasons for IONM changes",
       result:"12"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Consider consultation with a colleague",
+      answeroption:"Consider consultation with a colleague",
       response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+7.jpg'><br><br> You should always consider consultation with a colleague. Now what?",
       result:"8"
     )
@@ -242,27 +242,27 @@ namespace :db do
       questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+11.jpg'><br><br>In what methods will you gain control of the room (pick one to create the best environment for this situation):")
     #A9
     scenario1.questions.last.answers.create!(
-      answer:"Stop case and announce to room",
+      answeroption:"Stop case and announce to room",
       response:"Now everyone is notified of the changes. How else can you gain control of the room?",
       result:"9"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Eliminate extraneous stimuli (music, conversations, etc.)",
+      answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
       response:"The music has been stopped and you have eliminated extraneous stimuli. How else can you gain control of the room?",
       result:"9"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist support",
+      answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist support",
       response:"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
       result:"9"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Anticipate need for intraoperative imaging if not readily available",
+      answeroption:"Anticipate need for intraoperative imaging if not readily available",
       response:"How else can you gain control of the room? [This choice should show up on the side] ",
       result:"9"
     )
     scenario1.questions.last.answers.create!(
-      answer:"All of the above",
+      answeroption:"All of the above",
       response:"Now you have everyone’s attention and ready to take further action steps.",
       result:"8"
     )
@@ -272,32 +272,32 @@ namespace :db do
       questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+12.jpg'><br><br>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):")
     #A10
     scenario1.questions.last.answers.create!(
-      answer:"Optimize MAP",
+      answeroption:"Optimize MAP",
       response:"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice. What else can be done? ",
       result:"10"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Optimize Hematocrit",
+      answeroption:"Optimize Hematocrit",
       response:"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice. What else can be done? ",
       result:"10"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Optimize Blood pH",
+      answeroption:"Optimize Blood pH",
       response:"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice. What else can be done? ",
       result:"10"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Seek Normothermia",
+      answeroption:"Seek Normothermia",
       response:"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice. What else can be done? ",
       result:"10"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+      answeroption:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
       response:"Discussion of a potential wake-up test with the attending anesthesiologist is important at this point.<br><br>Please note that revisiting systemic considerations to confirm that they are optimized. ",
       result:"13"
     )
     scenario1.questions.last.answers.create!(
-      answer:"All of the Above",
+      answeroption:"All of the Above",
       response:"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice.<br><br>Discussion of potential wake-up test with attending anesthesiologist is important at this point. ",
       result:"13"
     )
@@ -307,32 +307,32 @@ namespace :db do
       questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+13.JPG'><br><br>Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):")
     #A11
     scenario1.questions.last.answers.create!(
-      answer:"Discuss status of inhalational agents with anesthesia",
+      answeroption:"Discuss status of inhalational agents with anesthesia",
       response:"IONM has not returned to baseline. What else? ",
       result:"11"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Check extent of neuromuscular blockade",
+      answeroption:"Check extent of neuromuscular blockade",
       response:"IONM has not returned to baseline. What else? ",
       result:"11"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Check electrode placement",
+      answeroption:"Check electrode placement",
       response:"IONM has not returned to baseline. What else? ",
       result:"11"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Determine pattern and timing of signal changes",
+      answeroption:"Determine pattern and timing of signal changes",
       response:"IONM has not returned to baseline. What else? ",
       result:"11"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+      answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
       response:"IONM has not returned to baseline. What else? ",
       result:"11"
     )
     scenario1.questions.last.answers.create!(
-      answer:"All of the Above",
+      answeroption:"All of the Above",
       response:"It is important to consider all these choices, however did not return MEP’s to baseline. What next? ",
       result:"8"
     )
@@ -342,17 +342,17 @@ namespace :db do
       questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe><br><br>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
     #A12
     scenario1.questions.last.answers.create!(
-      answer:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+      answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
       response:"IONM has not returned to baseline. What else? ",
       result:"12"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+      answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
       response:"Upon examination, everything looks normal. What else? ",
       result:"12"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Both of the Above",
+      answeroption:"Both of the Above",
       response:"After clearing the mechanical causes for IONM change, it did not return to baseline. What else? ",
       result:"8"
     )
@@ -362,37 +362,37 @@ namespace :db do
       questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+14.JPG'><br><br>You should always consider consultation with a colleague. Now what?")
     #A13
     scenario1.questions.last.answers.create!(
-      answer:"IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
+      answeroption:"IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
       response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
       result:"14"
     )
     scenario1.questions.last.answers.create!(
-      answer:"IV lidocaine 2mg/kg if blood flow to the spinal cord is the suspected reason for IOM changes",
+      answeroption:"IV lidocaine 2mg/kg if blood flow to the spinal cord is the suspected reason for IOM changes",
       response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
       result:"14"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Wake-up test",
+      answeroption:"Wake-up test",
       response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
       result:"14"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Post-op imaging (CT, MRI, CT Myelography)",
+      answeroption:"Post-op imaging (CT, MRI, CT Myelography)",
       response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
       result:"14"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Continuing Surgery",
+      answeroption:"Continuing Surgery",
       response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
       result:"14"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Staging and continuing another day",
+      answeroption:"Staging and continuing another day",
       response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
       result:"14"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Discussing this decision with another attending surgeon",
+      answeroption:"Discussing this decision with another attending surgeon",
       response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
       result:"14"
     )
@@ -402,17 +402,17 @@ namespace :db do
       questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+15.JPG'><br><br>A wake-up test was performed and she was noted to be moving the toes on both of her feet. She was put back to sleep and the MEP’s returned to baseline.<br><br>Would you consider: ")
     #A14
     scenario1.questions.last.answers.create!(
-      answer:"Continuing on with the surgery",
+      answeroption:"Continuing on with the surgery",
       response:"After discussion with another attending surgeon, we decided to continue on with the surgery. ",
       result:"15"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Staging and continuing on another day",
+      answeroption:"Staging and continuing on another day",
       response:"After discussion with another attending surgeon, we decided to continue on with the surgery. ",
       result:"15"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Discussing this decision with another attending surgeon. ",
+      answeroption:"Discussing this decision with another attending surgeon. ",
       response:"After discussion with another attending surgeon, we decided to continue on with the surgery. ",
       result:"15"
     )
@@ -422,7 +422,7 @@ namespace :db do
       questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+16.JPG'><br><br>Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made. ")
     #A15
     scenario1.questions.last.answers.create!(
-      answer:"See results",
+      answeroption:"See results",
       response:"Bilateral MEP’s and left-sided SSEP’s were severely diminished. ",
       result:"16"
     )
@@ -432,17 +432,17 @@ namespace :db do
       questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+17.JPG'><br><br>At this point, would you consider (please choose one):")
     #A16
     scenario1.questions.last.answers.create!(
-      answer:"Continuing on with the surgery",
+      answeroption:"Continuing on with the surgery",
       response:"Due to the second loss of MEP’s without a clear explanation, the case was aborted. Pt was transferred immediately to the MRI scanner for an urgent evaluation. The pt had no neural deficits and the MRI was normal. After discussion with another surgeon, discussing with the family in depth, the case was staged for another day. ",
       result:"17"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Staging and continuing on another day",
+      answeroption:"Staging and continuing on another day",
       response:"Due to the second loss of MEP’s without a clear explanation, the case was aborted. Pt was transferred immediately to the MRI scanner for an urgent evaluation. The pt had no neural deficits and the MRI was normal. After discussion with another surgeon, discussing with the family in depth, the case was staged for another day. ",
       result:"17"
     )
     scenario1.questions.last.answers.create!(
-      answer:"Discussing this decision with another attending surgeon. ",
+      answeroption:"Discussing this decision with another attending surgeon. ",
       response:"Due to the second loss of MEP’s without a clear explanation, the case was aborted. Pt was transferred immediately to the MRI scanner for an urgent evaluation. The pt had no neural deficits and the MRI was normal. After discussion with another surgeon, discussing with the family in depth, the case was staged for another day. ",
       result:"17"
     )
@@ -452,7 +452,7 @@ namespace :db do
       questionprompt: "This case is complete.")
     #A17
     scenario1.questions.last.answers.create!(
-      answer:"Select another case",
+      answeroption:"Select another case",
       result:"[return to root]"
     )
 
