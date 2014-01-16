@@ -482,7 +482,7 @@ namespace :db do
     #   responseText = Faker::Lorem.sentence(rand(2..10))
     #   descriptionText = Faker::Lorem.sentence(rand(2..10))
     # content = Faker::Lorem.sentence(rand(2..5))
-    response: responseText, nextQuestion: questionNumber ) }
+    # response: responseText, nextQuestion: questionNumber ) }
     # end
 
 
