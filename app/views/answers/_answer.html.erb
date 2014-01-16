@@ -8,12 +8,12 @@
           <div id="checkboxFiveInput"></div>
         </div>
         <div class="clear-fix"></div>
-        <%= answer.answeroption %>
+        <%= raw(answer.answeroption) %>
       <div class="clear-fix"></div>
     </label>
     <div id="answer-<%= answer.id %>" class="answer-response-holder" data-response="<%= answer.nextQuestion %>">
       <h4>
-        <%= answer.response %>
+        <%= raw(answer.response) %>
       </h4>
       <hr>
       <%= link_to 'Next', {:controller => 'scenarios', :action=> 'question', :id=>answer.nextQuestion }, :class=>"button success small full-w" %>
