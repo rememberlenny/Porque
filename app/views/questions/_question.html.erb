@@ -1,17 +1,9 @@
 <div class="question-content">
   <div class="row answer-chunck">
-    <div class="large-9 column">
+    <div class="large-12 column">
 
     <h4>Question</h4>
       <p class=""><%= raw(@question.questionprompt) %></p>
-    </div>
-    <div class="large-3 column">
-      <% if @question.media %>
-        <a href="#" data-reveal-id="questionMediaPopup">
-          <%= image_tag("#{@question.media}") %>
-          <strong class="enlarge-button enlarge-contain"><i class="fi-arrows-out large"></i> Click to enlarge.</strong>
-        </a>
-      <% end %>
     </div>
   </div>
 </div>

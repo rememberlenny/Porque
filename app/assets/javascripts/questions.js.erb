@@ -9,6 +9,10 @@ var $item,
     },
     buttonChecked = false;
 
+$(document).ready(function(){
+  checkIfNoOptions();
+});
+
 $('.answer-choice').on('click', function(){
   that = this;
   removeAllClickHandles();
@@ -25,6 +29,12 @@ $('button').on('click', function(){
   checkForClicked();
   loadDataIntoModal();
 });
+
+function checkIfNoOptions(){
+  if( !$('.answers .answer-choice') == false ){
+    $('button').removeAttr('disabled');
+  }
+}
 
 function enableSubmitButton(){
   if( buttonChecked === false ){
