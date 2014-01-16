@@ -238,26 +238,186 @@ i
       "result"  :"8"
     )
 
+    #Q10
     scenario1.questions.create!("questionprompt": "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):")
+    #A10
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Optimize MAP",
+      "response":"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice. What else can be done? ",
+      "result"  :"10"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Optimize Hematocrit",
+      "response":"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice. What else can be done? ",
+      "result"  :"10"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Optimize Blood pH",
+      "response":"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice. What else can be done? ",
+      "result"  :"10"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Seek Normothermia",
+      "response":"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice. What else can be done? ",
+      "result"  :"10"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+      "response":"Discussion of a potential wake-up test with the attending anesthesiologist is important at this point.<br><br>Please note that revisiting systemic considerations to confirm that they are optimized. ",
+      "result"  :"13"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"All of the Above",
+      "response":"Even though it was already determined that the blood pressure, temperature, blood pH level, and hematocrit level were not abnormal, revisiting systemic considerations and confirming there are no changes is considered good practice.<br><br>Discussion of potential wake-up test with attending anesthesiologist is important at this point. ",
+      "result"  :"13"
+    )
 
-    scenario1.questions.last.answers.create!()
-    scenario1.questions.last.answers.create!()
-    scenario1.questions.last.answers.create!()
-
+    #Q11
     scenario1.questions.create!("questionprompt": "Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):")
+    #A11
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discuss status of inhalational agents with anesthesia",
+      "response":"IONM has not returned to baseline. What else? ",
+      "result"  :"11"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Check extent of neuromuscular blockade",
+      "response":"IONM has not returned to baseline. What else? ",
+      "result"  :"11"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Check electrode placement",
+      "response":"IONM has not returned to baseline. What else? ",
+      "result"  :"11"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Determine pattern and timing of signal changes",
+      "response":"IONM has not returned to baseline. What else? ",
+      "result"  :"11"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+      "response":"IONM has not returned to baseline. What else? ",
+      "result"  :"11"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"All of the Above",
+      "response":"It is important to consider all these choices, however did not return MEP’s to baseline. What next? ",
+      "result"  :"8"
+    )
 
+    #Q12
     scenario1.questions.create!("questionprompt": "Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
+    #A12
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+      "response":"IONM has not returned to baseline. What else? ",
+      "result"  :"12"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+      "response":"Upon examination, everything looks normal. What else? ",
+      "result"  :"12"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Both of the Above",
+      "response":"After clearing the mechanical causes for IONM change, it did not return to baseline. What else? ",
+      "result"  :"8"
+    )
 
+    #Q13
     scenario1.questions.create!("questionprompt": "You should always consider consultation with a colleague. Now what?")
+    #A13
+    scenario1.questions.last.answers.create!(
+      "answer"  :"IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
+      "response":"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+      "result"  :"14"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"IV lidocaine 2mg/kg if blood flow to the spinal cord is the suspected reason for IOM changes",
+      "response":"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+      "result"  :"14"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Wake-up test",
+      "response":"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+      "result"  :"14"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Post-op imaging (CT, MRI, CT Myelography)",
+      "response":"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+      "result"  :"14"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Continuing Surgery",
+      "response":"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+      "result"  :"14"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Staging and continuing another day",
+      "response":"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+      "result"  :"14"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discussing this decision with another attending surgeon",
+      "response":"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+      "result"  :"14"
+    )
 
+    #Q14
     scenario1.questions.create!("questionprompt": "A wake-up test was performed and she was noted to be moving the toes on both of her feet. She was put back to sleep and the MEP’s returned to baseline.<br><br>Would you consider: ")
+    #A14
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Continuing on with the surgery",
+      "response":"After discussion with another attending surgeon, we decided to continue on with the surgery. ",
+      "result"  :"15"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Staging and continuing on another day",
+      "response":"After discussion with another attending surgeon, we decided to continue on with the surgery. ",
+      "result"  :"15"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discussing this decision with another attending surgeon. ",
+      "response":"After discussion with another attending surgeon, we decided to continue on with the surgery. ",
+      "result"  :"15"
+    )
 
+    #Q15
     scenario1.questions.create!("questionprompt": "Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made. ")
+    #A15
+    scenario1.questions.last.answers.create!(
+      "answer"  :"See results",
+      "response":"Bilateral MEP’s and left-sided SSEP’s were severely diminished. ",
+      "result"  :"16"
+    )
 
+    #Q16
     scenario1.questions.create!("questionprompt": "At this point, would you consider (please choose one):")
+    #A16
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Continuing on with the surgery",
+      "response":"Due to the second loss of MEP’s without a clear explanation, the case was aborted. Pt was transferred immediately to the MRI scanner for an urgent evaluation. The pt had no neural deficits and the MRI was normal. After discussion with another surgeon, discussing with the family in depth, the case was staged for another day. ",
+      "result"  :"17"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Staging and continuing on another day",
+      "response":"Due to the second loss of MEP’s without a clear explanation, the case was aborted. Pt was transferred immediately to the MRI scanner for an urgent evaluation. The pt had no neural deficits and the MRI was normal. After discussion with another surgeon, discussing with the family in depth, the case was staged for another day. ",
+      "result"  :"17"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discussing this decision with another attending surgeon. ",
+      "response":"Due to the second loss of MEP’s without a clear explanation, the case was aborted. Pt was transferred immediately to the MRI scanner for an urgent evaluation. The pt had no neural deficits and the MRI was normal. After discussion with another surgeon, discussing with the family in depth, the case was staged for another day. ",
+      "result"  :"17"
+    )
 
+    #Q17
     scenario1.questions.create!("questionprompt": "This case is complete.")
-
+    #A17
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Select another case",
+      "result"  :"[return to root]"
+    )
 
 
     # Scenario.create!( name:        "Scenario Name",
