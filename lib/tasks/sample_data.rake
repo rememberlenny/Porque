@@ -7,11 +7,31 @@ namespace :db do
     scenario1 = Scenario.find(1)
     scenario2 = Scenario.find(2)
     scenario3 = Scenario.find(3)
-i
-    scenario1 = Scenario.create!( "name": "Case 1", "description": "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.", "image": "test.jpg");
+
+    scenario1 = Scenario.create!(
+      "name": "Case 1",
+      "description": "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.",
+      "image": "test.jpg");
+
+    # Intro 1
+    scenario1.intro.create!(
+      "content" : "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+2+-+X-Ray.jpg'> <br><br> <p> Due to her size, positioning was difficult and her legs had to be secured with tape and straps to prevent them from falling off. Screws were placed cephalocaudally from T2 to L3 (skipping T3 and T5) on the left side. On the right, screws were placed caudal-cephalically from L3, and at the point when T10 screw was in we lost SSEP monitoring in the distribution of the right posterior tibial nerve.  </p>"
+    )
+
+    # Intro 2
+    scenario1.intro.create!(
+      "content" : " <iframe width='560' height='315' src='//www.youtube.com/v/biwNVnPF25E&start=35&end=60&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> <br><br> <p> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees. </p>"
+    )
+
+    # Intro 3
+    scenario1.intro.create!(
+      "content" : " <iframe width='560' height='315' src='//www.youtube.com/v/biwNVnPF25E&start=35&end=60&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> <br><br> <p> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees. </p>"
+    )
 
     # Question 1
-    scenario1.questions.create!( "questionprompt": "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.<br><br> Due to her size, positioning was difficult and her legs had to be secured with tape and straps to prevent them from falling off. Screws were placed cephalocaudally from T2 to L3 (skipping T3 and T5) on the left side. On the right, screws were placed caudal-cephalically from L3, and at the point when T10 screw was in we lost SSEP monitoring in the distribution of the right posterior tibial nerve. <br><br> What will you do next?" )
+    scenario1.questions.create!(
+      "questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+3.JPG'><br><br>What will you do next? (pick one to move forward in the intervention):"
+      )
     #Answers 1
     scenario1.questions.last.answers.create!(
       "answer"  :"Gain control of the room",
@@ -40,7 +60,7 @@ i
     )
 
     # Question 2
-    scenario1.questions.create!("questionprompt": "In what methods will you gain control of the room (pick one to create the best environment for this situation):")
+    scenario1.questions.create!("questionprompt": '<iframe width="560" height="315" src="//www.youtube.com/embed/8yU2TqSVtTY?autoplay=1" frameborder="0" allowfullscreen></iframe><br><br>In what methods will you gain control of the room (pick one to create the best environment for this situation):')
     # Answer 2
     scenario1.questions.last.answers.create!(
       "answer"  :"Stop case and announce to the room",
@@ -49,7 +69,7 @@ i
     )
     scenario1.questions.last.answers.create!(
       "answer"  :"Eliminate extraneous stimuli (music, conversations, etc.)",
-      "response":"The music has been stopped and you have eliminated extraneous stimuli.<br><br>How else can you gain control of the room?",
+      "response":"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+3.5.jpg'><br><br>The music has been stopped and you have eliminated extraneous stimuli.<br><br>How else can you gain control of the room?",
       "result"  :"2"
     )
     scenario1.questions.last.answers.create!(
@@ -69,7 +89,7 @@ i
     )
 
     #Q3
-    scenario1.questions.create!("questionprompt": "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes)")
+    scenario1.questions.create!("questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+4.jpg'><br><br>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes)")
     #A3
     scenario1.questions.last.answers.create!(
       "answer"  :"Optimize MAP",
@@ -104,7 +124,7 @@ i
     )
 
     #Q4
-    scenario1.questions.create!("questionprompt": "Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes)")
+    scenario1.questions.create!("questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+5.JPG'><br><br>Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes)")
     #A4
     scenario1.questions.last.answers.create!(
       "answer"  :"Discuss status of inhalational agents with anesthesia",
@@ -128,17 +148,17 @@ i
     )
     scenario1.questions.last.answers.create!(
       "answer"  :"Check limb/neck positioning; check limb position on table especially in unilateral loss",
-      "response":"You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
+      "response":"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><br><br>You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
       "result"  :"6"
     )
     scenario1.questions.last.answers.create!(
       "answer"  :"All of the Above",
-      "response":"<ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
+      "response":"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><br><br><ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
       "result"  :"6"
     )
 
     #Q5
-    scenario1.questions.create!("questionprompt": "Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
+    scenario1.questions.create!("questionprompt": " <iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe><br><br> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
     #A5
     scenario1.questions.last.answers.create!(
       "answer"  :"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
