@@ -177,7 +177,8 @@ namespace :db do
     )
 
     #Q6
-    scenario1.questions.create!("questionprompt": "After the SSEP’s returned to baseline, you:")
+    scenario1.questions.create!("questionprompt": "<iframe width='560' height='315' src='//www.youtube.com/embed/CJYxjjP846U?autoplay=1' frameborder='0' allowfullscreen></iframe>
+<br><br>After the SSEP’s returned to baseline, you:")
     #A6
     scenario1.questions.last.answers.create!(
       "answer"  :"Continue on with the surgery",
@@ -199,13 +200,13 @@ namespace :db do
     scenario1.questions.create!("questionprompt": "Screws were then placed on the right side at T7-T9. <br> <br> Bilateral SSEP’s and MEP’s are noted to have been lost. <br> <br> Blood pressure, temperature and hematocrit are checked; pt. was given a unit of cell saver blood. Lower extremities were properly placed on the table" )
     #A7
     scenario1.questions.last.answers.create!(
-      "answer"  :"See",
-      "response":"[IMAGE 10]",
+      "answer"  :"Next",
+      "response":"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+10.jpg'>",
       "result"  :"8"
     )
 
     #Q8
-    scenario1.questions.create!("questionprompt": "What will you do next? (pick one to move forward in the intervention):")
+    scenario1.questions.create!("questionprompt": "<iframe width='560' height='315' src='//www.youtube.com/v/K1YXuTznM1c&start=3&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe><br><br>What will you do next? (pick one to move forward in the intervention):")
     #A8
     scenario1.questions.last.answers.create!(
       "answer"  :"Gain control of the room",
@@ -225,12 +226,12 @@ namespace :db do
     )
     scenario1.questions.last.answers.create!(
       "answer"  :"Consider consultation with a colleague",
-      "response":"You should always consider consultation with a colleague. Now what?",
+      "response":"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+7.jpg'><br><br> You should always consider consultation with a colleague. Now what?",
       "result"  :"8"
     )
 
     #Q9
-    scenario1.questions.create!("questionprompt": "In what methods will you gain control of the room (pick one to create the best environment for this situation):")
+    scenario1.questions.create!("questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+11.jpg'><br><br>In what methods will you gain control of the room (pick one to create the best environment for this situation):")
     #A9
     scenario1.questions.last.answers.create!(
       "answer"  :"Stop case and announce to room",
@@ -259,7 +260,7 @@ namespace :db do
     )
 
     #Q10
-    scenario1.questions.create!("questionprompt": "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):")
+    scenario1.questions.create!("questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+12.jpg'><br><br>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):")
     #A10
     scenario1.questions.last.answers.create!(
       "answer"  :"Optimize MAP",
@@ -293,7 +294,7 @@ namespace :db do
     )
 
     #Q11
-    scenario1.questions.create!("questionprompt": "Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):")
+    scenario1.questions.create!("questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+13.JPG'><br><br>Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):")
     #A11
     scenario1.questions.last.answers.create!(
       "answer"  :"Discuss status of inhalational agents with anesthesia",
@@ -327,7 +328,7 @@ namespace :db do
     )
 
     #Q12
-    scenario1.questions.create!("questionprompt": "Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
+    scenario1.questions.create!("questionprompt": "<iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe><br><br>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
     #A12
     scenario1.questions.last.answers.create!(
       "answer"  :"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
@@ -346,7 +347,7 @@ namespace :db do
     )
 
     #Q13
-    scenario1.questions.create!("questionprompt": "You should always consider consultation with a colleague. Now what?")
+    scenario1.questions.create!("questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+14.JPG'><br><br>You should always consider consultation with a colleague. Now what?")
     #A13
     scenario1.questions.last.answers.create!(
       "answer"  :"IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
@@ -385,7 +386,7 @@ namespace :db do
     )
 
     #Q14
-    scenario1.questions.create!("questionprompt": "A wake-up test was performed and she was noted to be moving the toes on both of her feet. She was put back to sleep and the MEP’s returned to baseline.<br><br>Would you consider: ")
+    scenario1.questions.create!("questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+15.JPG'><br><br>A wake-up test was performed and she was noted to be moving the toes on both of her feet. She was put back to sleep and the MEP’s returned to baseline.<br><br>Would you consider: ")
     #A14
     scenario1.questions.last.answers.create!(
       "answer"  :"Continuing on with the surgery",
@@ -404,7 +405,7 @@ namespace :db do
     )
 
     #Q15
-    scenario1.questions.create!("questionprompt": "Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made. ")
+    scenario1.questions.create!("questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+16.JPG'><br><br>Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made. ")
     #A15
     scenario1.questions.last.answers.create!(
       "answer"  :"See results",
@@ -413,7 +414,7 @@ namespace :db do
     )
 
     #Q16
-    scenario1.questions.create!("questionprompt": "At this point, would you consider (please choose one):")
+    scenario1.questions.create!("questionprompt": "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+17.JPG'><br><br>At this point, would you consider (please choose one):")
     #A16
     scenario1.questions.last.answers.create!(
       "answer"  :"Continuing on with the surgery",
