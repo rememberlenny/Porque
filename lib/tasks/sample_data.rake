@@ -7,28 +7,242 @@ namespace :db do
     scenario1 = Scenario.find(1)
     scenario2 = Scenario.find(2)
     scenario3 = Scenario.find(3)
-
+i
     scenario1 = Scenario.create!( "name": "Case 1", "description": "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.", "image": "test.jpg");
 
+    # Question 1
     scenario1.questions.create!( "questionprompt": "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.<br><br> Due to her size, positioning was difficult and her legs had to be secured with tape and straps to prevent them from falling off. Screws were placed cephalocaudally from T2 to L3 (skipping T3 and T5) on the left side. On the right, screws were placed caudal-cephalically from L3, and at the point when T10 screw was in we lost SSEP monitoring in the distribution of the right posterior tibial nerve. <br><br> What will you do next?" )
+    #Answers 1
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Gain control of the room",
+      "response":"",
+      "result"  :"2"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Check anesthetic/systemic conditions of the patient",
+      "response":"",
+      "result"  :"3"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Seek technical/neurophysiologic reasons for IONM changes",
+      "response":"",
+      "result"  :"4"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Seek surgery-related reasons for IONM changes",
+      "response":"",
+      "result"  :"5"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Consider consultation with a colleague",
+      "response":"You should always consider consultation with a colleague. What else can you and your colleague do in order to pinpoint the reason to bring the IONM back to baseline?",
+      "result"  :"1"
+    )
 
+    # Question 2
     scenario1.questions.create!("questionprompt": "In what methods will you gain control of the room (pick one to create the best environment for this situation):")
+    # Answer 2
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Stop case and announce to the room",
+      "response":"Now everyone is notified of the changes. How else can you gain control of the room?",
+      "result"  :"2"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Eliminate extraneous stimuli (music, conversations, etc.)",
+      "response":"The music has been stopped and you have eliminated extraneous stimuli.<br><br>How else can you gain control of the room?",
+      "result"  :"2"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
+      "response":"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+      "result"  :"2"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Anticipate need for intraoperative imaging if not readily available",
+      "response":"How else can you gain control of the room? [",
+      "result"  :"2"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"All of the above",
+      "response":"Now you have everyone’s attention and ready to take further action steps.",
+      "result"  :"1"
+    )
 
+    #Q3
     scenario1.questions.create!("questionprompt": "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes)")
+    #A3
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Optimize MAP",
+      "response":"Blood pressure is normal; what else will you check?",
+      "result"  :"3"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Optimize Hematocrit",
+      "response":"There is no abnormality; what else will you check?",
+      "result"  :"3"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Optimize Blood pH",
+      "response":"There is no abnormality; what else will you check?",
+      "result"  :"3"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Seek Normothermia",
+      "response":"There is no abnormality; what else will you check?",
+      "result"  :"3"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+      "response":"Need discussed; what else will you check?",
+      "result"  :"3"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"All of the Above",
+      "response":"All these points are vital to check; however there are no )systemic abnormalities found. IONM has not returned to baseline. What
+      else? ",
+      "result"  :"1"
+    )
 
+    #Q4
     scenario1.questions.create!("questionprompt": "Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes)")
+    #A4
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discuss status of inhalational agents with anesthesia",
+      "response":"IONM has not returned to baseline. What else?",
+      "result"  :"4"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Check extent of neuromuscular blockade",
+      "response":"IONM has not returned to baseline. What else?",
+      "result"  :"4"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Check electrode placement",
+      "response":"During the process of checking all the electrode placements, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
+      "result"  :"6"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Determine pattern and timing of signal changes",
+      "response":"IONM has not returned to baseline. What else?",
+      "result"  :"4"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+      "response":"You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
+      "result"  :"6"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"All of the Above",
+      "response":"<ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
+      "result"  :"6"
+    )
 
+    #Q5
     scenario1.questions.create!("questionprompt": "Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
+    #A5
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+      "response":"IONM has not returned to baseline. What else? ",
+      "result"  :"5"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+      "response":"Upon examination, everything looks normal. What else? ",
+      "result"  :"5"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Both of the Above",
+      "response":"After checking for mechanical causes for IONM change, it did not return to baseline. What else? ",
+      "result"  :"1"
+    )
 
+    #Q6
     scenario1.questions.create!("questionprompt": "After the SSEP’s returned to baseline, you:")
+    #A6
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Continue on with the surgery",
+      "response":"After discussion with another attending surgeon, we continued on with the surgery. ",
+      "result"  :"7"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Stage and continue on another day",
+      "response":"After discussion with another attending surgeon, we continued on with the surgery. ",
+      "result"  :"7"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Discuss this decision with another attending surgeon",
+      "response":"Discussing and involving another attending surgeon is always important. It was decided to continue on with the surgery.",
+      "result"  :"7"
+    )
 
+    #Q7
     scenario1.questions.create!("questionprompt": "Screws were then placed on the right side at T7-T9. <br> <br> Bilateral SSEP’s and MEP’s are noted to have been lost. <br> <br> Blood pressure, temperature and hematocrit are checked; pt. was given a unit of cell saver blood. Lower extremities were properly placed on the table" )
+    #A7
+    scenario1.questions.last.answers.create!(
+      "answer"  :"See",
+      "response":"[IMAGE 10]",
+      "result"  :"8"
+    )
 
+    #Q8
     scenario1.questions.create!("questionprompt": "What will you do next? (pick one to move forward in the intervention):")
+    #A8
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Gain control of the room",
+      "result"  :"9"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Check anesthetic/systemic conditions of the patient",
+      "result"  :"10"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Seek technical/neurophysiologic reasons for IONM changes",
+      "result"  :"11"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Seek surgery-related reasons for IONM changes",
+      "result"  :"12"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Consider consultation with a colleague",
+      "response":"You should always consider consultation with a colleague. Now what?",
+      "result"  :"8"
+    )
 
+    #Q9
     scenario1.questions.create!("questionprompt": "In what methods will you gain control of the room (pick one to create the best environment for this situation):")
+    #A9
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Stop case and announce to room",
+      "response":"Now everyone is notified of the changes. How else can you gain control of the room?",
+      "result"  :"9"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Eliminate extraneous stimuli (music, conversations, etc.)",
+      "response":"The music has been stopped and you have eliminated extraneous stimuli. How else can you gain control of the room?",
+      "result"  :"9"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist support",
+      "response":"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+      "result"  :"9"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"Anticipate need for intraoperative imaging if not readily available",
+      "response":"How else can you gain control of the room? [This choice should show up on the side] ",
+      "result"  :"9"
+    )
+    scenario1.questions.last.answers.create!(
+      "answer"  :"All of the above",
+      "response":"Now you have everyone’s attention and ready to take further action steps.",
+      "result"  :"8"
+    )
 
     scenario1.questions.create!("questionprompt": "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):")
+
+    scenario1.questions.last.answers.create!()
+    scenario1.questions.last.answers.create!()
+    scenario1.questions.last.answers.create!()
 
     scenario1.questions.create!("questionprompt": "Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):")
 
