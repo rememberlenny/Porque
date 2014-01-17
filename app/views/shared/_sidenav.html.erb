@@ -1,4 +1,4 @@
-<ul class="side-nav text-center">
+<ul class="side-nav text-center fixy" >
   <div class="status">
     <% if @questions %>
     <% else %>
@@ -14,12 +14,6 @@
   <%= link_to url_for('https://s3.amazonaws.com/LKBG-TG/columbia/Response-to-IONM-Changes-Checklist.pdf') do %>
     <i class="step fi-clipboard-notes size-72"></i>
     Checklist
-  <% end %>
-  </li>
-  <li class="">
-  <%= link_to :back do %>
-    <i class="step fi-graph-trend size-72"></i>
-    Stats
   <% end %>
   </li>
   <li class="">
