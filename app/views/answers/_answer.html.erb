@@ -1,4 +1,6 @@
-<h5>Select an answer below</h5>
+<h5>Select an answer below
+    <i class="step fi-eye right hint-button"></i>
+  </h5>
 <hr>
 <ul class="no-bullet answer-choices" id="answer-choices">
   <% @answer.each do |answer| %>
@@ -9,7 +11,7 @@
   <% @isSame = "Next" %>
   <% @isSameClass = "success" %>
   <% end %>
-  <li id="answer-choice-<%= answer.id %>" class="answer-choice">
+  <li id="answer-choice-<%= answer.id %>" class="answer-choice <%= @isSameClass %>">
     <label>
         <div class="check">
           <div id="checkboxFiveInput"></div>

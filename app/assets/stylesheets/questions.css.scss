@@ -20,6 +20,16 @@
   }
 }
 
+.answer-choice.hinted{
+  &.success{
+
+  }
+  &.alert{
+    opacity: .7 !important;
+  }
+
+}
+
 button{
   margin-bottom: 0em !important;
 }
