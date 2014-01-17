@@ -19,6 +19,17 @@ class ScenariosController < ApplicationController
     # redirect_to  scenario_question_path(:scenario_id => params[:id])
   end
 
+  def intro
+    @scenario = Scenario.find(params[:scenario_id])
+    if params[:id].to_i >= @scenario.intro.length
+      redirect_to scenarioquestion_path(:scenario_id=>params[:scenario_id], :id=>1, :fq=>1)
+    else
+      @intro = @scenario.intro[params[:id].to_i]
+    end
+    @introlength = @scenario.intro.length
+    @next = params[:id].to_i+1
+  end
+
   def question
     if(params[:fq] == 1)
       @question = @scenario.questions.first

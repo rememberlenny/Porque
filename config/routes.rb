@@ -6,12 +6,14 @@ MedicalSimulation::Application.routes.draw do
   get 'contact' => 'pages#contact'
 
   resources :scenarios do
+    resources :intros, shallow: true
     resources :questions, shallow: true do
       resources :answers, shallow: true
     end
   end
 
-  get 'scenarios/:scenario_id/:id' => 'scenarios#question', as: :scenarioquestion
+  get 'scenarios/:scenario_id/intro/:id'  => 'scenarios#intro',     as: :scenariointro
+  get 'scenarios/:scenario_id/:id'        => 'scenarios#question',  as: :scenarioquestion
 
 
 
