@@ -31,12 +31,15 @@ class ScenariosController < ApplicationController
   end
 
   def question
-    if(params[:fq] == 1)
+    if(params[:id].to_i == 0)
+      redirect_to root_path
+    elsif(params[:fq] == 1)
       @question = @scenario.questions.first
       params[:first_question] = 0
+      @answer = Question.find(@question.id).answers
     else
       @question = Question.find(params[:id])
+      @answer = Question.find(@question.id).answers
     end
-    @answer = Question.find(@question.id).answers
   end
 end
