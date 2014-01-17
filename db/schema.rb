@@ -34,7 +34,6 @@ ActiveRecord::Schema.define(version: 20140116061654) do
   create_table "answers", force: true do |t|
     t.string   "answeroption"
     t.integer  "question_id"
-    t.integer  "questions_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "response"

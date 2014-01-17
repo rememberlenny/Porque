@@ -9,7 +9,7 @@ class ScenariosController < ApplicationController
   end
 
   def show
-    redirect_to scenarioquestion_path(:scenario_id=>params[:id], :fq=>1)
+    redirect_to scenariointro_path(:scenario_id=>params[:id], :id=>0, :fq=>1)
     # fq is first question
     @scenario = Scenario.all
     # respond_to do |format|
@@ -21,8 +21,9 @@ class ScenariosController < ApplicationController
 
   def intro
     @scenario = Scenario.find(params[:scenario_id])
+    @firstQuestionId = @scenario.questions.first.id
     if params[:id].to_i >= @scenario.intro.length
-      redirect_to scenarioquestion_path(:scenario_id=>params[:scenario_id], :id=>1, :fq=>1)
+      redirect_to scenarioquestion_path(:scenario_id=>params[:scenario_id], :id=>@firstQuestionId, :fq=>1)
     else
       @intro = @scenario.intro[params[:id].to_i]
     end
