@@ -11,7 +11,17 @@ var $item,
 
 $(document).ready(function(){
   checkIfNoOptions();
+  centerIframe();
+  centerImage();
 });
+
+function centerIframe(){
+  $( "iframe" ).wrap( "<div class='text-center'></div>");
+}
+
+function centerImage(){
+  $( "img" ).wrap( "<div class='text-align'></div>");
+}
 
 $('.answer-choice').on('click', function(){
   that = this;
