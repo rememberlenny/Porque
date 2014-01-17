@@ -12,6 +12,15 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+
+  .grey-back{
+    display: none;
+  }
+#wrapper.true{
+  .grey-back{
+    display: block;
+  }
+ }
 .button{
   &.secondary{
     color: #333 !important;
@@ -56,7 +65,6 @@ a{
   background: rgb(255, 255, 255);
   border-radius: 5px;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
-  z-index: 200;
 }
 
 .side-nav.fixed{

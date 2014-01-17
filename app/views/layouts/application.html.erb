@@ -7,31 +7,33 @@
 </head>
 <body>
 
-<% provide(:title, "IOM Web Simulator") %>
-<% provide(:description, "Created by the Center for Pediatric Orthopaedic Research at the Columbia University Medical Center") %>
+  <div id="wrapper" class="<%= current_page?(root_path) %>">
 
-    <%= render 'shared/topnav' %>
+    <% provide(:title, "IOM Web Simulator") %>
+    <% provide(:description, "Created by the Center for Pediatric Orthopaedic Research at the Columbia University Medical Center") %>
 
-    <%= render 'shared/header' %>
+      <%= render 'shared/topnav' %>
+      <%= render 'shared/header' %>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
 
-  <div class="row">
+    <div class="row">
 
-    <div class="large-2 column hide-for-medium-down">
-      <%= render 'shared/sidenav' %>
-    </div>
-    <div class="large-10 column back-white">
-      <div class="column">
-        <%= yield %>
+      <div class="large-2 column hide-for-medium-down">
+        <%= render 'shared/sidenav' %>
+      </div>
+      <div class="large-10 column back-white">
+        <div class="column">
+          <%= yield %>
+        </div>
       </div>
     </div>
+
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+
   </div>
-
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-
-
 
 </body>
 </html>
