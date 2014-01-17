@@ -35,22 +35,22 @@ namespace :db do
     #Answers 1
     scenario1.questions.last.answers.create!(
       answeroption:"Gain control of the room",
-      response:"",
+      response:"Proceed",
       nextQuestion:"2"
     )
     scenario1.questions.last.answers.create!(
       answeroption:"Check anesthetic/systemic conditions of the patient",
-      response:"",
+      response:"Proceed",
       nextQuestion:"3"
     )
     scenario1.questions.last.answers.create!(
       answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
-      response:"",
+      response:"Proceed",
       nextQuestion:"4"
     )
     scenario1.questions.last.answers.create!(
       answeroption:"Seek surgery-related reasons for IONM changes",
-      response:"",
+      response:"Proceed",
       nextQuestion:"5"
     )
     scenario1.questions.last.answers.create!(

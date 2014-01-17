@@ -2,6 +2,13 @@
 <hr>
 <ul class="no-bullet answer-choices" id="answer-choices">
   <% @answer.each do |answer| %>
+  <% if( answer.nextQuestion == @question.id ) %>
+  <% @isSame = "Back" %>
+  <% @isSameClass = "alert" %>
+  <% else %>
+  <% @isSame = "Next" %>
+  <% @isSameClass = "success" %>
+  <% end %>
   <li id="answer-choice-<%= answer.id %>" class="answer-choice">
     <label>
         <div class="check">
@@ -11,12 +18,12 @@
         <%= raw(answer.answeroption) %>
       <div class="clear-fix"></div>
     </label>
-    <div id="answer-<%= answer.id %>" class="answer-response-holder" data-response="<%= answer.nextQuestion %>">
-      <h4>
+    <div id="answer-<%= answer.id %>" class="answer-response-holder " data-response="<%= answer.nextQuestion %>">
+      <h4 class="">
         <%= raw(answer.response) %>
       </h4>
       <hr>
-      <%= link_to 'Next', {:controller => 'scenarios', :action=> 'question', :id=>answer.nextQuestion }, :class=>"button success small full-w" %>
+      <%= link_to @isSame, {:controller => 'scenarios', :action=> 'question', :id=>answer.nextQuestion }, :class=>"#{@isSameClass} button small full-w" %>
     </div>
   </li>
   <% end %>

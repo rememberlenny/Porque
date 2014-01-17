@@ -9,6 +9,17 @@
   }
 }
 
+.reveal-modal{
+  .button{
+    &.Back{
+      background: red !important;
+    }
+    &.Next{
+      background: rgb(60, 154, 95) !important;
+    }
+  }
+}
+
 button{
   margin-bottom: 0em !important;
 }
