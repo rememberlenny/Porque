@@ -491,6 +491,7 @@
       image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image+2+-+X-Ray.jpg")
 
     # Intro
+      (Insert X-RAY Image 20)
       # Intro 1
       # Page 26
       scenario2.intro.create!(
@@ -510,6 +511,8 @@
       )
 
     # Question
+
+      (Insert Image 21)
 
       # Question 1
         # Page 27
@@ -544,6 +547,7 @@
         )
 
       # Question 2
+      (Insert Video 8 no sound- automatically begin as page open; continue to repeat)
         # Page 28
         scenario2.questions.create!(
           questionprompt: "In what methods will you gain control of the room (pick one to create the best environment for this situation):"
@@ -577,6 +581,7 @@
         )
 
       # Question 3
+      (Insert Image 12)
         # Page 29
         scenario2.questions.create!(
           questionprompt: "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):"
@@ -614,6 +619,7 @@
         )
 
       # Question 4
+      (Insert Image 22)
         # Page 30
         scenario2.questions.create!(
           questionprompt: "Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
@@ -650,6 +656,7 @@
         )
 
       # Question 5
+      (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         # Page 31
         scenario2.questions.create!(
           questionprompt: "Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
@@ -671,6 +678,7 @@
         )
 
       # Question 6
+      (Insert Video 9 00:40 to end no sound- automatically begin as page open; continue to repeat)
         # Page 33
         scenario2.questions.create!(
           questionprompt: "After the IONM returns to baseline, you:"
@@ -693,6 +701,7 @@
         )
 
       # Question 7
+      (Insert Image 25)
         # Page 36
         scenario2.questions.create!(
           questionprompt: "The case moved forward and instead of pedicle screws, a claw was placed on the right side. A distal rod was placed and connected to the pelvic fixation. <br><br> A formal fusion was done. There motor evoked potential monitoring had not changed after improving. "
@@ -705,6 +714,7 @@
           )
 
       # Question 8
+      (Insert Image 26)
         # Page 37
         scenario2.questions.create!(
           questionprompt: "At this point you would:"
