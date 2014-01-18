@@ -49,17 +49,17 @@
 
       # Intro 3
       scenario1.intro.create!(
-        content: "<iframe width='560' height='315' src='//www.youtube.com/v/biwNVnPF25E&start=35&end=60&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> <br><br> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees."
+        content: "<iframe width='560' height='315' src='//www.youtube.com/v/biwNVnPF25E&start=35&end=60&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees."
       )
 
       # Intro 2
       scenario1.intro.create!(
-        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+2+-+X-Ray.jpg'> <br><br> Due to her size, positioning was difficult and her legs had to be secured with tape and straps to prevent them from falling off. Screws were placed cephalocaudally from T2 to L3 (skipping T3 and T5) on the left side. On the right, screws were placed caudal-cephalically from L3, and at the point when T10 screw was in we lost SSEP monitoring in the distribution of the right posterior tibial nerve."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+2+-+X-Ray.jpg'> Due to her size, positioning was difficult and her legs had to be secured with tape and straps to prevent them from falling off. Screws were placed cephalocaudally from T2 to L3 (skipping T3 and T5) on the left side. On the right, screws were placed caudal-cephalically from L3, and at the point when T10 screw was in we lost SSEP monitoring in the distribution of the right posterior tibial nerve."
       )
 
     # Question 1
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+3.JPG'><br><br>What will you do next? (pick one to move forward in the intervention):"
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+3.JPG'> What will you do next? (pick one to move forward in the intervention):"
         )
       #Answers 1
       scenario1.questions.last.answers.create!(
@@ -90,7 +90,7 @@
 
     # Question 2
       scenario1.questions.create!(
-        questionprompt: '<iframe width="560" height="315" src="//www.youtube.com/embed/8yU2TqSVtTY?autoplay=1" frameborder="0" allowfullscreen></iframe><br><br>In what methods will you gain control of the room (pick one to create the best environment for this situation):')
+        questionprompt: '<iframe width="560" height="315" src="//www.youtube.com/embed/8yU2TqSVtTY?autoplay=1" frameborder="0" allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):')
       # Answer 2
       scenario1.questions.last.answers.create!(
         answeroption:"Stop case and announce to the room",
@@ -99,7 +99,7 @@
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
-        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+3.5.jpg'><br><br>The music has been stopped and you have eliminated extraneous stimuli.<br><br>How else can you gain control of the room?",
+        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+3.5.jpg'>The music has been stopped and you have eliminated extraneous stimuli.<br><br>How else can you gain control of the room?",
         nextQuestion:"2"
       )
       scenario1.questions.last.answers.create!(
@@ -120,7 +120,7 @@
 
     #Q3
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+4.jpg'><br><br>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes)")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+4.jpg'>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes)")
       #A3
       scenario1.questions.last.answers.create!(
         answeroption:"Optimize MAP",
@@ -156,7 +156,7 @@
 
     #Q4
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+5.JPG'><br><br>Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes)")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+5.JPG'>Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes)")
       #A4
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss status of inhalational agents with anesthesia",
@@ -180,18 +180,18 @@
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
-        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><br><br>You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
+        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'>You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
         nextQuestion:"6"
       )
       scenario1.questions.last.answers.create!(
         answeroption:"All of the Above",
-        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><br><br><ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
+        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
         nextQuestion:"6"
       )
 
     #Q5
       scenario1.questions.create!(
-        questionprompt: " <iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe><br><br> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
+        questionprompt: " <iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
       #A5
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
@@ -211,7 +211,7 @@
 
     #Q6
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/embed/CJYxjjP846U?autoplay=1' frameborder='0' allowfullscreen></iframe><br><br>After the SSEP’s returned to baseline, you:")
+        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/embed/CJYxjjP846U?autoplay=1' frameborder='0' allowfullscreen></iframe>After the SSEP’s returned to baseline, you:")
       #A6
       scenario1.questions.last.answers.create!(
         answeroption:"Continue on with the surgery",
@@ -241,7 +241,7 @@
 
     #Q8
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/K1YXuTznM1c&start=3&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe><br><br>What will you do next? (pick one to move forward in the intervention):")
+        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/K1YXuTznM1c&start=3&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe>What will you do next? (pick one to move forward in the intervention):")
       #A8
       scenario1.questions.last.answers.create!(
         answeroption:"Gain control of the room",
@@ -261,13 +261,13 @@
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Consider consultation with a colleague",
-        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+7.jpg'><br><br> You should always consider consultation with a colleague. Now what?",
+        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+7.jpg'> You should always consider consultation with a colleague. Now what?",
         nextQuestion:"8"
       )
 
     #Q9
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+11.jpg'><br><br>In what methods will you gain control of the room (pick one to create the best environment for this situation):")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+11.jpg'>In what methods will you gain control of the room (pick one to create the best environment for this situation):")
       #A9
       scenario1.questions.last.answers.create!(
         answeroption:"Stop case and announce to room",
@@ -297,7 +297,7 @@
 
     #Q10
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+12.jpg'><br><br>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+12.jpg'>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):")
       #A10
       scenario1.questions.last.answers.create!(
         answeroption:"Optimize MAP",
@@ -332,7 +332,7 @@
 
     #Q11
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+13.JPG'><br><br>Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+13.JPG'>Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):")
       #A11
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss status of inhalational agents with anesthesia",
@@ -367,7 +367,7 @@
 
     #Q12
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe><br><br>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
+        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
       #A12
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
@@ -387,7 +387,7 @@
 
     #Q13
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+14.JPG'><br><br>You should always consider consultation with a colleague. Now what?")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+14.JPG'>You should always consider consultation with a colleague. Now what?")
       #A13
       scenario1.questions.last.answers.create!(
         answeroption:"IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
@@ -427,7 +427,7 @@
 
     #Q14
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+15.JPG'><br><br>A wake-up test was performed and she was noted to be moving the toes on both of her feet. She was put back to sleep and the MEP’s returned to baseline.<br><br>Would you consider: ")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+15.JPG'>A wake-up test was performed and she was noted to be moving the toes on both of her feet. She was put back to sleep and the MEP’s returned to baseline.<br><br>Would you consider: ")
       #A14
       scenario1.questions.last.answers.create!(
         answeroption:"Continuing on with the surgery",
@@ -447,7 +447,7 @@
 
     #Q15
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+16.JPG'><br><br>Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made. ")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+16.JPG'>Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made. ")
       #A15
       scenario1.questions.last.answers.create!(
         answeroption:"See results",
@@ -457,7 +457,7 @@
 
     #Q16
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+17.JPG'><br><br>At this point, would you consider (please choose one):")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+17.JPG'>At this point, would you consider (please choose one):")
       #A16
       scenario1.questions.last.answers.create!(
         answeroption:"Continuing on with the surgery",
@@ -491,11 +491,10 @@
       image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image+2+-+X-Ray.jpg")
 
     # Intro
-      (Insert X-RAY Image 20)
       # Intro 1
       # Page 26
       scenario2.intro.create!(
-        content: "In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
+        content: "<imgr src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+20+-+X-Ray.jpg'>In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
       )
 
       # Intro 1
@@ -511,13 +510,10 @@
       )
 
     # Question
-
-      (Insert Image 21)
-
       # Question 1
         # Page 27
         scenario2.questions.create!(
-          questionprompt: "What will you do next? (pick one to move forward in the intervention):"
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+21.JPG'>What will you do next? (pick one to move forward in the intervention):"
           )
         #Answers 1
         scenario2.questions.last.answers.create!(
@@ -547,10 +543,9 @@
         )
 
       # Question 2
-      (Insert Video 8 no sound- automatically begin as page open; continue to repeat)
         # Page 28
         scenario2.questions.create!(
-          questionprompt: "In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/a7FMQ9QuMng?autoplay=1' frameborder='0' allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
 
         # Answer 2
@@ -561,7 +556,7 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
-          response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+3.5.jpg'><br><br>The music has been stopped and you have eliminated extraneous stimuli.<br><br>How else can you gain control of the room?",
+          response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+3.5.jpg'> The music has been stopped and you have eliminated extraneous stimuli.<br><br>How else can you gain control of the room?",
           nextQuestion:"2"
         )
         scenario2.questions.last.answers.create!(
@@ -581,10 +576,9 @@
         )
 
       # Question 3
-      (Insert Image 12)
         # Page 29
         scenario2.questions.create!(
-          questionprompt: "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+12.jpg'>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
         scenario2.questions.last.answers.create!(
           answeroption:"Optimize MAP",
@@ -619,10 +613,9 @@
         )
 
       # Question 4
-      (Insert Image 22)
         # Page 30
         scenario2.questions.create!(
-          questionprompt: "Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+22.JPG'>Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
         scenario2.questions.last.answers.create!(
           answeroption:"Discuss status of inhalational agents with anesthesia",
@@ -646,24 +639,23 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
-          response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><br><br>You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
+          response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'>You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
           nextQuestion:"6"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"All of the Above",
-          response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><br><br><ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
+          response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
           nextQuestion:"6"
         )
 
       # Question 5
-      (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         # Page 31
         scenario2.questions.create!(
-          questionprompt: "Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
         scenario2.questions.last.answers.create!(
           answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
-          response:"IONM has not returned to baseline. What else? ",
+          response:"i.  After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach.",
           nextQuestion:"5"
         )
         scenario2.questions.last.answers.create!(
@@ -673,15 +665,14 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Both of the Above",
-          response:"After checking for mechanical causes for IONM change, it did not return to baseline. What else? ",
+          response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach. You are alerted that the motor evoked potential monitoring had rapidly improved. ",
           nextQuestion:"1"
         )
 
       # Question 6
-      (Insert Video 9 00:40 to end no sound- automatically begin as page open; continue to repeat)
         # Page 33
         scenario2.questions.create!(
-          questionprompt: "After the IONM returns to baseline, you:"
+          questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/lO0rLFW_tjo&start=40&end=80&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> After the IONM returns to baseline, you:"
           )
 
         scenario2.questions.last.answers.create!(
@@ -701,10 +692,9 @@
         )
 
       # Question 7
-      (Insert Image 25)
         # Page 36
         scenario2.questions.create!(
-          questionprompt: "The case moved forward and instead of pedicle screws, a claw was placed on the right side. A distal rod was placed and connected to the pelvic fixation. <br><br> A formal fusion was done. There motor evoked potential monitoring had not changed after improving. "
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+25.jpg'>The case moved forward and instead of pedicle screws, a claw was placed on the right side. A distal rod was placed and connected to the pelvic fixation. <br><br> A formal fusion was done. There motor evoked potential monitoring had not changed after improving. "
           )
 
         scenario2.questions.last.answers.create!(
@@ -714,10 +704,10 @@
           )
 
       # Question 8
-      (Insert Image 26)
+
         # Page 37
         scenario2.questions.create!(
-          questionprompt: "At this point you would:"
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+26.JPG'>At this point you would:"
           )
 
         scenario2.questions.last.answers.create!(
