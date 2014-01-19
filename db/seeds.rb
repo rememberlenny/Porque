@@ -488,7 +488,7 @@
     scenario2 = Scenario.create!(
       name: "Case 2",
       description: "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image+2+-+X-Ray.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image+25.jpg")
 
     # Intro
       # Intro 1
@@ -629,8 +629,8 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Check electrode placement",
-          response:"During the process of checking all the electrode placements, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
-          nextQuestion:"6"
+          response:"All electrodes are placed properly. What else? ",
+          nextQuestion:"4"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Determine pattern and timing of signal changes",
@@ -639,12 +639,12 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
-          response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'>You found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline!",
-          nextQuestion:"6"
+          response:"Limb and neck are positioned properly. What else? ",
+          nextQuestion:"4"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"All of the Above",
-          response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
+          response:"It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
           nextQuestion:"6"
         )
 
@@ -655,8 +655,8 @@
           )
         scenario2.questions.last.answers.create!(
           answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
-          response:"i.  After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach.",
-          nextQuestion:"5"
+          response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach.",
+          nextQuestion:"6"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
@@ -666,7 +666,7 @@
         scenario2.questions.last.answers.create!(
           answeroption:"Both of the Above",
           response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach. You are alerted that the motor evoked potential monitoring had rapidly improved. ",
-          nextQuestion:"1"
+          nextQuestion:"6"
         )
 
       # Question 6
