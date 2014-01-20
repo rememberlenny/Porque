@@ -1185,8 +1185,8 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"e.  Consider consultation with a colleague",
-          response:"Proceed",
-          nextQuestion:"19"
+          response:"You should always consider consultation with a colleague. Now what? ",
+          nextQuestion:"14"
         )
 
     # Question
@@ -1302,15 +1302,118 @@
     # Question
       # Question 18
         # Page 63
+        scenario2.questions.create!(
+          questionprompt: "Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):"
+        )
+        #Answers 9
+        scenario2.questions.last.answers.create!(
+          answeroption:"5.  Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+          response:"i.  IONM has not returned to baseline. What else? ",
+          nextQuestion:"18"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"6.  Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+          response:"i.  Upon examination, everything looks normal. What else? ",
+          nextQuestion:"18"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"7.  Both of the Above",
+          response:"i.  After clearing the mechanical causes for IONM change, it did not return to baseline. What else? ",
+          nextQuestion:"14"
+        )
 
     # Question
-      # Question 18
-        # Page 64
-
-    # Question
-      # Question 18
+      # Question 19
         # Page 65
+        scenario2.questions.create!(
+          questionprompt: "The SEP’s improved after a few minutes but the MEP’s were still lost. <br><br>Would you consider:"
+        )
+        #Answers 9
+        scenario2.questions.last.answers.create!(
+          answeroption:"12. IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
+          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"20. IV lidocaine 2mg/kg if blood flow to the spinal cord is the suspected reason for IOM changes",
+          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"14. Wake-up test",
+          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"15. Post-op imaging (CT, MRI, CT Myelography)",
+          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"16. Continuing Surgery",
+          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"17. Staging and continuing another day",
+          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"18. Discussing this decision with another attending surgeon",
+          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"16. Continuing Surgery",
+          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
 
     # Question
-      # Question 18
+      # Question 20
         # Page 66
+        scenario2.questions.create!(
+          questionprompt: "A wake-up test was performed and she was noted to be moving bilateral lower extremities. <br><br>Would you consider: "
+        )
+        #Answers 9
+        scenario2.questions.last.answers.create!(
+          answeroption:"4.  Continuing on with the surgery",
+          response:"i.  After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
+          nextQuestion:"21"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"5.  Staging and continuing on another day",
+          response:"i.  After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
+          nextQuestion:"21"
+        )
+        scenario2.questions.last.answers.create!(
+          answeroption:"6.  Discussing this decision with another attending surgeon. ",
+          response:"i.  After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
+          nextQuestion:"21"
+        )
+
+
+    # Question
+      # Question 21
+        # Page 67
+        scenario2.questions.create!(
+          questionprompt: "A decision to move forward with the surgery was made. Evoked Potentials continued to be stable and improved overtime. "
+        )
+        #Answers 9
+        scenario2.questions.last.answers.create!(
+          answeroption:"Next",
+          response:"Procede",
+          nextQuestion:"22"
+        )
+
+    # Question
+      # Question 22
+        # Page 68
+        scenario2.questions.create!(
+          questionprompt: "This case is complete.")
+        #A17
+        scenario2.questions.last.answers.create!(
+          answeroption:"Select another case",
+          nextQuestion:"[return to root]"
+        )
