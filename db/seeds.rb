@@ -814,33 +814,33 @@
           )
         #Answers 2
         scenario2.questions.last.answers.create!(
-          answeroption:"13. Stop case and announce to the room",
-          response:"i.  Now everyone is notified of the changes. How else can you gain control of the room?",
+          answeroption:"Stop case and announce to the room",
+          response:"Now everyone is notified of the changes. How else can you gain control of the room?",
           nextQuestion:"2"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"14. Eliminate extraneous stimuli (music, conversations, etc.)",
+          answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
           response:"Proceed",
           nextQuestion:"2"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"i.  The music has been stopped and you have eliminated extraneous stimuli. How else can you gain control of the room?",
+          answeroption:"The music has been stopped and you have eliminated extraneous stimuli. How else can you gain control of the room?",
           response:"Proceed",
           nextQuestion:"2"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"15. Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
-          response:"i.  You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+          answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
+          response:"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
           nextQuestion:"2"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"16. Anticipate need for intraoperative imaging if not readily available",
-          response:"i.  How else can you gain control of the room? [This choice should show up on the side] ",
+          answeroption:"Anticipate need for intraoperative imaging if not readily available",
+          response:"How else can you gain control of the room? [This choice should show up on the side] ",
           nextQuestion:"2"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"17. All of the above",
-          response:"i.  Now you have everyone’s attention and ready to take further action steps.",
+          answeroption:"All of the above",
+          response:"Now you have everyone’s attention and ready to take further action steps.",
           nextQuestion:"1"
         )
 
@@ -852,33 +852,33 @@
           )
         #Answers 3
         scenario2.questions.last.answers.create!(
-          answeroption:"15. Optimize MAP",
-          response:"i.  Blood pressure is normal; what else will you check?",
+          answeroption:"Optimize MAP",
+          response:"Blood pressure is normal; what else will you check?",
           nextQuestion:"3"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"16. Optimize Hematocrit",
-          response:"i.  There is no abnormality; what else will you check? ",
+          answeroption:"Optimize Hematocrit",
+          response:"There is no abnormality; what else will you check? ",
           nextQuestion:"3"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"17. Optimize Blood pH",
-          response:"i.  There is no abnormality; what else will you check?",
+          answeroption:"Optimize Blood pH",
+          response:"There is no abnormality; what else will you check?",
           nextQuestion:"3"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"18. Seek Normothermia",
-          response:"i.  There is no abnormality; what else will you check?",
+          answeroption:"Seek Normothermia",
+          response:"There is no abnormality; what else will you check?",
           nextQuestion:"3"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"19. Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
-          response:"i.  Need discussed; what else will you check?",
+          answeroption:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+          response:"Need discussed; what else will you check?",
           nextQuestion:"3"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"20. All of the Above",
-          response:"i.  All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
+          answeroption:"All of the Above",
+          response:"All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
           nextQuestion:"1"
         )
 
@@ -890,33 +890,33 @@
           )
         #Answers 4
         scenario2.questions.last.answers.create!(
-          answeroption:"15. Discuss status of inhalational agents with anesthesia",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Discuss status of inhalational agents with anesthesia",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"4"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"16. Check extent of neuromuscular blockade",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Check extent of neuromuscular blockade",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"4"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"17. Check electrode placement",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Check electrode placement",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"4"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"18. Determine pattern and timing of signal changes",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Determine pattern and timing of signal changes",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"4"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"19. Check limb/neck positioning; check limb position on table especially in unilateral loss",
-          response:"i.  Limb and neck are positioned properly. What else? ",
+          answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+          response:"Limb and neck are positioned properly. What else? ",
           nextQuestion:"4"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"20. All of the Above",
-          response:"i.  It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
+          answeroption:"All of the Above",
+          response:"It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
           nextQuestion:"1"
         )
 
@@ -928,18 +928,18 @@
           )
         #Answers 5
         scenario2.questions.last.answers.create!(
-          answeroption:"9.  Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
-          response:"i.  After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach",
+          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+          response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach",
           nextQuestion:"5"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"10. Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
-          response:"i.  Upon examination, everything looks normal. What else? ",
+          answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+          response:"Upon examination, everything looks normal. What else? ",
           nextQuestion:"5"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"11. Both of the Above",
-          response:"i.  After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach. You are alerted that the motor evoked potential monitoring had rapidly improved. ",
+          answeroption:"Both of the Above",
+          response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach. You are alerted that the motor evoked potential monitoring had rapidly improved. ",
           nextQuestion:"1"
         )
     # Question
@@ -950,18 +950,18 @@
           )
         #Answers 1
         scenario2.questions.last.answers.create!(
-          answeroption:"7.  Continue on with the surgery",
-          response:"i.  After discussion with another attending surgeon, you proceeded with instrumentation.",
+          answeroption:"Continue on with the surgery",
+          response:"After discussion with another attending surgeon, you proceeded with instrumentation.",
           nextQuestion:"7"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"8.  Stage and continue on another day",
-          response:"i.  After discussion with another attending surgeon, you proceeded with instrumentation.",
+          answeroption:"Stage and continue on another day",
+          response:"After discussion with another attending surgeon, you proceeded with instrumentation.",
           nextQuestion:"7"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"9.  Discuss this decision with another attending surgeon",
-          response:"i.  After discussion with another attending surgeon, you proceeded with instrumentation.",
+          answeroption:"Discuss this decision with another attending surgeon",
+          response:"After discussion with another attending surgeon, you proceeded with instrumentation.",
           nextQuestion:"7"
         )
 
@@ -986,27 +986,27 @@
           )
         #Answers 8
         scenario2.questions.last.answers.create!(
-          answeroption:"a.  Gain control of the room",
+          answeroption:"Gain control of the room",
           response:"Proceed",
           nextQuestion:"9"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"b.  Check anesthetic/systemic conditions of the patient",
+          answeroption:"Check anesthetic/systemic conditions of the patient",
           response:"Proceed",
           nextQuestion:"10"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"c.  Seek technical/neurophysiologic reasons for IONM changes",
+          answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
           response:"Proceed",
           nextQuestion:"11"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"d.  Seek surgery-related reasons for IONM changes",
+          answeroption:"Seek surgery-related reasons for IONM changes",
           response:"Proceed",
           nextQuestion:"12"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"e.  Consider consultation with a colleague",
+          answeroption:"Consider consultation with a colleague",
           response:"You should always consider consultation with a colleague. What else can you and your colleague do in order to pinpoint the reason to bring the IONM back to baseline?",
           nextQuestion:"8"
         )
@@ -1015,32 +1015,32 @@
       # Question 9
         # Page 51
         scenario2.questions.create!(
-          questionprompt: " In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          questionprompt: "In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"1.  Stop case and announce to the room",
-          response:"i.  Now everyone is notified of the changes. How else can you gain control of the room?",
+          answeroption:"Stop case and announce to the room",
+          response:"Now everyone is notified of the changes. How else can you gain control of the room?",
           nextQuestion:"9"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"2.  Eliminate extraneous stimuli (music, conversations, etc.)",
-          response:"i.  Music and conversations were very distracting at this time. <br><br>You ask for everyone to stop the music and get everyone’s attention towards finding why there are IONM changes.",
+          answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
+          response:"Music and conversations were very distracting at this time. <br><br>You ask for everyone to stop the music and get everyone’s attention towards finding why there are IONM changes.",
           nextQuestion:"13"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"3.  Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
-          response:"i.  You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+          answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
+          response:"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
           nextQuestion:"9"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"4.  Anticipate need for intraoperative imaging if not readily available",
-          response:"i.  How else can you gain control of the room? ",
+          answeroption:"Anticipate need for intraoperative imaging if not readily available",
+          response:"How else can you gain control of the room? ",
           nextQuestion:"9"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"5.  All of the above",
-          response:"i.  Now you have everyone’s attention and ready to take further action steps. ",
+          answeroption:"All of the above",
+          response:"Now you have everyone’s attention and ready to take further action steps. ",
           nextQuestion:"8"
         )
 
@@ -1048,37 +1048,37 @@
       # Question 10
         # Page 52
         scenario2.questions.create!(
-          questionprompt: " In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          questionprompt: "In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"1.  Optimize MAP",
-          response:"i.  There is no abnormality; what else will you check?",
+          answeroption:"Optimize MAP",
+          response:"There is no abnormality; what else will you check?",
           nextQuestion:"10"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"2.  Optimize Hematocrit",
-          response:"i.  There is no abnormality; what else will you check?",
+          answeroption:"Optimize Hematocrit",
+          response:"There is no abnormality; what else will you check?",
           nextQuestion:"10"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"3.  Optimize Blood pH",
-          response:"i.  There is no abnormality; what else will you check?",
+          answeroption:"Optimize Blood pH",
+          response:"There is no abnormality; what else will you check?",
           nextQuestion:"10"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"4.  Seek Normothermia",
-          response:"i.  There is no abnormality; what else will you check?",
+          answeroption:"Seek Normothermia",
+          response:"There is no abnormality; what else will you check?",
           nextQuestion:"10"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"5.  Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
-          response:"i.  Need discussed; what else will you check?",
+          answeroption:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+          response:"Need discussed; what else will you check?",
           nextQuestion:"10"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"6.  All of the Above",
-          response:"i.  All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
+          answeroption:"All of the Above",
+          response:"All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
           nextQuestion:"8"
         )
 
@@ -1090,33 +1090,33 @@
           )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"1.  Discuss status of inhalational agents with anesthesia",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Discuss status of inhalational agents with anesthesia",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"11"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"2.  Check extent of neuromuscular blockade",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Check extent of neuromuscular blockade",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"11"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"3.  Check electrode placement",
-          response:"i.  All electrodes are placed properly. What else? ",
+          answeroption:"Check electrode placement",
+          response:"All electrodes are placed properly. What else? ",
           nextQuestion:"11"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"4.  Determine pattern and timing of signal changes",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Determine pattern and timing of signal changes",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"11"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"5.  Check limb/neck positioning; check limb position on table especially in unilateral loss",
-          response:"i.  Limb and neck are positioned properly. What else? ",
+          answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+          response:"Limb and neck are positioned properly. What else? ",
           nextQuestion:"11"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"6.  All of the Above",
-          response:"i.  It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
+          answeroption:"All of the Above",
+          response:"It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
           nextQuestion:"9"
         )
 
@@ -1128,18 +1128,18 @@
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"1.  Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
-          response:"i.  No abnormalities were found. What else?",
+          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+          response:"No abnormalities were found. What else?",
           nextQuestion:"12"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"2.  Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
-          response:"i.  Upon examination, everything looks normal. What else? ",
+          answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+          response:"Upon examination, everything looks normal. What else? ",
           nextQuestion:"12"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"3.  Both of the Above",
-          response:"i.  Everything appears normal. What else can be done? ",
+          answeroption:"Both of the Above",
+          response:"Everything appears normal. What else can be done? ",
           nextQuestion:"12"
         )
 
@@ -1164,27 +1164,27 @@
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"a.  Gain control of the room",
+          answeroption:"Gain control of the room",
           response:"Proceed",
           nextQuestion:"15"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"b.  Check anesthetic/systemic conditions of the patient",
+          answeroption:"Check anesthetic/systemic conditions of the patient",
           response:"Proceed",
           nextQuestion:"16"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"c.  Seek technical/neurophysiologic reasons for IONM changes",
+          answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
           response:"Proceed",
           nextQuestion:"17"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"d.  Seek surgery-related reasons for IONM changes",
+          answeroption:"Seek surgery-related reasons for IONM changes",
           response:"Proceed",
           nextQuestion:"18"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"e.  Consider consultation with a colleague",
+          answeroption:"Consider consultation with a colleague",
           response:"You should always consider consultation with a colleague. Now what? ",
           nextQuestion:"14"
         )
@@ -1197,34 +1197,29 @@
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"7.  Stop case and announce to room",
-          response:"i.  Now everyone is notified of the changes. How else can you gain control of the room?",
+          answeroption:"Stop case and announce to room",
+          response:"Now everyone is notified of the changes. How else can you gain control of the room?",
           nextQuestion:"15"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"8.  Eliminate extraneous stimuli (music, conversations, etc.)",
+          answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
           response:"ii. The music has already been stopped and you have already eliminated extraneous stimuli. How else can you gain control of the room?",
           nextQuestion:"15"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"9.  Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist support",
-          response:"iii.  You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+          answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist support",
+          response:"iiYou have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
           nextQuestion:"15"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"10. Anticipate need for intraoperative imaging if not readily available",
+          answeroption:"Anticipate need for intraoperative imaging if not readily available",
           response:"iv. How else can you gain control of the room? ",
           nextQuestion:"15"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"11. All of the above",
+          answeroption:"All of the above",
           response:"v.  Now you have everyone’s attention and ready to take further action steps. ",
           nextQuestion:"15"
-        )
-        scenario2.questions.last.answers.create!(
-          answeroption:"",
-          response:"",
-          nextQuestion:"14"
         )
     # Question
       # Question 16
@@ -1234,28 +1229,28 @@
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"8.  Optimize MAP",
-          response:"i.  MAP was optimized to 100 but there was no resolution. What else can be done? ",
+          answeroption:"Optimize MAP",
+          response:"MAP was optimized to 100 but there was no resolution. What else can be done? ",
           nextQuestion:"16"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"9.  Optimize Hematocrit",
-          response:"i.  No abnormalities found. What else can be done? ",
+          answeroption:"Optimize Hematocrit",
+          response:"No abnormalities found. What else can be done? ",
           nextQuestion:"16"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"10. Optimize Blood pH",
-          response:"i.  No abnormalities found. What else can be done? ",
+          answeroption:"Optimize Blood pH",
+          response:"No abnormalities found. What else can be done? ",
           nextQuestion:"16"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"12. Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
-          response:"i.  Discussion of a potential wake-up test with the attending anesthesiologist is important at this point. A wake-up was conducted. ",
+          answeroption:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+          response:"Discussion of a potential wake-up test with the attending anesthesiologist is important at this point. A wake-up was conducted. ",
           nextQuestion:"18"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"13. All of the Above",
-          response:"i.  Discussion of a potential wake-up test with the attending anesthesiologist is important at this point. A wake-up was conducted. ",
+          answeroption:"All of the Above",
+          response:"Discussion of a potential wake-up test with the attending anesthesiologist is important at this point. A wake-up was conducted. ",
           nextQuestion:"18"
         )
 
@@ -1268,33 +1263,33 @@
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"8.  Discuss status of inhalational agents with anesthesia",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Discuss status of inhalational agents with anesthesia",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"17"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"9.  Check extent of neuromuscular blockade",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Check extent of neuromuscular blockade",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"17"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"10. Check electrode placement",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Check electrode placement",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"17"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"11. Determine pattern and timing of signal changes",
-          response:"i.  IONM has not returned to baseline. What else?",
+          answeroption:"Determine pattern and timing of signal changes",
+          response:"IONM has not returned to baseline. What else?",
           nextQuestion:"17"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"12. Check limb/neck positioning; check limb position on table especially in unilateral loss",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"17"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"13. All of the Above",
-          response:"i.  It is important to consider all these choices, however did not return MEP’s to baseline. What next? ",
+          answeroption:"All of the Above",
+          response:"It is important to consider all these choices, however did not return MEP’s to baseline. What next? ",
           nextQuestion:"14"
         )
 
@@ -1307,18 +1302,18 @@
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"5.  Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
-          response:"i.  IONM has not returned to baseline. What else? ",
+          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"18"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"6.  Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
-          response:"i.  Upon examination, everything looks normal. What else? ",
+          answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+          response:"Upon examination, everything looks normal. What else? ",
           nextQuestion:"18"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"7.  Both of the Above",
-          response:"i.  After clearing the mechanical causes for IONM change, it did not return to baseline. What else? ",
+          answeroption:"Both of the Above",
+          response:"After clearing the mechanical causes for IONM change, it did not return to baseline. What else? ",
           nextQuestion:"14"
         )
 
@@ -1330,43 +1325,43 @@
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"12. IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
-          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          answeroption:"IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
           nextQuestion:"20"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"20. IV lidocaine 2mg/kg if blood flow to the spinal cord is the suspected reason for IOM changes",
-          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          answeroption:"IV lidocaine 2mg/kg if blood flow to the spinal cord is the suspected reason for IOM changes",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
           nextQuestion:"20"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"14. Wake-up test",
-          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          answeroption:"Wake-up test",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
           nextQuestion:"20"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"15. Post-op imaging (CT, MRI, CT Myelography)",
-          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          answeroption:"Post-op imaging (CT, MRI, CT Myelography)",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
           nextQuestion:"20"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"16. Continuing Surgery",
-          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          answeroption:"Continuing Surgery",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
           nextQuestion:"20"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"17. Staging and continuing another day",
-          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          answeroption:"Staging and continuing another day",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
           nextQuestion:"20"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"18. Discussing this decision with another attending surgeon",
-          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          answeroption:"Discussing this decision with another attending surgeon",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
           nextQuestion:"20"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"16. Continuing Surgery",
-          response:"i.  After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          answeroption:"Continuing Surgery",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
           nextQuestion:"20"
         )
 
@@ -1378,18 +1373,18 @@
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
-          answeroption:"4.  Continuing on with the surgery",
-          response:"i.  After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
+          answeroption:"Continuing on with the surgery",
+          response:"After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
           nextQuestion:"21"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"5.  Staging and continuing on another day",
-          response:"i.  After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
+          answeroption:"Staging and continuing on another day",
+          response:"After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
           nextQuestion:"21"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"6.  Discussing this decision with another attending surgeon. ",
-          response:"i.  After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
+          answeroption:"Discussing this decision with another attending surgeon. ",
+          response:"After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
           nextQuestion:"21"
         )
 
@@ -1398,7 +1393,7 @@
       # Question 21
         # Page 67
         scenario2.questions.create!(
-          questionprompt: "A decision to move forward with the surgery was made. Evoked Potentials continued to be stable and improved overtime. "
+          questionprompt: "A decision to move forward with the surgery was made. Evoked Potentials continued to be stable and improved overtime."
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
