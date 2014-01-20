@@ -109,7 +109,7 @@
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Anticipate need for intraoperative imaging if not readily available",
-        response:"How else can you gain control of the room? [",
+        response:"How else can you gain control of the room?",
         nextQuestion:"2"
       )
       scenario1.questions.last.answers.create!(
@@ -286,7 +286,7 @@
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Anticipate need for intraoperative imaging if not readily available",
-        response:"How else can you gain control of the room? [This choice should show up on the side] ",
+        response:"How else can you gain control of the room?",
         nextQuestion:"9"
       )
       scenario1.questions.last.answers.create!(
@@ -566,7 +566,7 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Anticipate need for intraoperative imaging if not readily available",
-          response:"How else can you gain control of the room? [",
+          response:"How else can you gain control of the room?",
           nextQuestion:"2"
         )
         scenario2.questions.last.answers.create!(
@@ -835,7 +835,7 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Anticipate need for intraoperative imaging if not readily available",
-          response:"How else can you gain control of the room? [This choice should show up on the side] ",
+          response:"How else can you gain control of the room? This choice should show up on the side] ",
           nextQuestion:"2"
         )
         scenario2.questions.last.answers.create!(
