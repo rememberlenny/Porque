@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20140116061654) do
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
 
   create_table "answers", force: true do |t|
-    t.string   "answeroption"
+    t.text     "answeroption"
     t.integer  "question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -70,7 +70,7 @@ ActiveRecord::Schema.define(version: 20140116061654) do
 
   create_table "scenarios", force: true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description"
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
