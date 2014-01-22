@@ -39,12 +39,12 @@
     scenario1 = Scenario.create!(
       name: "Case 1",
       description: "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image+2+-+X-Ray.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image+20+-+X-Ray.jpg")
 
     # Intro
       # Intro 1
       scenario1.intro.create!(
-        content: "In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Screen%2BShot%2B2014-01-22%2Bat%2B1.24.33%2BAM.jpg'><br>In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>At any point of the simulator, you will have access to the checklist by clicking on the button to the left indicated as “Checklist.”<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
       )
 
       # Intro 3
@@ -185,7 +185,7 @@
       )
       scenario1.questions.last.answers.create!(
         answeroption:"All of the Above",
-        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'><ul>You checked all of the following: <li>Discuss status of inhalational agents with anesthesia</li> <li>Check extent of neuromuscular blockade</li> <li>Check electrode placement</li> <li>Determine pattern and timing of signal changes</li> <li>Check limb/neck positioning; check limb position on table especially in unilateral loss</li> <li>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.</li></ul>",
+        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+6.JPG'>You checked all of the following: <br><br>-Discuss status of inhalational agents with anesthesia<br>-Check extent of neuromuscular blockade<br>-Check electrode placement<br>-Determine pattern and timing of signal changes<br>-Check limb/neck positioning; check limb position on table especially in unilateral loss<br>-As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.",
         nextQuestion:"6"
       )
 
@@ -447,11 +447,11 @@
 
     #Q15
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+16.JPG'>Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made. ")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+16.JPG'>Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made. <br><br>Bilateral MEP’s and left-sided SSEP’s were severely diminished. ")
       #A15
       scenario1.questions.last.answers.create!(
-        answeroption:"See results",
-        response:"Bilateral MEP’s and left-sided SSEP’s were severely diminished. ",
+        answeroption:"Next",
+        response:"Proceed",
         nextQuestion:"16"
       )
 
@@ -494,7 +494,7 @@
       # Intro 1
       # Page 26
       scenario2.intro.create!(
-        content: "<imgr src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+20+-+X-Ray.jpg'>In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Screen%2BShot%2B2014-01-22%2Bat%2B1.24.33%2BAM.jpg'><br>In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>At any point of the simulator, you will have access to the checklist by clicking on the button to the left indicated as “Checklist.”<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
       )
 
       # Intro 1
@@ -607,8 +607,7 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"All of the Above",
-          response:"All these points are vital to check; however there are no )systemic abnormalities found. IONM has not returned to baseline. What
-          else? ",
+          response:"All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
           nextQuestion:"1"
         )
 
@@ -760,7 +759,7 @@
     # Intro
       # Intro 0
       scenario2.intro.create!(
-        content: "In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
+        content: "In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>At any point of the simulator, you will have access to the checklist by clicking on the button to the left indicated as “Checklist.”<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
       )
 
       # Intro 1
@@ -842,7 +841,7 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Anticipate need for intraoperative imaging if not readily available",
-          response:"How else can you gain control of the room? This choice should show up on the side] ",
+          response:"How else can you gain control of the room? ",
           nextQuestion:"2"
         )
         scenario2.questions.last.answers.create!(
@@ -1223,23 +1222,23 @@
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
-          response:"ii. The music has already been stopped and you have already eliminated extraneous stimuli. How else can you gain control of the room?",
+          response:"The music has already been stopped and you have already eliminated extraneous stimuli. How else can you gain control of the room?",
           nextQuestion:"15"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist support",
-          response:"iiYou have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+          response:"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
           nextQuestion:"15"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Anticipate need for intraoperative imaging if not readily available",
-          response:"iv. How else can you gain control of the room? ",
+          response:"How else can you gain control of the room? ",
           nextQuestion:"15"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"All of the above",
-          response:"v.  Now you have everyone’s attention and ready to take further action steps. ",
-          nextQuestion:"15"
+          response:"Now you have everyone’s attention and ready to take further action steps. ",
+          nextQuestion:"14"
         )
     # Question
       # Question 16
@@ -1436,6 +1435,669 @@
           questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+11.jpg'> This case is complete.")
         #A17
         scenario2.questions.last.answers.create!(
+          answeroption:"Select another case",
+          nextQuestion:"[return to root]"
+        )
+
+
+# Question
+      # Question 1
+        # Page 40
+        # (Insert Video 3 no sound - automatically begin as page open; continue to repeat)
+        scenario3.questions.create!(
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
+          )
+        #Answers 1
+        scenario3.questions.last.answers.create!(
+          answeroption:"Gain control of the room",
+          response:"Proceed",
+          nextQuestion:"2"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check anesthetic/systemic conditions of the patient",
+          response:"Proceed",
+          nextQuestion:"3"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
+          response:"Proceed",
+          nextQuestion:"4"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Seek surgery-related reasons for IONM changes",
+          response:"Proceed",
+          nextQuestion:"5"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Consider consultation with a colleague",
+          response:"You should always consider consultation with a colleague. What else can you and your colleague do in order to pinpoint the reason to bring the IONM back to baseline?",
+          nextQuestion:"1"
+        )
+
+    # Question
+      # Question 2
+        # Page 41
+        # (Insert Image 11)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+11.jpg'>In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          )
+        #Answers 2
+        scenario3.questions.last.answers.create!(
+          answeroption:"Stop case and announce to the room",
+          response:"Now everyone is notified of the changes. How else can you gain control of the room?",
+          nextQuestion:"2"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
+          response:"Proceed",
+          nextQuestion:"2"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"The music has been stopped and you have eliminated extraneous stimuli. How else can you gain control of the room?",
+          response:"Proceed",
+          nextQuestion:"2"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
+          response:"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+          nextQuestion:"2"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Anticipate need for intraoperative imaging if not readily available",
+          response:"How else can you gain control of the room? ",
+          nextQuestion:"2"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"All of the above",
+          response:"Now you have everyone’s attention and ready to take further action steps.",
+          nextQuestion:"1"
+        )
+
+    # Question
+      # Question 3
+        # Page 42
+        # (Insert Image 12)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+12.jpg'> Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):"
+          )
+        #Answers 3
+        scenario3.questions.last.answers.create!(
+          answeroption:"Optimize MAP",
+          response:"Blood pressure is normal; what else will you check?",
+          nextQuestion:"3"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Optimize Hematocrit",
+          response:"There is no abnormality; what else will you check? ",
+          nextQuestion:"3"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Optimize Blood pH",
+          response:"There is no abnormality; what else will you check?",
+          nextQuestion:"3"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Seek Normothermia",
+          response:"There is no abnormality; what else will you check?",
+          nextQuestion:"3"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+          response:"Need discussed; what else will you check?",
+          nextQuestion:"3"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"All of the Above",
+          response:"All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
+          nextQuestion:"1"
+        )
+
+    # Question
+      # Question 4
+        # Page 43
+        # (Insert Image 29)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+29.JPG'> Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          )
+        #Answers 4
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss status of inhalational agents with anesthesia",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"4"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check extent of neuromuscular blockade",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"4"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check electrode placement",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"4"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Determine pattern and timing of signal changes",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"4"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+          response:"Limb and neck are positioned properly. What else? ",
+          nextQuestion:"4"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"All of the Above",
+          response:"It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
+          nextQuestion:"1"
+        )
+
+    # Question
+      # Question 5
+        # Page 44
+        # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
+        scenario3.questions.create!(
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/CJYxjjP846U&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          )
+        #Answers 5
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+          response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach",
+          nextQuestion:"5"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+          response:"Upon examination, everything looks normal. What else? ",
+          nextQuestion:"5"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Both of the Above",
+          response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach. You are alerted that the motor evoked potential monitoring had rapidly improved. ",
+          nextQuestion:"1"
+        )
+    # Question
+      # Question 6
+        # Page 46
+        # (Insert Video 10 00:00 to 00:10 no sound- automatically begin as page open; continue to repeat)
+        scenario3.questions.create!(
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=10&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> You are informed that after 2 minutes the evoked potentials improved and normalized. At this point you would: "
+          )
+        #Answers 1
+        scenario3.questions.last.answers.create!(
+          answeroption:"Continue on with the surgery",
+          response:"After discussion with another attending surgeon, you proceeded with instrumentation.",
+          nextQuestion:"7"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Stage and continue on another day",
+          response:"After discussion with another attending surgeon, you proceeded with instrumentation.",
+          nextQuestion:"7"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss this decision with another attending surgeon",
+          response:"After discussion with another attending surgeon, you proceeded with instrumentation.",
+          nextQuestion:"7"
+        )
+
+    # Question
+      # Question 7
+        # Page 49
+        # (Insert Image 34)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+34.jpg'> You proceeded with the instrumentation in the upper thoracic spine despite the surrounding distractions. <br><br> Patient is given an infusion of propofol and you are informed once again that there was a loss of lower extremity motor-evoked potentials."
+          )
+        #Answers 1
+        scenario3.questions.last.answers.create!(
+          answeroption:"Next",
+          response:"Proceed",
+          nextQuestion:"8"
+        )
+
+    # Question
+      # Question 8
+        # Page 50
+        # (Insert Video 3 no sound - automatically begin as page open; continue to repeat)
+        scenario3.questions.create!(
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
+          )
+        #Answers 8
+        scenario3.questions.last.answers.create!(
+          answeroption:"Gain control of the room",
+          response:"Proceed",
+          nextQuestion:"9"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check anesthetic/systemic conditions of the patient",
+          response:"Proceed",
+          nextQuestion:"10"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
+          response:"Proceed",
+          nextQuestion:"11"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Seek surgery-related reasons for IONM changes",
+          response:"Proceed",
+          nextQuestion:"12"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Consider consultation with a colleague",
+          response:"You should always consider consultation with a colleague. What else can you and your colleague do in order to pinpoint the reason to bring the IONM back to baseline?",
+          nextQuestion:"8"
+        )
+
+    # Question
+      # Question 9
+        # Page 51
+        # (Insert Video 8 no sound- automatically begin as page open; continue to repeat)
+        scenario3.questions.create!(
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/a7FMQ9QuMng&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Stop case and announce to the room",
+          response:"Now everyone is notified of the changes. How else can you gain control of the room?",
+          nextQuestion:"9"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
+          response:"Music and conversations were very distracting at this time. <br><br>You ask for everyone to stop the music and get everyone’s attention towards finding why there are IONM changes.",
+          nextQuestion:"13"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
+          response:"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+          nextQuestion:"9"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Anticipate need for intraoperative imaging if not readily available",
+          response:"How else can you gain control of the room? ",
+          nextQuestion:"9"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"All of the above",
+          response:"Now you have everyone’s attention and ready to take further action steps. ",
+          nextQuestion:"8"
+        )
+
+    # Question
+      # Question 10
+        # Page 52
+        # (Insert Image 12)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+12.jpg'> In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Optimize MAP",
+          response:"There is no abnormality; what else will you check?",
+          nextQuestion:"10"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Optimize Hematocrit",
+          response:"There is no abnormality; what else will you check?",
+          nextQuestion:"10"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Optimize Blood pH",
+          response:"There is no abnormality; what else will you check?",
+          nextQuestion:"10"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Seek Normothermia",
+          response:"There is no abnormality; what else will you check?",
+          nextQuestion:"10"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+          response:"Need discussed; what else will you check?",
+          nextQuestion:"10"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"All of the Above",
+          response:"All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
+          nextQuestion:"8"
+        )
+
+    # Question
+      # Question 11
+        # Page 53
+        # (Insert Image 22)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+22.JPG'> Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss status of inhalational agents with anesthesia",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"11"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check extent of neuromuscular blockade",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"11"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check electrode placement",
+          response:"All electrodes are placed properly. What else? ",
+          nextQuestion:"11"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Determine pattern and timing of signal changes",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"11"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+          response:"Limb and neck are positioned properly. What else? ",
+          nextQuestion:"11"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"All of the Above",
+          response:"It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
+          nextQuestion:"9"
+        )
+
+    # Question
+      # Question 12
+        # Page 54
+        # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
+        scenario3.questions.create!(
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+          response:"No abnormalities were found. What else?",
+          nextQuestion:"12"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+          response:"Upon examination, everything looks normal. What else? ",
+          nextQuestion:"12"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Both of the Above",
+          response:"Everything appears normal. What else can be done? ",
+          nextQuestion:"12"
+        )
+
+    # Question
+      # Question 13
+        # Page 58
+        # (Insert Image 17)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+17.JPG'> After all distractions were eliminated, an effort to improve potentials was made. "
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Proceed",
+          response:"Proceed",
+          nextQuestion:"14"
+        )
+
+    # Question
+      # Question 14
+        # Page 59
+        # (Insert Image 35)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+35.jpg'> After all distractions were eliminated, an effort to improve potentials was made. "
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Gain control of the room",
+          response:"Proceed",
+          nextQuestion:"15"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check anesthetic/systemic conditions of the patient",
+          response:"Proceed",
+          nextQuestion:"16"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
+          response:"Proceed",
+          nextQuestion:"17"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Seek surgery-related reasons for IONM changes",
+          response:"Proceed",
+          nextQuestion:"18"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Consider consultation with a colleague",
+          response:"You should always consider consultation with a colleague. Now what? ",
+          nextQuestion:"14"
+        )
+
+    # Question
+      # Question 15
+        # Page 60
+        # (Insert Image 36)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+36.jpg'> In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Stop case and announce to room",
+          response:"Now everyone is notified of the changes. How else can you gain control of the room?",
+          nextQuestion:"15"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
+          response:"The music has already been stopped and you have already eliminated extraneous stimuli. How else can you gain control of the room?",
+          nextQuestion:"15"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist support",
+          response:"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+          nextQuestion:"15"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Anticipate need for intraoperative imaging if not readily available",
+          response:"How else can you gain control of the room? ",
+          nextQuestion:"15"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"All of the above",
+          response:"Now you have everyone’s attention and ready to take further action steps. ",
+          nextQuestion:"14"
+        )
+    # Question
+      # Question 16
+        # Page 61
+        # (Insert Image 12)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+12.jpg'> Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):"
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Optimize MAP",
+          response:"MAP was optimized to 100 but there was no resolution. What else can be done? ",
+          nextQuestion:"16"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Optimize Hematocrit",
+          response:"No abnormalities found. What else can be done? ",
+          nextQuestion:"16"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Optimize Blood pH",
+          response:"No abnormalities found. What else can be done? ",
+          nextQuestion:"16"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
+          response:"Discussion of a potential wake-up test with the attending anesthesiologist is important at this point. A wake-up was conducted. ",
+          nextQuestion:"18"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"All of the Above",
+          response:"Discussion of a potential wake-up test with the attending anesthesiologist is important at this point. A wake-up was conducted. ",
+          nextQuestion:"18"
+        )
+
+
+    # Question
+      # Question 17
+        # Page 62
+        # (Insert Image 29)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+29.JPG'> Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):"
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss status of inhalational agents with anesthesia",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"17"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check extent of neuromuscular blockade",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"17"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check electrode placement",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"17"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Determine pattern and timing of signal changes",
+          response:"IONM has not returned to baseline. What else?",
+          nextQuestion:"17"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"17"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"All of the Above",
+          response:"It is important to consider all these choices, however did not return MEP’s to baseline. What next? ",
+          nextQuestion:"14"
+        )
+
+
+    # Question
+      # Question 18
+        # Page 63
+        # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
+        scenario3.questions.create!(
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):"
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+          response:"IONM has not returned to baseline. What else? ",
+          nextQuestion:"18"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
+          response:"Upon examination, everything looks normal. What else? ",
+          nextQuestion:"18"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Both of the Above",
+          response:"After clearing the mechanical causes for IONM change, it did not return to baseline. What else? ",
+          nextQuestion:"14"
+        )
+
+    # Question
+      # Question 19
+        # Page 65
+        # (Insert Image 26)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+26.JPG'> The SEP’s improved after a few minutes but the MEP’s were still lost. <br><br>Would you consider:"
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"IV lidocaine 2mg/kg if blood flow to the spinal cord is the suspected reason for IOM changes",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Wake-up test",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Post-op imaging (CT, MRI, CT Myelography)",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Continuing Surgery",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Staging and continuing another day",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discussing this decision with another attending surgeon",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Continuing Surgery",
+          response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
+          nextQuestion:"20"
+        )
+
+    # Question
+      # Question 20
+        # Page 66
+        # (Insert Image 37)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+37.JPG'> A wake-up test was performed and she was noted to be moving bilateral lower extremities. <br><br>Would you consider: "
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Continuing on with the surgery",
+          response:"After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
+          nextQuestion:"21"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Staging and continuing on another day",
+          response:"After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
+          nextQuestion:"21"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Discussing this decision with another attending surgeon. ",
+          response:"After discussion with another attending surgeon, it was decided to continue on with the surgery. ",
+          nextQuestion:"21"
+        )
+
+
+    # Question
+      # Question 21
+        # Page 67
+        # (Insert Video 6 00:03 to end no sound- automatically begin as page open; continue to repeat)
+        scenario3.questions.create!(
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/K1YXuTznM1c&start=03&end=15&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> A decision to move forward with the surgery was made. Evoked Potentials continued to be stable and improved overtime."
+        )
+        #Answers 9
+        scenario3.questions.last.answers.create!(
+          answeroption:"Next",
+          response:"Procede",
+          nextQuestion:"22"
+        )
+
+    # Question
+      # Question 22
+        # Page 68
+        # (Insert Image 11)
+        scenario3.questions.create!(
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image+11.jpg'> This case is complete.")
+        #A17
+        scenario3.questions.last.answers.create!(
           answeroption:"Select another case",
           nextQuestion:"[return to root]"
         )
