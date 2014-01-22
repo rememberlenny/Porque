@@ -49,7 +49,7 @@
 
       # Intro 3
       scenario1.intro.create!(
-        content: "<iframe width='560' height='315' src='http://www.youtube.com/embed/biwNVnPF25E?start=35&end=60&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees."
+        content: "<iframe width='560' height='315' src='http://www.youtube.com/embed/biwNVnPF25E?start=35&end=60&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees."
       )
 
       # Intro 2
@@ -191,7 +191,7 @@
 
     #Q5
       scenario1.questions.create!(
-        questionprompt: " <iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
+        questionprompt: " <iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
       #A5
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
@@ -241,7 +241,7 @@
 
     #Q8
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/K1YXuTznM1c?start=3&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>What will you do next? (pick one to move forward in the intervention):")
+        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/K1YXuTznM1c?start=3&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>What will you do next? (pick one to move forward in the intervention):")
       #A8
       scenario1.questions.last.answers.create!(
         answeroption:"Gain control of the room",
@@ -367,7 +367,7 @@
 
     #Q12
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
+        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
       #A12
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
@@ -651,7 +651,7 @@
       # Question 5
         # Page 31
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
         scenario2.questions.last.answers.create!(
           answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
@@ -672,7 +672,7 @@
       # Question 6
         # Page 33
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/lO0rLFW_tjo?start=40&end=80&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> After the IONM returns to baseline, you:"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/lO0rLFW_tjo?start=40&end=80&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> After the IONM returns to baseline, you:"
           )
 
         scenario2.questions.last.answers.create!(
@@ -934,7 +934,7 @@
         # Page 44
         # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/CJYxjjP846U&start=0&end=19&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/CJYxjjP846U&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
         #Answers 5
         scenario2.questions.last.answers.create!(
@@ -957,7 +957,7 @@
         # Page 46
         # (Insert Video 10 00:00 to 00:10 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=10&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> You are informed that after 2 minutes the evoked potentials improved and normalized. At this point you would: "
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=10&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> You are informed that after 2 minutes the evoked potentials improved and normalized. At this point you would: "
           )
         #Answers 1
         scenario2.questions.last.answers.create!(
@@ -1029,7 +1029,7 @@
         # Page 51
         # (Insert Video 8 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/a7FMQ9QuMng&start=0&end=19&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/a7FMQ9QuMng&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
         #Answers 9
         scenario2.questions.last.answers.create!(
@@ -1141,7 +1141,7 @@
         # Page 54
         # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
@@ -1321,7 +1321,7 @@
         # Page 63
         # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):"
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
@@ -1419,7 +1419,7 @@
         # Page 67
         # (Insert Video 6 00:03 to end no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/K1YXuTznM1c&start=03&end=15&version=3&autoplay=1&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> A decision to move forward with the surgery was made. Evoked Potentials continued to be stable and improved overtime."
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/K1YXuTznM1c&start=03&end=15&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> A decision to move forward with the surgery was made. Evoked Potentials continued to be stable and improved overtime."
         )
         #Answers 9
         scenario2.questions.last.answers.create!(
