@@ -748,10 +748,15 @@
   #Scenario 3
 
     scenario2 = Scenario.create!(
-      name: "Case 2",
+    #(Insert X-RAY Image 27)
+
+      name: "Case 3",
       description: "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.",
       image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image+25.jpg")
 
+
+
+    # (Insert Image 33)
     # Intro
       # Intro 0
       scenario2.intro.create!(
@@ -776,6 +781,7 @@
     # Question
       # Question 1
         # Page 40
+        # (Insert Video 3 no sound - automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
           questionprompt: "What will you do next? (pick one to move forward in the intervention):"
           )
@@ -809,6 +815,7 @@
     # Question
       # Question 2
         # Page 41
+        # (Insert Image 11)
         scenario2.questions.create!(
           questionprompt: "In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
@@ -847,6 +854,7 @@
     # Question
       # Question 3
         # Page 42
+        # (Insert Image 12)
         scenario2.questions.create!(
           questionprompt: "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
@@ -885,6 +893,7 @@
     # Question
       # Question 4
         # Page 43
+        # (Insert Image 29)
         scenario2.questions.create!(
           questionprompt: "Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
@@ -923,6 +932,7 @@
     # Question
       # Question 5
         # Page 44
+        # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
           questionprompt: "Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
@@ -945,6 +955,7 @@
     # Question
       # Question 6
         # Page 46
+        # (Insert Video 10 00:00 to 00:10 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
           questionprompt: "You are informed that after 2 minutes the evoked potentials improved and normalized. At this point you would: "
           )
@@ -968,6 +979,7 @@
     # Question
       # Question 7
         # Page 49
+        # (Insert Image 34)
         scenario2.questions.create!(
           questionprompt: "You proceeded with the instrumentation in the upper thoracic spine despite the surrounding distractions. <br><br> Patient is given an infusion of propofol and you are informed once again that there was a loss of lower extremity motor-evoked potentials."
           )
@@ -981,6 +993,7 @@
     # Question
       # Question 8
         # Page 50
+        # (Insert Video 3 no sound - automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
           questionprompt: "What will you do next? (pick one to move forward in the intervention):"
           )
@@ -1014,6 +1027,7 @@
     # Question
       # Question 9
         # Page 51
+        # (Insert Video 8 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
           questionprompt: "In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
@@ -1047,6 +1061,7 @@
     # Question
       # Question 10
         # Page 52
+        # (Insert Image 12)
         scenario2.questions.create!(
           questionprompt: "In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
@@ -1085,6 +1100,7 @@
     # Question
       # Question 11
         # Page 53
+        # (Insert Image 22)
         scenario2.questions.create!(
           questionprompt: "Seek technical/neurophysiologic reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
@@ -1123,6 +1139,7 @@
     # Question
       # Question 12
         # Page 54
+        # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
           questionprompt: "Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
         )
@@ -1146,6 +1163,7 @@
     # Question
       # Question 13
         # Page 58
+        # (Insert Image 17)
         scenario2.questions.create!(
           questionprompt: "After all distractions were eliminated, an effort to improve potentials was made. "
         )
@@ -1159,6 +1177,7 @@
     # Question
       # Question 14
         # Page 59
+        # (Insert Image 35)
         scenario2.questions.create!(
           questionprompt: "After all distractions were eliminated, an effort to improve potentials was made. "
         )
@@ -1192,6 +1211,7 @@
     # Question
       # Question 15
         # Page 60
+        # (Insert Image 36)
         scenario2.questions.create!(
           questionprompt: "In what methods will you gain control of the room (pick one to create the best environment for this situation):"
         )
@@ -1224,6 +1244,7 @@
     # Question
       # Question 16
         # Page 61
+        # (Insert Image 12)
         scenario2.questions.create!(
           questionprompt: "Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):"
         )
@@ -1258,6 +1279,7 @@
     # Question
       # Question 17
         # Page 62
+        # (Insert Image 29)
         scenario2.questions.create!(
           questionprompt: "Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):"
         )
@@ -1297,6 +1319,7 @@
     # Question
       # Question 18
         # Page 63
+        # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
           questionprompt: "Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):"
         )
@@ -1320,6 +1343,7 @@
     # Question
       # Question 19
         # Page 65
+        # (Insert Image 26)
         scenario2.questions.create!(
           questionprompt: "The SEP’s improved after a few minutes but the MEP’s were still lost. <br><br>Would you consider:"
         )
@@ -1368,6 +1392,7 @@
     # Question
       # Question 20
         # Page 66
+        # (Insert Image 37)
         scenario2.questions.create!(
           questionprompt: "A wake-up test was performed and she was noted to be moving bilateral lower extremities. <br><br>Would you consider: "
         )
@@ -1392,6 +1417,7 @@
     # Question
       # Question 21
         # Page 67
+        # (Insert Video 6 00:03 to end no sound- automatically begin as page open; continue to repeat)
         scenario2.questions.create!(
           questionprompt: "A decision to move forward with the surgery was made. Evoked Potentials continued to be stable and improved overtime."
         )
@@ -1405,6 +1431,7 @@
     # Question
       # Question 22
         # Page 68
+        # (Insert Image 11)
         scenario2.questions.create!(
           questionprompt: "This case is complete.")
         #A17
