@@ -15,7 +15,7 @@ $(document).ready(function(){
   centerImage();
 });
 
-$('.answer-choice').on('click', function(){
+$('.answer-choice').on('vclick', function(){
   that = this;
   removeAllClickHandles();
   addClickPointer(that);
@@ -26,13 +26,13 @@ $('.answer-choice').on('click', function(){
   setUpResponseModal();
 });
 
-$('button').on('click', function(){
+$('button').on('vclick', function(){
   passClickedToSave();
   checkForClicked();
   loadDataIntoModal();
 });
 
-$('.hint-button').on('click', function(){
+$('.hint-button').on('vclick', function(){
   highlightProceed();
 });
 
