@@ -1,3 +1,4 @@
+
 var $item,
     $this,
     that,
@@ -10,6 +11,7 @@ var $item,
     buttonChecked = false;
 
 $(document).ready(function(){
+  closeModal();
   checkIfNoOptions();
   centerIframe();
   centerImage();
@@ -30,11 +32,20 @@ $('button').on('vclick', function(){
   passClickedToSave();
   checkForClicked();
   loadDataIntoModal();
+  replaceAlertWithClose();
 });
 
 $('.hint-button').on('vclick', function(){
   highlightProceed();
 });
+
+function replaceAlertWithClose(){
+  $('.alert.button').attr('href', 'javascript:closeModal();')
+}
+
+function closeModal(){
+  $('.reveal-modal.open').foundation('reveal', 'close');
+}
 
 function highlightProceed(){
   $('.answer-choice').each(function(i, item){
@@ -47,7 +58,7 @@ function centerIframe(){
 }
 
 function centerImage(){
-  $( "img" ).wrap( "<div class='text-align'></div>");
+  $( "img" ).wrap( "<div class='text-center media-container'></div>");
 }
 
 function checkIfNoOptions(){
