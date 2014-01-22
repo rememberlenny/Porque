@@ -49,7 +49,7 @@
 
       # Intro 3
       scenario1.intro.create!(
-        content: "<iframe width='560' height='315' src='//www.youtube.com/v/biwNVnPF25E&start=35&end=60&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees."
+        content: "<iframe width='560' height='315' src='//www.youtube.com/v/biwNVnPF25E?start=35&end=60&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees."
       )
 
       # Intro 2
@@ -191,7 +191,7 @@
 
     #Q5
       scenario1.questions.create!(
-        questionprompt: " <iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
+        questionprompt: " <iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
       #A5
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
@@ -241,7 +241,7 @@
 
     #Q8
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/K1YXuTznM1c&start=3&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe>What will you do next? (pick one to move forward in the intervention):")
+        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/K1YXuTznM1c?start=3&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe>What will you do next? (pick one to move forward in the intervention):")
       #A8
       scenario1.questions.last.answers.create!(
         answeroption:"Gain control of the room",
@@ -367,7 +367,7 @@
 
     #Q12
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
+        questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
       #A12
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
@@ -651,7 +651,7 @@
       # Question 5
         # Page 31
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
         scenario2.questions.last.answers.create!(
           answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
@@ -672,7 +672,7 @@
       # Question 6
         # Page 33
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/lO0rLFW_tjo&start=40&end=80&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> After the IONM returns to baseline, you:"
+          questionprompt: "<iframe width='560' height='315' src='//www.youtube.com/v/lO0rLFW_tjo?start=40&end=80&version=3&autoplay=1' frameborder='0' allowfullscreen></iframe> After the IONM returns to baseline, you:"
           )
 
         scenario2.questions.last.answers.create!(

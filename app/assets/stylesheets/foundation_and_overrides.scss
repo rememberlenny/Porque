@@ -41,7 +41,10 @@ $rem-base: 14px;
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Georgia", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+h1, h2, h3, h4, h5{
+  font-family: "Georgia", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
