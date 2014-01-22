@@ -488,7 +488,7 @@
     scenario2 = Scenario.create!(
       name: "Case 2",
       description: "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image+25.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image+20+-+X-Ray.jpg")
 
     # Intro
       # Intro 1
