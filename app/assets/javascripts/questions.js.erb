@@ -105,7 +105,9 @@ function checkForClicked(){
 }
 
 function checkForContent(item){
-
+  if($('.clicked').find('.answer-response-holder h4').html() === "Proceed"){
+    console.log(item);
+  }
 }
 
 function passClickedToSave(){

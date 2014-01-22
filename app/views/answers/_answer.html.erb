@@ -23,9 +23,7 @@
       <div class="clear-fix"></div>
     </label>
     <div id="answer-<%= answer.id %>" class="answer-response-holder " data-response="<%= answer.nextQuestion %>">
-      <h4 class="">
-        <%= raw(answer.response) %>
-      </h4>
+      <h4 class=""><%= raw(answer.response) %></h4>
       <hr>
       <%= link_to @isSame, {:controller => 'scenarios', :action=> 'question', :id=>answer.nextQuestion }, :class=>"#{@isSameClass} button small full-w" %>
     </div>
