@@ -1440,6 +1440,23 @@
         )
 
 
+   # Intro
+      # Intro 1
+
+    scenario3 = Scenario.create!(
+      name: "Case 3",
+      description: "Emily is a 12 yoF with progressive adolescent idiopathic scoliosis showing a curve to the left T1-T5 of 30 degrees that bends to 29 to the right, T6-T12 of 51 degrees that bends to 40, and to the left L1-L4 of 20 degrees that bends to 9. <br><br>She comes in for posterior spinal instrumentation and fusion.",
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image-27---X-Ray.jpg")
+
+      scenario3.intro.create!(
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Screen%2BShot%2B2014-01-22%2Bat%2B1.24.33%2BAM.jpg'><br>In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>At any point of the simulator, you will have access to the checklist by clicking on the button to the left indicated as “Checklist.”<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
+      )
+
+      # Intro 3
+      scenario3.intro.create!(
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-33.jpg'><br>Screws were placed between T4 and L1. <br><br>You are informed that there is a complete loss of upper and lower evoke and somatosensory evoke potentials. "
+      )
+
 # Question
       # Question 1
         # Page 40
