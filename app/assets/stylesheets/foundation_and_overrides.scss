@@ -42,8 +42,17 @@ $rem-base: 14px;
 // $body-bg: #fff;
 // $body-font-color: #222;
 $body-font-family: "Georgia", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-h1, h2, h3, h4, h5{
-  font-family: "Georgia", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+h1, h2, h3, h4, h5, label{
+  font-family: "Georgia", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif !important;
+}
+
+.ui-btn{
+  background: none !important;
+  border-color:transparent!important;
+  text-shadow: 0 0px 0 transparent !important;
+  -webkit-box-shadow:  none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 }
 // $body-font-weight: normal;
 // $body-font-style: normal;

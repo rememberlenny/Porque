@@ -11,10 +11,11 @@ var $item,
     buttonChecked = false;
 
 $(document).ready(function(){
-  closeModal();
   checkIfNoOptions();
   centerIframe();
   centerImage();
+  replaceAlertWithClose();
+  closeModal();
 });
 
 $('.answer-choice').on('vclick', function(){
@@ -32,15 +33,20 @@ $('button').on('vclick', function(){
   passClickedToSave();
   checkForClicked();
   loadDataIntoModal();
-  replaceAlertWithClose();
+  closeModal();
 });
 
 $('.hint-button').on('vclick', function(){
   highlightProceed();
 });
 
+$('.success.button').each(function(i, item){
+  var savedHref = $(item).attr('href');
+
+});
+
 function replaceAlertWithClose(){
-  $('.alert.button').attr('href', 'javascript:closeModal();')
+  $('.alert.button').attr('href', 'javascript:closeModal();');
 }
 
 function closeModal(){
