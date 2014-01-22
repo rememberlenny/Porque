@@ -18,6 +18,8 @@ $(document).ready(function(){
   closeModal();
 });
 
+
+
 $('.answer-choice').on('vclick', function(){
   that = this;
   removeAllClickHandles();
@@ -93,10 +95,17 @@ function disableSubmitButton(){
 
 function checkForClicked(){
   $('.answer-choice').each(function(i, item){
+
+    checkForContent(item);
+
     if( $item.hasClass('clicked') ){
       clickedChoice = $item.attr('id');
     }
   });
+}
+
+function checkForContent(item){
+
 }
 
 function passClickedToSave(){

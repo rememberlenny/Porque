@@ -13,37 +13,17 @@
     </div>
   <% end %>
 
-  <p>
-    <strong>
-      <%= "Answer" %>
-    </strong>
-  </p>
-  <p>
-    <%= f.text_field :answeroption %>
-  </p>
+  <p><strong><%= "Answer" %></strong></p>
+  <p><%= f.text_field :answeroption %></p>
 
-  <p>
-    <strong>
-      <%= "Response" %>
-    </strong>
-  </p>
-  <p>
-    <%= f.text_area :response %>
-  </p>
+  <p><strong><%= "Response" %></strong></p>
+  <p><%= f.text_area :response %></p>
 
 
-  <p>
-    <strong>
-      <%= "Next Question" %>
-    </strong>
-  </p>
-  <p>
-    <%= f.text_field :nextQuestion %>
-  </p>
+  <p><strong><%= "Next Question" %></strong></p>
+  <p><%= f.text_field :nextQuestion %></p>
 
-  <p>
-    <%= f.submit 'Save', :class=>'button right small' %>
-  </p>
+  <p><%= f.submit 'Save', :class=>'button right small' %></p>
 
   <% end %>
 
