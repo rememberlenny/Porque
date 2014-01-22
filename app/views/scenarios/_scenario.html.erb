@@ -9,7 +9,7 @@
       <%= link_to scenario do %>
         <h5><%= scenario.name %></h5>
       <% end %>
-        <p><%=scenario.description %></p>
+        <p><%= raw(scenario.description)  %></p>
       <%= link_to scenario, :class=>"button tiny" do %>
         Begin <%=scenario.name %>
       <% end %>
