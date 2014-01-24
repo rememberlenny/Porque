@@ -13,6 +13,21 @@
  *= require_tree .
  */
 
+* {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.loading{
+  opacity: 0;
+}
+
 div#submitResponse.reveal-modal.open{
   opacity: 1;
   visibility: visible;

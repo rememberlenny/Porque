@@ -8,6 +8,7 @@ var $item,
       textcontent:  '',
       nextquestion: ''
     },
+    question = {},
     buttonChecked = false;
 
 $(document).ready(function(){
@@ -15,7 +16,10 @@ $(document).ready(function(){
   centerIframe();
   centerImage();
   replaceAlertWithClose();
-  closeModal();
+  saveQuestions();
+  buttonEventsActivate();
+  setContainerSize();
+  removeLoading();
 });
 
 (function() {
@@ -89,35 +93,46 @@ $(document).ready(function(){
 
 })();
 
-$('.answer-choice').on(TouchMouseEvent.UP, function(){
-  that = this;
-  removeAllClickHandles();
-  addClickPointer(that);
-  if($(that).hasClass('clicked')){
-    disableSubmitButton();
-  }
-  enableSubmitButton();
-  setUpResponseModal();
-});
+function removeLoading(){
+  $('.loading').each(function(i, item){
+    $(item).removeClass('loading');
+  });
+}
 
-$('button').on(TouchMouseEvent.UP, function(){
-  passClickedToSave();
-  checkForClicked();
-  loadDataIntoModal();
-  closeModal();
-});
+function setContainerSize(){
+  var panelHeight = $('#panelContent').height();
+  $('#panelContent').css('min-height', panelHeight);
+}
 
-$('.hint-button').on(TouchMouseEvent.UP, function(){
-  highlightProceed();
-});
+function buttonEventsActivate(){
+  $('.answer-choice').on(TouchMouseEvent.UP, function(){
+    that = this;
+    removeAllClickHandles();
+    addClickPointer(that);
+    if($(that).hasClass('clicked')){
+      disableSubmitButton();
+    }
+    enableSubmitButton();
+    setUpResponseModal();
+  });
 
-$('.success.button').each(function(i, item){
-  var savedHref = $(item).attr('href');
+  $('button').on(TouchMouseEvent.UP, function(){
+    passClickedToSave();
+    checkForClicked();
+    loadDataIntoModal();
+  });
 
-});
+  $('.hint-button').on(TouchMouseEvent.UP, function(){
+    highlightProceed();
+  });
+
+  $('.success.button').each(function(i, item){
+    var savedHref = $(item).attr('href');
+  });
+}
 
 function replaceAlertWithClose(){
-  $('.alert.button').attr('href', 'javascript:closeModal();');
+  $('.alert.button').attr('href', 'javascript:returnQuestionContent();');
 }
 
 function closeModal(){
@@ -203,6 +218,20 @@ function setUpResponseModal(){
   response.nextquestion = $(response.holder).find('.answer-response-holder').data('response');
 }
 
-function loadDataIntoModal(){
-  $('#submitResponseContent').html(response.textcontent);
+function saveQuestions(){
+  question.containerContent = $('#panelContent').html();
 }
+
+function returnQuestionContent(){
+  $('.question-content h5').css('opacity',1);
+  $('#panelContent').html(question.containerContent);
+  buttonEventsActivate();
+}
+
+function loadDataIntoModal(){
+  $('.question-content h5').css('opacity',.3);
+  $('#panelContent').children().fadeOut(200, function(){
+    $('#panelContent').html(response.textcontent);
+  });
+}
+
