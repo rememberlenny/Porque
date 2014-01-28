@@ -90,7 +90,7 @@
 
     # Question 2
       scenario1.questions.create!(
-        questionprompt: '<iframe width="560" height="315" src="//www.youtube.com/embed/8yU2TqSVtTY?autoplay=1" frameborder="0" allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):')
+        questionprompt: '<iframe width="560" height="315" src="//www.youtube.com/embed/8yU2TqSVtTY?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):')
       # Answer 2
       scenario1.questions.last.answers.create!(
         answeroption:"Stop case and announce to the room",
@@ -211,7 +211,7 @@
 
     #Q6
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/CJYxjjP846U?autoplay=1' frameborder='0' allowfullscreen></iframe>After the SSEP’s returned to baseline, you:")
+        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/CJYxjjP846U?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>After the SSEP’s returned to baseline, you:")
       #A6
       scenario1.questions.last.answers.create!(
         answeroption:"Continue on with the surgery",
@@ -545,7 +545,7 @@
       # Question 2
         # Page 28
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/a7FMQ9QuMng?autoplay=1' frameborder='0' allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/a7FMQ9QuMng?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
 
         # Answer 2
@@ -767,7 +767,7 @@
         # Page 40
         # (Insert Video 3 no sound - automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
           )
         #Answers 1
         scenario3.questions.last.answers.create!(
@@ -979,7 +979,7 @@
         # Page 50
         # (Insert Video 3 no sound - automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
           )
         #Answers 8
         scenario3.questions.last.answers.create!(
