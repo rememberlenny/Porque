@@ -376,13 +376,18 @@
         questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
       #A12
       scenario1.questions.last.answers.create!(
-        answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+        answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease/remove distraction or other corrective forces, or probe for breech).",
         response:"IONM has not returned to baseline. What else? ",
         nextQuestion:"12"
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
         response:"Upon examination, everything looks normal. What else? ",
+        nextQuestion:"12"
+      )
+      scenario1.questions.last.answers.create!(
+        answeroption:"Intra-op imaging (O-arm, Fluoro, X-ray) to evaluate implant placement. ",
+        response:"Upon examination, there are no abnormalities. What else? ",
         nextQuestion:"12"
       )
       scenario1.questions.last.answers.create!(
@@ -396,12 +401,12 @@
         questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-14.JPG'>You should always consider consultation with a colleague. Now what?")
       #A13
       scenario1.questions.last.answers.create!(
-        answeroption:"IV steroid protocol: 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
+        answeroption:"IV steroid protocol: e.g. Methylprednisolone 30mg/kg in 15 min for 1st hour, then 5.4 mg/kg/hr for 23 hrs",
         response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
         nextQuestion:"14"
       )
       scenario1.questions.last.answers.create!(
-        answeroption:"IV lidocaine 2mg/kg if blood flow to the spinal cord is the suspected reason for IOM changes",
+        answeroption:"IV lidocaine 2mg/kg if blood flow to the spinal cord is the suspected reason for IONM changes",
         response:"After discussion with another attending surgeon, we decided to conduct a wake-up test. ",
         nextQuestion:"14"
       )
@@ -587,7 +592,7 @@
           questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-12.jpg'>Check anesthetic/systemic conditions of the patient (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
         scenario2.questions.last.answers.create!(
-          answeroption:"Optimize MAP",
+          answeroption:"Optimize MAP (Mean Arterial Pressure)",
           response:"Blood pressure is normal; what else will you check?",
           nextQuestion:"3"
         )
@@ -628,7 +633,7 @@
           nextQuestion:"4"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"Check extent of neuromuscular blockade",
+          answeroption:"Check extent of neuromuscular blockade and degree of paralysis",
           response:"IONM has not returned to baseline. What else?",
           nextQuestion:"4"
         )
@@ -1068,7 +1073,7 @@
           )
         #Answers 9
         scenario3.questions.last.answers.create!(
-          answeroption:"Optimize MAP",
+          answeroption:"Optimize MAP (Mean Arterial Pressure)",
           response:"There is no abnormality; what else will you check?",
           nextQuestion:"10"
         )
@@ -1112,7 +1117,7 @@
           nextQuestion:"11"
         )
         scenario3.questions.last.answers.create!(
-          answeroption:"Check extent of neuromuscular blockade",
+          answeroption:"Check extent of neuromuscular blockade and degree of paralysis",
           response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"11"
         )
@@ -1146,13 +1151,18 @@
         )
         #Answers 9
         scenario3.questions.last.answers.create!(
-          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease/remove distraction or other corrective forces, or probe for breech).",
           response:"No abnormalities were found. What else?",
           nextQuestion:"12"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
           response:"Upon examination, everything looks normal. What else? ",
+          nextQuestion:"12"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Intra-op imaging (O-arm, Fluoro, X-ray) to evaluate implant placement.",
+          response:"Upon examination, there are no abnormalities. What else? ",
           nextQuestion:"12"
         )
         scenario3.questions.last.answers.create!(
@@ -1251,7 +1261,7 @@
         )
         #Answers 9
         scenario3.questions.last.answers.create!(
-          answeroption:"Optimize MAP",
+          answeroption:"Optimize MAP (mean arterial pressure)",
           response:"MAP was optimized to 100 but there was no resolution. What else can be done? ",
           nextQuestion:"16"
         )
@@ -1291,7 +1301,7 @@
           nextQuestion:"17"
         )
         scenario3.questions.last.answers.create!(
-          answeroption:"Check extent of neuromuscular blockade",
+          answeroption:"Check extent of neuromuscular blockade and degree of paralysis",
           response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"17"
         )
@@ -1326,13 +1336,18 @@
         )
         #Answers 9
         scenario3.questions.last.answers.create!(
-          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction, or probe for breech).",
+          answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease/remove distraction or other corrective forces, or probe for breech).",
           response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"18"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
           response:"Upon examination, everything looks normal. What else? ",
+          nextQuestion:"18"
+        )
+        scenario3.questions.last.answers.create!(
+          answeroption:"Intra-op imaging (O-arm, Fluoro, X-ray) to evaluate implant placement. ",
+          response:"Upon examination, there are no abnormalities. What else? ",
           nextQuestion:"18"
         )
         scenario3.questions.last.answers.create!(
