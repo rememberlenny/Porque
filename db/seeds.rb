@@ -44,7 +44,8 @@
     # Intro
       # Intro 1
       scenario1.intro.create!(
-        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Screen%2BShot%2B2014-01-22%2Bat%2B1.24.33%2BAM.jpg'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-10.jpg'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
+
       )
 
       # Intro 3
@@ -236,11 +237,11 @@
 
     #Q7
       scenario1.questions.create!(
-        questionprompt: "Screws were then placed on the right side at T7-T9. <br> <br> Bilateral SSEP’s and MEP’s are noted to have been lost. <br> <br> Blood pressure, temperature and hematocrit are checked; pt. was given a unit of cell saver blood. Lower extremities were properly placed on the table" )
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-10.jpg'><br>Screws were then placed on the right side at T7-T9. <br> <br> Bilateral SSEP’s and MEP’s are noted to have been lost. <br> <br> Blood pressure, temperature and hematocrit are checked; pt. was given a unit of cell saver blood. Lower extremities were properly placed on the table" )
       #A7
       scenario1.questions.last.answers.create!(
         answeroption:"Next",
-        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-10.jpg'>",
+        response:"Proceed",
         nextQuestion:"8"
       )
 
@@ -251,7 +252,7 @@
       scenario1.questions.last.answers.create!(
         answeroption:"Gain control of the room",
         response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. ",
-        nextQuestion:"9"
+        nextQuestion:"8"
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Check anesthetic/systemic conditions of the patient",
@@ -499,13 +500,14 @@
     scenario2 = Scenario.create!(
       name: "Case 2",
       description: "Matthew is a 12yoM with severe scoliosis and congenital muscular dystrophy. <br><br>His x-ray shows curves measuring 94 and 101 degrees bending down only to 84 and 70 degrees",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/2_X-RAY.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image-20---X-Ray.jpg")
 
     # Intro
       # Intro 1
       # Page 26
       scenario2.intro.create!(
-        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Screen%2BShot%2B2014-01-22%2Bat%2B1.24.33%2BAM.jpg'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-10.jpg'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
+
       )
 
       # Intro 1
@@ -529,8 +531,8 @@
         #Answers 1
         scenario2.questions.last.answers.create!(
           answeroption:"Gain control of the room",
-          response:"Proceed",
-          nextQuestion:"2"
+          response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. ",
+          nextQuestion:"1"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Check anesthetic/systemic conditions of the patient",
@@ -767,10 +769,11 @@
     scenario3 = Scenario.create!(
       name: "Case 3",
       description: "Emily is a 12 yoF with progressive adolescent idiopathic scoliosis showing a curve to the left T1-T5 of 30 degrees that bends to 29 to the right, T6-T12 of 51 degrees that bends to 40, and to the left L1-L4 of 20 degrees that bends to 9. <br><br>She comes in for posterior spinal instrumentation and fusion.",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/3_X-Ray.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image-27---X-Ray.jpg")
 
       scenario3.intro.create!(
-        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Screen%2BShot%2B2014-01-22%2Bat%2B1.24.33%2BAM.jpg'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-10.jpg'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
+
       )
 
       # Intro 3
@@ -1007,7 +1010,7 @@
         scenario3.questions.last.answers.create!(
           answeroption:"Gain control of the room",
           response:"Great! You have now gained control of the room by completing the following:<br>1.     Intraoperative Pause-Stop case and announce to room.<br>2.     Eliminate extraneous stimuli (music, conversation, etc.)<br>3.     Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.     Anticipate need for intraoperative imaging if not readily available.<br><br>Music and conversations were very distracting.<br>You ask for everyone to stop the music and get everyone’s attention towards pinpointing the reason for the IONM change.",
-          nextQuestion:"9"
+          nextQuestion:"8"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Check anesthetic/systemic conditions of the patient",
@@ -1195,8 +1198,8 @@
         #Answers 9
         scenario3.questions.last.answers.create!(
           answeroption:"Gain control of the room",
-          response:"Proceed",
-          nextQuestion:"15"
+          response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. ",
+          nextQuestion:"14"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Check anesthetic/systemic conditions of the patient",
