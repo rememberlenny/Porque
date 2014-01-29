@@ -822,32 +822,32 @@
         #Answers 2
         scenario3.questions.last.answers.create!(
           answeroption:"Stop case and announce to the room",
-          response:"Two minutes have passed. <br><br>Now everyone is notified of the changes. How else can you gain control of the room?",
+          response:"Now everyone is notified of the changes. How else can you gain control of the room?",
           nextQuestion:"2"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
-          response:"Two minutes have passed. <br><br>Proceed",
+          response:"Proceed",
           nextQuestion:"2"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"The music has been stopped and you have eliminated extraneous stimuli. How else can you gain control of the room?",
-          response:"Two minutes have passed. <br><br>Proceed",
+          response:"Proceed",
           nextQuestion:"2"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Summon ATTENDING anesthesiologist and SENIOR neurophysiologist/neurologist for support.",
-          response:"Two minutes have passed. <br><br>You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
+          response:"You have the attention of the attending anesthesiologist and senior neurophysiologist/neurologist now. How else can you gain control of the room?",
           nextQuestion:"2"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Anticipate need for intraoperative imaging if not readily available",
-          response:"Two minutes have passed. <br><br>How else can you gain control of the room? ",
+          response:"How else can you gain control of the room? ",
           nextQuestion:"2"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"All of the above",
-          response:"Two minutes have passed. <br><br>Now you have everyone’s attention and ready to take further action steps.",
+          response:"Two minutes have passed! <br><br>Now you have everyone’s attention and ready to take further action steps.",
           nextQuestion:"6"
         )
 
@@ -861,32 +861,32 @@
         #Answers 3
         scenario3.questions.last.answers.create!(
           answeroption:"Optimize MAP (Mean Arterial Pressure)",
-          response:"Two minutes have passed. <br><br>Blood pressure is normal; what else will you check?",
+          response:"Blood pressure is normal; what else will you check?",
           nextQuestion:"3"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Optimize Hematocrit",
-          response:"Two minutes have passed. <br><br>There is no abnormality; what else will you check? ",
+          response:"There is no abnormality; what else will you check? ",
           nextQuestion:"3"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Optimize Blood pH",
-          response:"Two minutes have passed. <br><br>There is no abnormality; what else will you check?",
+          response:"There is no abnormality; what else will you check?",
           nextQuestion:"3"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Seek Normothermia",
-          response:"Two minutes have passed. <br><br>There is no abnormality; what else will you check?",
+          response:"There is no abnormality; what else will you check?",
           nextQuestion:"3"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Discuss POTENTIAL need for eventual wake-up test with ATTENDING anesthesiologist",
-          response:"Two minutes have passed. <br><br>Need discussed; what else will you check?",
+          response:"Need discussed; what else will you check?",
           nextQuestion:"3"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"All of the Above",
-          response:"Two minutes have passed. <br><br>All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
+          response:"Two minutes have passed! <br><br>All these points are vital to check; however there are no systemic abnormalities found. IONM has not returned to baseline. What else? ",
           nextQuestion:"6"
         )
 
@@ -900,32 +900,32 @@
         #Answers 4
         scenario3.questions.last.answers.create!(
           answeroption:"Discuss status of inhalational agents with anesthesia",
-          response:"Two minutes have passed. <br><br>IONM has not returned to baseline. What else? ",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"4"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Check extent of neuromuscular blockade and degree of paralysis",
-          response:"Two minutes have passed. <br><br>IONM has not returned to baseline. What else? ",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"4"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Check electrode placement",
-          response:"Two minutes have passed. <br><br>IONM has not returned to baseline. What else? ",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"4"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Determine pattern and timing of signal changes",
-          response:"Two minutes have passed. <br><br>IONM has not returned to baseline. What else? ",
+          response:"IONM has not returned to baseline. What else? ",
           nextQuestion:"4"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Check limb/neck positioning; check limb position on table especially in unilateral loss",
-          response:"Two minutes have passed. <br><br>Limb and neck are positioned properly. What else? ",
+          response:"Limb and neck are positioned properly. What else? ",
           nextQuestion:"4"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"All of the Above",
-          response:"Two minutes have passed. <br><br>It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
+          response:"Two minutes have passed! <br><br>It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
           nextQuestion:"6"
         )
 
@@ -939,26 +939,25 @@
         #Answers 5
         scenario3.questions.last.answers.create!(
           answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease/remove distraction or other corrective forces, or probe for breech).",
-          response:"Two minutes have passed. <br><br>After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach",
+          response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach",
           nextQuestion:"5"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Evaluate for spinal cord compression and examine osteotomy/laminotomy sites. ",
-          response:"Two minutes have passed. <br><br>Upon examination, everything looks normal. What else? ",
+          response:"Upon examination, everything looks normal. What else? ",
           nextQuestion:"5"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Intra-op imaging (O-arm, Fluoro, X-ray) to evaluate implant placement. ",
-          response:"Two minutes have passed. <br><br>Upon examination, there are no abnormalities. What else? ",
+          response:"Upon examination, there are no abnormalities. What else? ",
           nextQuestion:"5"
         )
 
         scenario3.questions.last.answers.create!(
           answeroption:"Both of the Above",
-          response:"Two minutes have passed. <br><br>After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach. You are alerted that the motor evoked potential monitoring had rapidly improved. ",
+          response:"Two minutes have passed! <br><br>After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach. You are alerted that the motor evoked potential monitoring had rapidly improved. ",
           nextQuestion:"6"
         )
-
     # Question
       # Question 6
         # Page 46
