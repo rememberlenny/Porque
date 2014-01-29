@@ -39,7 +39,7 @@
     scenario1 = Scenario.create!(
       name: "Case 1",
       description: "Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees.",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image-20---X-Ray.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Case_1_-_Image_2_NEW_X-Ray.jpg")
 
     # Intro
       # Intro 1
@@ -499,7 +499,7 @@
     scenario2 = Scenario.create!(
       name: "Case 2",
       description: "Matthew is a 12yoM with severe scoliosis and congenital muscular dystrophy. <br><br>His x-ray shows curves measuring 94 and 101 degrees bending down only to 84 and 70 degrees",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image-20---X-Ray.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/2_X-RAY.jpg")
 
     # Intro
       # Intro 1
@@ -767,7 +767,7 @@
     scenario3 = Scenario.create!(
       name: "Case 3",
       description: "Emily is a 12 yoF with progressive adolescent idiopathic scoliosis showing a curve to the left T1-T5 of 30 degrees that bends to 29 to the right, T6-T12 of 51 degrees that bends to 40, and to the left L1-L4 of 20 degrees that bends to 9. <br><br>She comes in for posterior spinal instrumentation and fusion.",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image-27---X-Ray.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/3_X-Ray.jpg")
 
       scenario3.intro.create!(
         content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Screen%2BShot%2B2014-01-22%2Bat%2B1.24.33%2BAM.jpg'><br>In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.<br><br>At any point of the simulator, you will have access to the checklist by clicking on the button to the left indicated as “Checklist.”<br><br>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations."
@@ -1006,7 +1006,7 @@
         #Answers 8
         scenario3.questions.last.answers.create!(
           answeroption:"Gain control of the room",
-          response:"Proceed",
+          response:"Great! You have now gained control of the room by completing the following:<br>1.     Intraoperative Pause-Stop case and announce to room.<br>2.     Eliminate extraneous stimuli (music, conversation, etc.)<br>3.     Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.     Anticipate need for intraoperative imaging if not readily available.<br><br>Music and conversations were very distracting.<br>You ask for everyone to stop the music and get everyone’s attention towards pinpointing the reason for the IONM change.",
           nextQuestion:"9"
         )
         scenario3.questions.last.answers.create!(

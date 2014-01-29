@@ -126,6 +126,10 @@ function buttonEventsActivate(){
     highlightProceed();
   });
 
+  $('.checklistpopup').on(TouchMouseEvent.UP, function(){
+    $('#questionMediaPopup').foundation('reveal', 'open');
+  });
+
   $('.success.button').each(function(i, item){
     var savedHref = $(item).attr('href');
   });
