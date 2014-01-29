@@ -500,7 +500,7 @@
     scenario2 = Scenario.create!(
       name: "Case 2",
       description: "Matthew is a 12yoM with severe scoliosis and congenital muscular dystrophy. <br><br>His x-ray shows curves measuring 94 and 101 degrees bending down only to 84 and 70 degrees",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image-20---X-Ray.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/2_X-RAY.jpg")
 
     # Intro
       # Intro 1
@@ -769,7 +769,7 @@
     scenario3 = Scenario.create!(
       name: "Case 3",
       description: "Emily is a 12 yoF with progressive adolescent idiopathic scoliosis showing a curve to the left T1-T5 of 30 degrees that bends to 29 to the right, T6-T12 of 51 degrees that bends to 40, and to the left L1-L4 of 20 degrees that bends to 9. <br><br>She comes in for posterior spinal instrumentation and fusion.",
-      image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image-27---X-Ray.jpg")
+      image: "https://s3.amazonaws.com/LKBG-TG/columbia/3_X-Ray.jpg")
 
       scenario3.intro.create!(
         content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/checklist.png'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
