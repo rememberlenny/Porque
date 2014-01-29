@@ -55,7 +55,7 @@
 
       # Intro 2
       scenario1.intro.create!(
-        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-2---X-Ray.jpg'> Due to her size (H: 5’6 inches, WT: 250lbs), positioning was difficult and her legs had to be secured with tape and straps to prevent them from falling off. Screws were placed cephalocaudally from T2 to L3 (skipping T3 and T5) on the left side. On the right, screws were placed caudal-cephalically from L3, and at the point when T10 screw was in we lost SSEP monitoring in the distribution of the right posterior tibial nerve."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Case_1_-_Image_2_NEW_X-Ray.jpg'> Due to her size (H: 5’6 inches, WT: 250lbs), positioning was difficult and her legs had to be secured with tape and straps to prevent them from falling off. Screws were placed cephalocaudally from T2 to L3 (skipping T3 and T5) on the left side. On the right, screws were placed caudal-cephalically from L3, and at the point when T10 screw was in we lost SSEP monitoring in the distribution of the right posterior tibial nerve."
       )
 
     # Question 1

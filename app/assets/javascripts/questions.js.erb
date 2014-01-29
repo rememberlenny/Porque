@@ -158,6 +158,7 @@ function buttonEventsActivate(){
   });
 
   $('.checklistpopup').on(TouchMouseEvent.UP, function (e) {
+    e.preventDefault();
     $('#questionMediaPopup').modal();
     return false;
   });
