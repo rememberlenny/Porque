@@ -44,7 +44,7 @@
     # Intro
       # Intro 1
       scenario1.intro.create!(
-        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-10.jpg'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/checklist.png'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
 
       )
 
@@ -506,7 +506,7 @@
       # Intro 1
       # Page 26
       scenario2.intro.create!(
-        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-10.jpg'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/checklist.png'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
 
       )
 
@@ -772,7 +772,7 @@
       image: "https://s3.amazonaws.com/LKBG-TG/columbia/Image-27---X-Ray.jpg")
 
       scenario3.intro.create!(
-        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-10.jpg'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/checklist.png'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
 
       )
 
