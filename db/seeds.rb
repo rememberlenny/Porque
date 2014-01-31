@@ -1016,7 +1016,7 @@
         #Answers 8
         scenario3.questions.last.answers.create!(
           answeroption:"Gain control of the room",
-          response:"Great! You have now gained control of the room by completing the following:<br>1.     Intraoperative Pause-Stop case and announce to room.<br>2.     Eliminate extraneous stimuli (music, conversation, etc.)<br>3.     Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.     Anticipate need for intraoperative imaging if not readily available.<br><br>Music and conversations were very distracting.<br>You ask for everyone to stop the music and get everyone’s attention towards pinpointing the reason for the IONM change.",
+          response:"Music and conversations were very distracting at this time.<br>You ask for everyone to stop the music and get everyone’s attention towards finding why there are IONM changes.",
           nextQuestion:"13"
         )
         scenario3.questions.last.answers.create!(
@@ -1071,7 +1071,7 @@
         scenario3.questions.last.answers.create!(
           answeroption:"All of the above",
           response:"Now you have everyone’s attention and ready to take further action steps. ",
-          nextQuestion:"8"
+          nextQuestion:"13"
         )
 
     # Question
