@@ -50,7 +50,7 @@
 
       # Intro 3
       scenario1.intro.create!(
-        content: "<iframe width='560' height='315' src='http://www.youtube.com/embed/biwNVnPF25E?start=35&end=60&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees."
+        content: "<iframe width='560' height='315' src='http://www.youtube.com/embed/biwNVnPF25E?start=35&end=60&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> Amy is a 15 yo girl (post menarchal, Risser 4) with progressive adolescent idiopathic scoliosis with a right thoracic curve from T5 to T10 measuring 60 degrees and a left lumbar curve from T11 to L3 measuring 45 degrees."
       )
 
       # Intro 2
@@ -65,22 +65,22 @@
       #Answers 1
       scenario1.questions.last.answers.create!(
         answeroption:"Gain control of the room",
-        response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. ",
+        response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. <br><br>What other action steps can you take?",
         nextQuestion:"1"
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Check anesthetic/systemic conditions of the patient",
-        response:"Proceed",
+        response:"You have informed the team of your action plan. They are prepared to continue.",
         nextQuestion:"3"
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
-        response:"Proceed",
+        response:"You have informed the team of your action plan. They are prepared to continue.",
         nextQuestion:"4"
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Seek surgery-related reasons for IONM changes",
-        response:"Proceed",
+        response:"You have informed the team of your action plan. They are prepared to continue.",
         nextQuestion:"5"
       )
       scenario1.questions.last.answers.create!(
@@ -91,7 +91,7 @@
 
     # Question 2
       scenario1.questions.create!(
-        questionprompt: '<iframe width="560" height="315" src="//www.youtube.com/embed/8yU2TqSVtTY?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):')
+        questionprompt: '<iframe width="560" height="315" src="//www.youtube.com/embed/8yU2TqSVtTY?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):')
       # Answer 2
       scenario1.questions.last.answers.create!(
         answeroption:"Stop case and announce to the room",
@@ -186,13 +186,13 @@
       )
       scenario1.questions.last.answers.create!(
         answeroption:"All of the Above",
-        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-6.JPG'>You checked all of the following: <br><br>-Discuss status of inhalational agents with anesthesia<br>-Check extent of neuromuscular blockade and degree of paralysis<br>-Check electrode placement<br>-Determine pattern and timing of signal changes<br>-Check limb/neck positioning; check limb position on table especially in unilateral loss<br>-As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.",
+        response:"<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-6.JPG'>You checked all of the following: <br><br>Discuss status of inhalational agents with anesthesia<br>Check extent of neuromuscular blockade and degree of paralysis<br>Check electrode placement<br>Determine pattern and timing of signal changes<br>Check limb/neck positioning; check limb position on table especially in unilateral loss<br>As a result, you found that the right leg had fallen off the table! You readjusted the leg and the SSEP’s returned to baseline.",
         nextQuestion:"6"
       )
 
     #Q5
       scenario1.questions.create!(
-        questionprompt: " <iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
+        questionprompt: " <iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):")
       #A5
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease distraction/remove distraction or other corrective forces, or probe for breech).",
@@ -210,18 +210,18 @@
         nextQuestion:"5"
       )
       scenario1.questions.last.answers.create!(
-        answeroption:"Both of the Above",
+        answeroption:"All of the Above",
         response:"After checking for mechanical causes for IONM change, it did not return to baseline. What else? ",
         nextQuestion:"1"
       )
 
     #Q6
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/CJYxjjP846U?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>After the SSEP’s returned to baseline, you:")
+        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/CJYxjjP846U?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe>After the SSEP’s returned to baseline, you:")
       #A6
       scenario1.questions.last.answers.create!(
         answeroption:"Continue on with the surgery",
-        response:"After discussion with another attending surgeon, we continued on with the surgery. ",
+        response:"After discussion with another attending surgeon, we continued with the surgery. ",
         nextQuestion:"7"
       )
       scenario1.questions.last.answers.create!(
@@ -240,30 +240,33 @@
         questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-10.jpg'><br>Screws were then placed on the right side at T7-T9. <br> <br> Bilateral SSEP’s and MEP’s are noted to have been lost. <br> <br> Blood pressure, temperature and hematocrit are checked; pt. was given a unit of cell saver blood. Lower extremities were properly placed on the table" )
       #A7
       scenario1.questions.last.answers.create!(
-        answeroption:"Next",
-        response:"Proceed",
+        answeroption:"Bilateral SSEP’s and MEP’s are noted to have been lost.",
+        response:"Blood pressure, temperature and hematocrit are checked; pt. was given a unit of cell saver blood. Lower extremities were properly placed on the table.",
         nextQuestion:"8"
       )
 
     #Q8
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/K1YXuTznM1c?start=3&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>What will you do next?<br>(The following are headings from the checklist. Please choose what you feel would be the next best action step):")
+        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/K1YXuTznM1c?start=3&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe>What will you do next?<br>(The following are headings from the checklist. Please choose what you feel would be the next best action step):")
       #A8
       scenario1.questions.last.answers.create!(
         answeroption:"Gain control of the room",
-        response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. ",
+        response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. <br><br>What other action steps can you take?",
         nextQuestion:"8"
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Check anesthetic/systemic conditions of the patient",
+        response:"You have informed the team of your action plan. They are prepared to continue.  ",
         nextQuestion:"10"
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
+        response:"You have informed the team of your action plan. They are prepared to continue.  ",
         nextQuestion:"11"
       )
       scenario1.questions.last.answers.create!(
         answeroption:"Seek surgery-related reasons for IONM changes",
+        response:"You have informed the team of your action plan. They are prepared to continue.  ",
         nextQuestion:"12"
       )
       scenario1.questions.last.answers.create!(
@@ -374,7 +377,7 @@
 
     #Q12
       scenario1.questions.create!(
-        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
+        questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe>Seek surgery-related reasons for IONM changes (please choose an answer to see if the IONM returns to baseline):")
       #A12
       scenario1.questions.last.answers.create!(
         answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease/remove distraction or other corrective forces, or probe for breech).",
@@ -392,7 +395,7 @@
         nextQuestion:"12"
       )
       scenario1.questions.last.answers.create!(
-        answeroption:"Both of the Above",
+        answeroption:"All of the Above",
         response:"After clearing the mechanical causes for IONM change, it did not return to baseline. What else? ",
         nextQuestion:"8"
       )
@@ -459,11 +462,11 @@
 
     #Q15
       scenario1.questions.create!(
-        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-16.JPG'>Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made. <br><br>Bilateral MEP’s and left-sided SSEP’s were severely diminished. ")
+        questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-16.JPG'>")
       #A15
       scenario1.questions.last.answers.create!(
-        answeroption:"Next",
-        response:"Proceed",
+        answeroption:"Screws were then placed at T6-T7 on the right side and a downgoing transverse process hook was placed at T2. No attempt to place screws at T3-T5 was made.",
+        response:"Bilateral MEP’s and left-sided SSEP’s were severely diminished.",
         nextQuestion:"16"
       )
 
@@ -513,13 +516,13 @@
       # Intro 1
       # Page 26
       scenario2.intro.create!(
-        content: "Matthew is a 12yoM with severe scoliosis and congenital muscular dystrophy. <br><br>His x-ray shows curves measuring 94 and 101 degrees bending down only to 84 and 70 degrees. "
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-20---X-Ray.jpg'><br>Matthew is a 12yoM with severe scoliosis and congenital muscular dystrophy. <br><br>His x-ray shows curves measuring 94 and 101 degrees bending down only to 84 and 70 degrees. "
       )
 
       # Intro 2
       # Page 26
       scenario2.intro.create!(
-        content: "Pt. is brought in for a posterior spinal instrumentation and fusion. After placing pedicle screws, a Vitallium rod was placed under the skin on the right side. Another Vitallium rod was then tunneled under the muscle on the left-side, placed in the proximal screws and attached distally. <br><br>At this time, you are alerted that motor evoked potential monitoring is lost. "
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-14.JPG'><br>Pt. is brought in for a posterior spinal instrumentation and fusion. After placing pedicle screws, a Vitallium rod was placed under the skin on the right side. Another Vitallium rod was then tunneled under the muscle on the left-side, placed in the proximal screws and attached distally. <br><br>At this time, you are alerted that motor evoked potential monitoring is lost. "
       )
 
     # Question
@@ -531,22 +534,22 @@
         #Answers 1
         scenario2.questions.last.answers.create!(
           answeroption:"Gain control of the room",
-          response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. ",
+          response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. <br><br>What other action steps can you take?",
           nextQuestion:"1"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Check anesthetic/systemic conditions of the patient",
-          response:"Proceed",
+          response:"You have informed the team of your action plan. They are prepared to continue.",
           nextQuestion:"3"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
-          response:"Proceed",
+          response:"You have informed the team of your action plan. They are prepared to continue.",
           nextQuestion:"4"
         )
         scenario2.questions.last.answers.create!(
           answeroption:"Seek surgery-related reasons for IONM changes",
-          response:"Proceed",
+          response:"You have informed the team of your action plan. They are prepared to continue.",
           nextQuestion:"5"
         )
         scenario2.questions.last.answers.create!(
@@ -558,7 +561,7 @@
       # Question 2
         # Page 28
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/a7FMQ9QuMng?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/a7FMQ9QuMng?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe>In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
 
         # Answer 2
@@ -663,7 +666,7 @@
       # Question 5
         # Page 31
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI?start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
         scenario2.questions.last.answers.create!(
           answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease/remove distraction or other corrective forces, distraction, or probe for breech).",
@@ -681,7 +684,7 @@
           nextQuestion:"5"
         )
         scenario2.questions.last.answers.create!(
-          answeroption:"Both of the Above",
+          answeroption:"All of the Above",
           response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach. You are alerted that the motor evoked potential monitoring had rapidly improved. ",
           nextQuestion:"6"
         )
@@ -689,7 +692,7 @@
       # Question 6
         # Page 33
         scenario2.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/lO0rLFW_tjo?start=40&end=80&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> After the IONM returns to baseline, you:"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/lO0rLFW_tjo?start=40&end=80&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> After the IONM returns to baseline, you:"
           )
 
         scenario2.questions.last.answers.create!(
@@ -711,12 +714,12 @@
       # Question 7
         # Page 36
         scenario2.questions.create!(
-          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-25.jpg'>The case moved forward and instead of pedicle screws, a claw was placed on the right side. A distal rod was placed and connected to the pelvic fixation. <br><br> A formal fusion was done. There motor evoked potential monitoring had not changed after improving. "
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-25.jpg'>The case moved forward and instead of pedicle screws, a claw was placed on the right side. "
           )
 
         scenario2.questions.last.answers.create!(
-            answeroption:"Next",
-            response:"Continue",
+            answeroption:"A distal rod was placed and connected to the pelvic fixation.",
+            response:"Blood A formal fusion was done. Motor evoked potential monitoring had not changed after improving",
             nextQuestion:"8"
           )
 
@@ -724,7 +727,7 @@
 
         # Page 37
         scenario2.questions.create!(
-          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-26.JPG'>At this point you would:"
+          questionprompt: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-26.JPG'>Despite the fact that motor evoked potential monitoring returned to normal, any other actions you would take?"
           )
 
         scenario2.questions.last.answers.create!(
@@ -775,23 +778,27 @@
         content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/checklist.png'><br>In order to facilitate the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline during intraoperative monitoring, we have created this IONM web simulator.<br><br>At any point of the simulator, you have will have access to the checklist by clicking on the button labeled “checklist” to the left hand side."
 
       )
+      scenario3.intro.create!(
+        content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-27---X-Ray.jpg'><br>Emily is a 12 yo girl with progressive adolescent idiopathic scoliosis. Her X-rays show a 30-degree left upper thoracic curve (T1-T5) that bends to 29 degrees, a right lower thoracic curve (T6-T12) of 51 degrees that bends to 40 degrees, and a 20-degree left lumbar curve (L1-L4) that bends to 9 degrees. "
+      )
 
       # Intro 3
       scenario3.intro.create!(
         content: "<img src='https://s3.amazonaws.com/LKBG-TG/columbia/Image-33.jpg'><br>Screws were placed between T4 and L1. <br><br>You are informed that there is a complete loss of upper and lower evoke and somatosensory evoke potentials. "
       )
+      # Intro 3
 
 # Question
       # Question 1
         # Page 40
         # (Insert Video 3 no sound - automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
           )
         #Answers 1
         scenario3.questions.last.answers.create!(
           answeroption:"Gain control of the room",
-          response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. ",
+          response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. <br><br>What other action steps can you take?",
           nextQuestion:"1"
         )
         scenario3.questions.last.answers.create!(
@@ -830,12 +837,12 @@
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Eliminate extraneous stimuli (music, conversations, etc.)",
-          response:"Proceed",
+          response:"You have informed the team of your action plan. They are prepared to continue.  ",
           nextQuestion:"2"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"The music has been stopped and you have eliminated extraneous stimuli. How else can you gain control of the room?",
-          response:"Proceed",
+          response:"You have informed the team of your action plan. They are prepared to continue.  ",
           nextQuestion:"2"
         )
         scenario3.questions.last.answers.create!(
@@ -937,12 +944,12 @@
         # Page 44
         # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/CJYxjjP846U&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe>1 minute has passed.<br><br> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/CJYxjjP846U&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe>1 minute has passed.<br><br> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
           )
         #Answers 5
         scenario3.questions.last.answers.create!(
           answeroption:"Discuss events and actions just prior to signal loss and consider reversing actions (e.g.; remove traction/rods/screws, decrease/remove distraction or other corrective forces, or probe for breech).",
-          response:"After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach",
+          response:"Upon examination, everything looks normal. What else?",
           nextQuestion:"5"
         )
         scenario3.questions.last.answers.create!(
@@ -957,8 +964,8 @@
         )
 
         scenario3.questions.last.answers.create!(
-          answeroption:"Both of the Above",
-          response:"Two minutes have passed! <br><br>After removing the rod, you removed all the screws at the proximal point. You probed and found that there was a medial breach. You are alerted that the motor evoked potential monitoring had rapidly improved. ",
+          answeroption:"All of the Above",
+          response:"Two minutes have passed! <br><br>After clearing the mechanical causes for IONM change, it did not return to baseline.",
           nextQuestion:"6"
         )
     # Question
@@ -966,7 +973,7 @@
         # Page 46
         # (Insert Video 10 00:00 to 00:10 no sound- automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=10&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> You are informed that after 2 minutes the evoked potentials improved and normalized. At this point you would: "
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=10&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> You are informed that after 2 minutes the evoked potentials improved and normalized. At this point you would: "
           )
         #Answers 1
         scenario3.questions.last.answers.create!(
@@ -994,8 +1001,8 @@
           )
         #Answers 1
         scenario3.questions.last.answers.create!(
-          answeroption:"Next",
-          response:"Proceed",
+          answeroption:"You proceeded with the instrumentation in the upper thoracic spine despite the surrounding distractions.",
+          response:"Patient is given an infusion of propofol and you are informed once again that there was a loss of lower extremity motor-evoked potentials.",
           nextQuestion:"8"
         )
 
@@ -1004,27 +1011,27 @@
         # Page 50
         # (Insert Video 3 no sound - automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/8yU2TqSVtTY?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> What will you do next? (pick one to move forward in the intervention):"
           )
         #Answers 8
         scenario3.questions.last.answers.create!(
           answeroption:"Gain control of the room",
           response:"Great! You have now gained control of the room by completing the following:<br>1.     Intraoperative Pause-Stop case and announce to room.<br>2.     Eliminate extraneous stimuli (music, conversation, etc.)<br>3.     Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.     Anticipate need for intraoperative imaging if not readily available.<br><br>Music and conversations were very distracting.<br>You ask for everyone to stop the music and get everyone’s attention towards pinpointing the reason for the IONM change.",
-          nextQuestion:"8"
+          nextQuestion:"13"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Check anesthetic/systemic conditions of the patient",
-          response:"Proceed",
+          response:" You have informed the team of your action plan. They are prepared to continue.  ",
           nextQuestion:"10"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
-          response:"Proceed",
+          response:" You have informed the team of your action plan. They are prepared to continue.  ",
           nextQuestion:"11"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Seek surgery-related reasons for IONM changes",
-          response:"Proceed",
+          response:" You have informed the team of your action plan. They are prepared to continue.  ",
           nextQuestion:"12"
         )
         scenario3.questions.last.answers.create!(
@@ -1038,7 +1045,7 @@
         # Page 51
         # (Insert Video 8 no sound- automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/a7FMQ9QuMng&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> In what methods will you gain control of the room (pick one to create the best environment for this situation):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/a7FMQ9QuMng&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> In what methods will you gain control of the room (pick one to create the best environment for this situation):"
           )
         #Answers 9
         scenario3.questions.last.answers.create!(
@@ -1142,7 +1149,7 @@
         scenario3.questions.last.answers.create!(
           answeroption:"All of the Above",
           response:"It is important to continue revisiting systemic considerations and confirm that they are optimized. However, the IONM has not yet returned to baseline. ",
-          nextQuestion:"9"
+          nextQuestion:"8"
         )
 
     # Question
@@ -1150,7 +1157,7 @@
         # Page 54
         # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> Seek surgery-related reasons for IONM changes (pick an answer to pinpoint the possible reason for the IONM changes):"
         )
         #Answers 9
         scenario3.questions.last.answers.create!(
@@ -1169,9 +1176,9 @@
           nextQuestion:"12"
         )
         scenario3.questions.last.answers.create!(
-          answeroption:"Both of the Above",
+          answeroption:"All of the Above",
           response:"Everything appears normal. What else can be done? ",
-          nextQuestion:"12"
+          nextQuestion:"8"
         )
 
     # Question
@@ -1198,22 +1205,22 @@
         #Answers 9
         scenario3.questions.last.answers.create!(
           answeroption:"Gain control of the room",
-          response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. ",
+          response:"Great! You have now gained control of the room by completing the following: <br>1.  Intraoperative Pause-Stop case and announce to room.<br>2.  Eliminate extraneous stimuli (music, conversation, etc.) <br>3.  Summon ATTENDING, anesthesiologist, SENIOR neurophysiologist/neurologist and MOST EXPERIENCED nurse.<br>4.  Anticipate need for intraoperative imaging if not readily available. <br><br>What other action steps can you take?",
           nextQuestion:"14"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Check anesthetic/systemic conditions of the patient",
-          response:"Proceed",
+          response:" You have informed the team of your action plan. They are prepared to continue.  ",
           nextQuestion:"16"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Seek technical/neurophysiologic reasons for IONM changes",
-          response:"Proceed",
+          response:" You have informed the team of your action plan. They are prepared to continue.  ",
           nextQuestion:"17"
         )
         scenario3.questions.last.answers.create!(
           answeroption:"Seek surgery-related reasons for IONM changes",
-          response:"Proceed",
+          response:" You have informed the team of your action plan. They are prepared to continue.  ",
           nextQuestion:"18"
         )
         scenario3.questions.last.answers.create!(
@@ -1335,7 +1342,7 @@
         # Page 63
         # (Insert Video 4 00:00 to 00:19 no sound- automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):"
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/yPZbiG7OdzI&start=0&end=19&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> Seek technical/neurophysiologic reasons for IONM changes (please choose an answer for a possibility of the IONM returning to baseline):"
         )
         #Answers 9
         scenario3.questions.last.answers.create!(
@@ -1354,7 +1361,7 @@
           nextQuestion:"18"
         )
         scenario3.questions.last.answers.create!(
-          answeroption:"Both of the Above",
+          answeroption:"All of the Above",
           response:"After clearing the mechanical causes for IONM change, it did not return to baseline. What else? ",
           nextQuestion:"14"
         )
@@ -1438,7 +1445,7 @@
         # Page 67
         # (Insert Video 6 00:03 to end no sound- automatically begin as page open; continue to repeat)
         scenario3.questions.create!(
-          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/K1YXuTznM1c&start=03&end=15&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0' frameborder='0' allowfullscreen></iframe> A decision to move forward with the surgery was made. Evoked Potentials continued to be stable and improved overtime."
+          questionprompt: "<iframe width='560' height='315' src='http://www.youtube.com/embed/K1YXuTznM1c&start=03&end=15&version=3&autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&enablejsapi=1' frameborder='0' allowfullscreen></iframe> A decision to move forward with the surgery was made. Evoked Potentials continued to be stable and improved overtime."
         )
         #Answers 9
         scenario3.questions.last.answers.create!(

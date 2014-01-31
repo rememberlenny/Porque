@@ -1,23 +1,23 @@
 <div class="row">
 
 <h3>IONM Web Simulator</h3>
+ <p class="">Welcome to the Responding to Intraoperative Neuromonitoring (IONM) Changes Web Simulator created by the Center for Pediatric Orthopaedic Research at the Columbia University Medical Center. We recently created a multi-center consensus-based checklist to standardize surgeon responses to IONM changes.</p>
+  <p class="">In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.</p>
+  <p class=""><i>Please note that the presented cases are based on a true case although deidentified as per HIPAA regulations.</i></p>
+  <ol class="">
+    <li>The presented cases are based on a true case although deidentified as per HIPAA regulations.</li>
+    <li>All photographs and videos have been consented for the purpose of this simulator. Please do NOT use outside of this simulator.</li>
+    <li>Photographs and videos are for demostration only and do not necessarily correspond to the case provided.</li>
+    <li>These cases all can have multiple answers. Please choose an answer to the best of your knowledge. However, each case will have a “correct” answer for the sake of the simulator according to the case it is based off of.</li>
+  </ol>
 
-<p class="">Welcome to the Responding to Intraoperative Neuromonitoring (IONM) Changes Web Simulator created by the Center for Pediatric Orthopaedic Research at the Columbia University Medical Center. We recently created a multi-center consensus-based checklist to standardize surgeon responses to IONM changes.</p>
-<p class="">In order to assist in facilitating the importance of utilizing this checklist and being aware of the various steps and choices to make at the time of a deviation from baseline in intraoperative monitoring, we have created this web simulator.</p>
-<p class=""><strong>Please note:</strong></p>
-<ol class="">
-<li>The presented cases are based on a true case although deidentified as per HIPAA regulations.</li>
-<li>All photographs and videos have been consented for the purpose of this simulator. Please do not use outside of the simulator for other use.</li>
-<li>Photographs and videos do not necessarily correspond to the case provided.</li>
-<li>These cases all can have multiple answers. Please choose an answer to the best of your knowledge. However, each case will have a “correct” answer for the sake of the simulator according to the case it is based off of.</li>
-</ol>
 <% if @scenarios.any? %>
   <hr>
   <ul class="large-block-grid-1 small-block-grid-1 medium-block-grid-2">
 
-<%= render @scenarios %>
+  <%= render @scenarios %>
 
-</ul>
+  </ul>
 <% end %>
 
 </div>
