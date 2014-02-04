@@ -1,5 +1,5 @@
 
-![Project Sample](https://s3.amazonaws.com/LKBG-TG/portfolio/columbia-medical.jpg)
+![Project Sample](public/img/columbia-medical.jpg)
 
 == Columbia Medical Simulation
 
