@@ -1,6 +1,6 @@
 == Columbia Medical Simulation
 
-![alt text](public/img/columbia-medical.jpg "Title")
+![Sample](public/img/columbia-medical.jpg "Title")
 
 This project was made for the IONM research project. The project was ubilt on behalf of the Columbia Medial School Orthopedic department.
 
