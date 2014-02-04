@@ -13,3 +13,7 @@ Data is structured using Courses, Questions, and Answers. The Course contains Qu
 == Example
 
 The project can currently be viewed on [iomwebsimulator.herokuapp.com](http://iomwebsimulator.herokuapp.com)
+
+== On the horizon
+
+This project is missing the capacity to hold an admin panel. The admin panel would allow a privilleged user to create new courses and modify existing courses.
